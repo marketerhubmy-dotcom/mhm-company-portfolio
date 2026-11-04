@@ -16,8 +16,10 @@ export const site = {
   url: (env.VITE_SITE_URL || 'https://web.mhmacademy.site').replace(/\/+$/, ''),
   locale: 'ms_MY',
   lang: 'ms',
-  whatsappNumber: digits(env.VITE_WHATSAPP_NUMBER),
-  email: email(env.VITE_CONTACT_EMAIL),
+  // Official WhatsApp (confirmed by owner). Env var overrides.
+  whatsappNumber: digits(env.VITE_WHATSAPP_NUMBER || '601111141772'),
+  // Official support address (also used on sms.mhmacademy.site). Env var overrides.
+  email: email(env.VITE_CONTACT_EMAIL || 'support@mhmacademy.site'),
   location: 'Malaysia',
   academyUrl: env.VITE_ACADEMY_URL || 'https://mhmacademy.site',
   githubOwner: 'marketerhubmy-dotcom',
