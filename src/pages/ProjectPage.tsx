@@ -76,11 +76,11 @@ export default function ProjectPage() {
         <div className="guides pointer-events-none absolute inset-0 opacity-60" aria-hidden="true" />
         <div className="container-x relative">
           <nav aria-label="Breadcrumb" className="enter label flex items-center gap-3 text-muted" style={{ ['--i' as string]: -4 }}>
-            <Link to="/kerja" viewTransition className="link-underline inline-flex items-center gap-1.5 text-ink">
+            <Link to="/kerja" viewTransition className="link-underline inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-ink">
               <ArrowLeft className="size-3.5" aria-hidden="true" /> Hasil Kerja
             </Link>
-            <span aria-hidden="true">/</span>
-            <span aria-current="page" className="truncate">{p.title}</span>
+            <span aria-hidden="true" className="shrink-0">/</span>
+            <span aria-current="page" className="min-w-0 truncate">{p.title}</span>
           </nav>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:items-end">

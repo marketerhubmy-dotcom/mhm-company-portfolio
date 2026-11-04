@@ -35,7 +35,7 @@ export function BrowserFrame({ image, url, sizes, priority, className, zoom = tr
     <figure className={cn('overflow-hidden rounded-[0.9rem] border border-ink/15 bg-ink-2 shadow-[0_1px_0_rgb(255_255_255/0.06)_inset,0_30px_60px_-30px_rgb(18_19_17/0.45)]', className)}>
       <div className="flex h-8 items-center gap-3 border-b border-line-dark px-3.5" aria-hidden="true">
         <span className="flex gap-1.5">{[0, 1, 2].map((i) => <span key={i} className="size-2.5 rounded-full bg-paper/20" />)}</span>
-        {url && <span className="label truncate !text-[0.62rem] !tracking-[0.04em] !normal-case text-paper/45">{url.replace(/^https:\/\//, '')}</span>}
+        {url && <span className="label min-w-0 truncate !text-[0.62rem] !tracking-[0.04em] !normal-case text-paper/45">{url.replace(/^https:\/\//, '')}</span>}
       </div>
       <div className="overflow-hidden">
         <Img image={image} sizes={sizes} priority={priority} imgClassName={zoom ? 'transition-[transform,opacity] duration-[1.2s] ease-out-expo group-hover:scale-[1.035]' : undefined} />

@@ -82,8 +82,8 @@ export function ProjectTile({ project, large, priority }: { project: Project; la
       <div className="relative z-10 mt-4 flex flex-wrap items-center gap-3">
         <StatusBadge status={project.status} />
         {project.demoUrl && (
-          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="label link-underline inline-flex items-center gap-1 text-ink-soft hover:text-ink">
-            {hostOf(project.demoUrl)} <ArrowUpRight className="size-3.5" aria-hidden="true" />
+          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="label link-underline inline-flex min-w-0 max-w-full items-center gap-1 text-ink-soft hover:text-ink">
+            <span className="min-w-0 truncate">{hostOf(project.demoUrl)}</span> <ArrowUpRight className="size-3.5" aria-hidden="true" />
             <span className="sr-only">(dibuka dalam tab baharu)</span>
           </a>
         )}

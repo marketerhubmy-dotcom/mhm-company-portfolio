@@ -85,7 +85,7 @@ export default function ContactPage() {
               </ContactRow>
               {site.email && (
                 <ContactRow icon={Mail} label="E-mel">
-                  <a href={`mailto:${site.email}`} className="link-underline">{site.email}</a>
+                  <a href={`mailto:${site.email}`} className="link-underline">{site.email.split('@')[0]}@<wbr />{site.email.split('@')[1]}</a>
                 </ContactRow>
               )}
               <ContactRow icon={MapPin} label="Lokasi">{site.location}</ContactRow>
@@ -200,10 +200,10 @@ export default function ContactPage() {
 
 function ContactRow({ icon: Icon, label, children }: { icon: typeof Mail; label: string; children: React.ReactNode }) {
   return (
-    <li className="grid grid-cols-[2rem_6rem_1fr] items-center gap-2 py-4 text-[0.95rem]">
+    <li className="grid grid-cols-[2rem_6rem_minmax(0,1fr)] items-center gap-2 py-4 text-[0.95rem]">
       <Icon className="size-4 text-saga-deep" aria-hidden="true" />
       <span className="label text-muted">{label}</span>
-      <span>{children}</span>
+      <span className="min-w-0 break-words [overflow-wrap:anywhere]">{children}</span>
     </li>
   );
 }
