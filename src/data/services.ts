@@ -9,8 +9,8 @@ export type Service = {
   who: string;
   problems: string[];
   deliverables: string[];
-  /** Configurable: leave null to show "Sebut harga ikut skop". Never invent prices. */
-  priceNote: string | null;
+  /** Owner-approved estimate in MYR (null → "Sebut harga ikut skop"). `openEnded` renders "RM30,000+". */
+  priceRange: { min: number; max: number; openEnded?: boolean } | null;
   /** Projects in another category that show part of this service. `note` must say
    *  exactly which part, so a related example is never presented as more than it is. */
   relatedExamples?: { slug: string; note: string }[];
@@ -29,7 +29,7 @@ export const services: Service[] = [
       'Pesanan masuk berselerak dan sukar dijejak.',
     ],
     deliverables: ['Struktur kandungan & susunan tawaran', 'Reka bentuk mobile-first', 'Aliran pesanan (contoh: ke WhatsApp)', 'Asas SEO & kelajuan', 'Pemasangan pada domain anda'],
-    priceNote: null,
+    priceRange: { min: 800, max: 2500 },
   },
   {
     id: 'website-bisnes',
@@ -43,7 +43,7 @@ export const services: Service[] = [
       'Website sukar dikemas kini tanpa bantuan teknikal.',
     ],
     deliverables: ['Seni bina maklumat & halaman', 'Reka bentuk responsif', 'Halaman servis, profil & hubungi', 'SEO teknikal (metadata, sitemap)', 'Panduan pengurusan kandungan'],
-    priceNote: null,
+    priceRange: { min: 2500, max: 8000 },
   },
   {
     id: 'ecommerce',
@@ -57,7 +57,7 @@ export const services: Service[] = [
       'Katalog dan stok sukar diurus apabila produk bertambah.',
     ],
     deliverables: ['Katalog produk & pakej', 'Aliran checkout', 'Akses produk digital selepas bayaran', 'Integrasi pembayaran (ikut pilihan)', 'Dashboard pengurusan asas'],
-    priceNote: null,
+    priceRange: { min: 3500, max: 12000 },
   },
   {
     id: 'web-app',
@@ -71,7 +71,7 @@ export const services: Service[] = [
       'Data tersebar di beberapa alat yang tidak bercakap antara satu sama lain.',
     ],
     deliverables: ['Analisis aliran kerja', 'Prototaip interaktif', 'Aplikasi web dengan akses mengikut role', 'Integrasi API', 'Dokumentasi & serahan'],
-    priceNote: null,
+    priceRange: { min: 8000, max: 30000, openEnded: true },
   },
   {
     id: 'crm-erp',
@@ -85,7 +85,7 @@ export const services: Service[] = [
       'Pengurusan tidak dapat melihat prestasi secara keseluruhan.',
     ],
     deliverables: ['Modul order & pelanggan', 'Pengesahan bayaran', 'Pipeline logistik & stok', 'Modul HR (ikut keperluan)', 'Dashboard & laporan mengikut role'],
-    priceNote: null,
+    priceRange: { min: 10000, max: 50000, openEnded: true },
     relatedExamples: [
       { slug: 'mhm-business-suite', note: 'Modul CRM (pelanggan, peluang jualan, pipeline, follow-up) dan Order Management.' },
     ],
@@ -102,7 +102,7 @@ export const services: Service[] = [
       'Perlu asas yang boleh berkembang apabila pengguna bertambah.',
     ],
     deliverables: ['Skop MVP & keutamaan ciri', 'Akaun pengguna & peranan', 'Reka bentuk produk', 'Pembangunan & pelancaran', 'Pelan penambahbaikan berfasa'],
-    priceNote: null,
+    priceRange: { min: 15000, max: 60000, openEnded: true },
   },
   {
     id: 'automasi-ai',
@@ -116,7 +116,7 @@ export const services: Service[] = [
       'Laporan harian mengambil masa berjam-jam untuk disediakan.',
     ],
     deliverables: ['Pemetaan proses yang boleh diautomasi', 'Aliran automasi / AI agent', 'Integrasi dengan alat sedia ada', 'Kawalan & semakan manusia', 'Panduan penggunaan'],
-    priceNote: null,
+    priceRange: { min: 2500, max: 15000 },
   },
   {
     id: 'automasi-marketing',
@@ -130,10 +130,22 @@ export const services: Service[] = [
       'Tidak tahu sumber iklan mana yang menghasilkan jualan.',
     ],
     deliverables: ['Aliran follow-up prospek', 'Segmentasi & penjejakan sumber', 'Templat mesej kempen', 'Integrasi borang & CRM', 'Dashboard ringkas'],
-    priceNote: null,
+    priceRange: { min: 1500, max: 8000 },
     relatedExamples: [
       { slug: 'synax-landing-page', note: 'Prospek separa siap dihantar automatik ke ERP; acara Lead & Purchase ke Meta Pixel.' },
       { slug: 'odajah-erp-demo', note: 'Modul Prospect: follow-up stage, tugasan staf dan sumber lead (diurus staf).' },
     ],
   },
 ];
+
+/** Applies to every estimate shown on the site. */
+export const pricingNotes = [
+  'Anggaran berdasarkan skop biasa. Harga sebenar ditentukan dalam sebut harga bertulis selepas skop dipersetujui.',
+  'Tidak termasuk domain, hosting, langganan pihak ketiga (contoh: API WhatsApp, AI atau payment gateway) dan bajet iklan, kecuali dinyatakan dalam sebut harga.',
+] as const;
+
+const rm = (n: number) => 'RM' + n.toLocaleString('en-MY');
+export function formatPriceRange(r: Service['priceRange']): string | null {
+  if (!r) return null;
+  return `${rm(r.min)} – ${rm(r.max)}${r.openEnded ? '+' : ''}`;
+}

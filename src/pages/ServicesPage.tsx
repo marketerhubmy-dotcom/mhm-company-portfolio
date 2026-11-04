@@ -3,7 +3,7 @@ import { Seo } from '@/components/Seo';
 import { ButtonLink } from '@/components/Button';
 import { SectionLabel } from '@/components/SectionLabel';
 import { StatusBadge } from '@/components/StatusBadge';
-import { services } from '@/data/services';
+import { formatPriceRange, pricingNotes, services } from '@/data/services';
 import { projects } from '@/features/portfolio/data';
 import { Process } from '@/sections/Process';
 import { FinalCta } from '@/sections/FinalCta';
@@ -19,7 +19,7 @@ export default function ServicesPage() {
         jsonLd={[{
           '@context': 'https://schema.org',
           '@type': 'ItemList',
-          itemListElement: services.map((s, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Service', name: s.title, description: s.short, provider: { '@type': 'Organization', name: 'MHM CENTER' }, areaServed: 'MY' } })),
+          itemListElement: services.map((s, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Service', name: s.title, description: s.short, provider: { '@type': 'Organization', name: 'MHM CENTER' }, ...(s.priceRange ? { offers: { '@type': 'AggregateOffer', priceCurrency: 'MYR', lowPrice: s.priceRange.min, highPrice: s.priceRange.max } } : {}), areaServed: 'MY' } })),
         }]}
       />
       <section className="paper-grain relative pt-[calc(var(--header-h)+3rem)] md:pt-[calc(var(--header-h)+5rem)]">
@@ -31,8 +31,14 @@ export default function ServicesPage() {
             <span className="line-mask"><span style={{ ['--i' as string]: 1 }}>kepada <span className="serif-accent text-brand-deep">sistem penuh.</span></span></span>
           </h1>
           <p className="enter lede mt-10 max-w-2xl text-ink-soft" style={{ ['--i' as string]: 1 }}>
-            Lapan servis, satu pendekatan: fahami bisnes dahulu, kemudian bina apa yang benar-benar diperlukan. Harga diberikan selepas skop dipersetujui — tiada pakej tetap yang memaksa.
+            Lapan servis, satu pendekatan: fahami bisnes dahulu, kemudian bina apa yang benar-benar diperlukan. Setiap servis disertakan anggaran harga supaya anda boleh merancang bajet — harga sebenar diberikan selepas skop dipersetujui.
           </p>
+          <aside aria-label="Nota harga" className="enter mt-10 max-w-2xl rounded-xl border border-line bg-paper-2 p-5 text-sm text-ink-soft" style={{ ['--i' as string]: 2 }}>
+            <p className="label mb-3 text-ink">Tentang anggaran harga</p>
+            <ul className="space-y-2">
+              {pricingNotes.map((n) => <li key={n} className="grid grid-cols-[1rem_1fr]"><span aria-hidden="true" className="text-brand">—</span>{n}</li>)}
+            </ul>
+          </aside>
         </div>
       </section>
 
@@ -96,7 +102,10 @@ export default function ServicesPage() {
                       <p className="mt-3 text-sm text-muted">Contoh awam akan ditambah. Tanya kami untuk perbincangan projek berkaitan.</p>
                     )}
                     <div className="mt-8 flex flex-wrap items-center gap-4 border-t border-line pt-6">
-                      <p className="mr-auto text-sm"><span className="label mr-2 text-muted">Harga</span>{s.priceNote ?? 'Sebut harga ikut skop'}</p>
+                      <p className="mr-auto">
+                        <span className="label block text-muted">Anggaran harga</span>
+                        <span className="mt-1 block font-display text-[1.35rem] font-semibold tracking-[-0.02em] text-ink">{formatPriceRange(s.priceRange) ?? 'Sebut harga ikut skop'}</span>
+                      </p>
                       <ButtonLink to={`/hubungi?servis=${s.id}`} className="!min-h-11">Tanya Servis Ini</ButtonLink>
                     </div>
                   </div>
