@@ -2,7 +2,7 @@
  * Captures REAL screenshots of portfolio demos into a raw folder.
  * Dev-only tool (not part of the site build). Requires Playwright + Chromium.
  *
- *   node scripts/media/capture.cjs <outDir>
+ *   node scripts/media/capture.cjs <outDir> [slug]
  *   python3 scripts/media/optimize.py <outDir> public/projects
  *
  * Add new shots to SHOTS below. Never fabricate screenshots.
@@ -13,6 +13,7 @@ const path = require('node:path');
 
 const ERP = 'https://demo-odajah-erp.marketerhubmy.workers.dev';
 const AINA = 'https://demo-aina-herb.pages.dev';
+const SMS = 'https://sms.mhmacademy.site';
 
 const desktop = { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1.5 };
 const mobile = { viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true };
@@ -43,6 +44,11 @@ const SHOTS = [
   { slug: 'aina-herb-susu-kacha', name: 'cara-minum', ctx: mobile, run: async (p) => { await p.goto(AINA, { waitUntil: 'networkidle' }); await p.getByText('Cara Minum', { exact: true }).first().scrollIntoViewIfNeeded(); await p.evaluate(() => window.scrollBy(0, -90)); await p.waitForTimeout(1200); } },
   { slug: 'aina-herb-susu-kacha', name: 'pilih-pakej', ctx: mobile, run: async (p) => { await p.goto(AINA, { waitUntil: 'networkidle' }); await p.getByText('Beli Sekarang · Dari RM110').first().click(); await p.waitForTimeout(1500); } },
   { slug: 'aina-herb-susu-kacha', name: 'butiran', ctx: mobile, run: async (p) => { await p.goto(AINA, { waitUntil: 'networkidle' }); await p.getByText('TENTANG PRODUK INI').first().scrollIntoViewIfNeeded(); await p.evaluate(() => window.scrollBy(0, -80)); await p.waitForTimeout(1200); } },
+  // ---- MHM SMS (public pages only — never log in) ----
+  { slug: 'mhm-sms', name: 'laman-utama', ctx: desktop, run: async (p) => { await p.goto(SMS, { waitUntil: 'networkidle' }); await p.waitForTimeout(1200); } },
+  { slug: 'mhm-sms', name: 'harga-stok', ctx: desktop, run: async (p) => { await p.goto(`${SMS}/harga`, { waitUntil: 'networkidle' }); await p.waitForTimeout(1500); } },
+  { slug: 'mhm-sms', name: 'cara-guna', ctx: desktop, run: async (p) => { await p.goto(`${SMS}/cara-guna`, { waitUntil: 'networkidle' }); await p.waitForTimeout(1200); } },
+  { slug: 'mhm-sms', name: 'daftar', ctx: desktop, run: async (p) => { await p.goto(`${SMS}/daftar`, { waitUntil: 'networkidle' }); await p.waitForTimeout(1200); } },
 ];
 
 (async () => {
@@ -50,7 +56,8 @@ const SHOTS = [
   if (!out) { console.error('usage: node scripts/media/capture.cjs <outDir>'); process.exit(1); }
   const browser = await chromium.launch();
   let failed = 0;
-  for (const s of SHOTS) {
+  const only = process.argv[3]; // optional: capture a single project slug
+  for (const s of SHOTS.filter((x) => !only || x.slug === only)) {
     const ctx = await browser.newContext(s.ctx);
     const page = await ctx.newPage();
     try {
