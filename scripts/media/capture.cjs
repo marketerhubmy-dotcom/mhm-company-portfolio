@@ -15,6 +15,25 @@ const ERP = 'https://demo-odajah-erp.marketerhubmy.workers.dev';
 const AINA = 'https://demo-aina-herb.pages.dev';
 const SMS = 'https://sms.mhmacademy.site';
 const SYNAX = 'https://synaxhq.site';
+const TT = 'https://tiktok-affiliate-2uuc.onrender.com';
+const ACADEMY = 'https://mhmacademy.site';
+
+/** MHM Academy shows live "X telah membeli ..." purchase toasts with buyer names.
+ *  Those are personal data: hide them before any capture. */
+async function academy(page, anchor) {
+  await page.addInitScript(() => {
+    document.addEventListener('DOMContentLoaded', () => {
+      const st = document.createElement('style');
+      st.textContent = '.purchase-popup{display:none!important}';
+      document.head.appendChild(st);
+    });
+  });
+  await page.goto(ACADEMY, { waitUntil: 'networkidle' });
+  if (anchor) { await page.getByText(anchor).first().scrollIntoViewIfNeeded(); await page.evaluate(() => window.scrollBy(0, -80)); }
+  await page.waitForTimeout(2500);
+  // innerText only contains rendered text, so this catches any visible buyer toast.
+  if (await page.evaluate(() => /telah membeli/i.test(document.body.innerText))) throw new Error('purchase toast still visible — refusing to capture');
+}
 
 /** Live client site: block ads pixels and the client ERP so captures never create
  *  fake page views, leads or prospects. Never type into its order form. */
@@ -80,6 +99,13 @@ const SHOTS = [
     } },
   { slug: 'synax-landing-page', name: 'pilih-pakej', ctx: mobile, run: (p) => synax(p, '/lp/spm', '#pakej') },
   { slug: 'synax-landing-page', name: 'borang-pesanan', ctx: mobile, run: (p) => synax(p, '/lp/spm', '#order') },
+  // ---- TikTok Affiliate Admin (internal tool): empty shells only, never an API key or data ----
+  { slug: 'tiktok-affiliate-admin', name: 'panel-admin', ctx: desktop, run: async (p) => { await p.goto(TT, { waitUntil: 'networkidle', timeout: 90000 }); await p.waitForTimeout(1500); } },
+  { slug: 'tiktok-affiliate-admin', name: 'pendaftaran-affiliate', ctx: desktop, run: async (p) => { await p.goto(`${TT}/daftar.html`, { waitUntil: 'networkidle', timeout: 90000 }); await p.waitForTimeout(1200); } },
+  // ---- MHM Academy (public pages only) ----
+  { slug: 'mhm-academy', name: 'laman-utama', ctx: desktop, run: (p) => academy(p) },
+  { slug: 'mhm-academy', name: 'katalog-modul', ctx: desktop, run: (p) => academy(p, 'Pilih modul ikut masalah') },
+  { slug: 'mhm-academy', name: 'cara-beli', ctx: desktop, run: (p) => academy(p, 'Tiga langkah ringkas') },
 ];
 
 (async () => {

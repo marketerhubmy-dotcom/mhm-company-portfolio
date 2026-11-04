@@ -85,10 +85,15 @@ describe('committed content', () => {
       expect(r.ok, `${f}: ${!r.ok ? r.errors.join('; ') : ''}`).toBe(true);
     }
   });
-  it('generated portfolio contains only approved projects', () => {
-    const list = JSON.parse(readFileSync('src/data/portfolio.generated.json', 'utf8')) as { approvedForPublic: boolean; slug: string }[];
+  it('generated portfolio publishes exactly the approved manual entries (approval gate)', () => {
+    const list = JSON.parse(readFileSync('src/data/portfolio.generated.json', 'utf8')) as { approvedForPublic: boolean; slug: string; source: string }[];
     expect(list.length).toBeGreaterThan(0);
     expect(list.every((p) => p.approvedForPublic)).toBe(true);
-    expect(list.map((p) => p.slug)).not.toContain('mhm-academy');
+    const manual = readdirSync('content/projects').map((f) => JSON.parse(readFileSync(`content/projects/${f}`, 'utf8')) as { slug: string; approvedForPublic?: boolean });
+    const approved = manual.filter((m) => m.approvedForPublic === true).map((m) => m.slug).sort();
+    const draft = manual.filter((m) => m.approvedForPublic !== true).map((m) => m.slug);
+    const publishedManual = list.filter((p) => p.source === 'manual').map((p) => p.slug).sort();
+    expect(publishedManual).toEqual(approved);
+    for (const d of draft) expect(publishedManual).not.toContain(d);
   });
 });

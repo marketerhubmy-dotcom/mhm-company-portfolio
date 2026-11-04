@@ -3,17 +3,96 @@
   "id": "mhm-academy",
   "slug": "mhm-academy",
   "title": "MHM Academy — Kedai Modul Digital",
-  "description": "Platform kedai modul digital dalam ekosistem MHM: modul praktikal marketing, iklan, AI dan automasi, dengan akses bahan selepas bayaran disahkan.",
+  "tagline": "Kedai modul digital dengan akses bahan terus selepas bayaran disahkan.",
+  "description": "Platform ekosistem MHM untuk menjual modul praktikal marketing, iklan, AI dan automasi. Pembeli memilih modul, membayar sekali dan mendapat akses bahan selepas bayaran disahkan — termasuk akses kepada MHM AI Content Studio.",
   "category": "ecommerce",
   "projectType": "Digital Product Platform",
   "technologies": [],
   "demoUrl": "https://mhmacademy.site",
   "repositoryReference": null,
-  "thumbnail": null,
-  "galleryImages": [],
+  "thumbnail": {
+    "src": "/projects/mhm-academy/laman-utama-1600.webp",
+    "alt": "Laman utama MHM Academy dengan tajuk beli modul praktikal dan modul pilihan",
+    "width": 1600,
+    "height": 1000,
+    "caption": "Laman utama kedai modul digital.",
+    "frame": "desktop",
+    "srcset": {
+      "800": "/projects/mhm-academy/laman-utama-800.webp",
+      "1600": "/projects/mhm-academy/laman-utama-1600.webp"
+    }
+  },
+  "galleryImages": [
+    {
+      "src": "/projects/mhm-academy/laman-utama-1600.webp",
+      "alt": "Laman utama MHM Academy dengan tajuk beli modul praktikal dan modul pilihan",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Laman utama kedai modul digital.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-academy/laman-utama-800.webp",
+        "1600": "/projects/mhm-academy/laman-utama-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-academy/katalog-modul-1600.webp",
+      "alt": "Katalog modul dengan penapis Semua, Boleh beli, Percuma, Akan datang dan carian",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Katalog modul dengan penapis status dan carian.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-academy/katalog-modul-800.webp",
+        "1600": "/projects/mhm-academy/katalog-modul-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-academy/cara-beli-1600.webp",
+      "alt": "Bahagian cara beli tiga langkah: pilih modul, bayar sekali, akses bahan",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Aliran pembelian tiga langkah.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-academy/cara-beli-800.webp",
+        "1600": "/projects/mhm-academy/cara-beli-1600.webp"
+      }
+    }
+  ],
   "featured": false,
-  "displayOrder": 30,
-  "approvedForPublic": false,
+  "displayOrder": 22,
+  "approvedForPublic": true,
   "status": "production",
-  "updatedAt": "2026-11-04"
+  "updatedAt": "2026-11-04",
+  "caseStudy": {
+    "intro": "MHM Academy ialah platform jualan produk digital milik MHM sendiri, dan pintu masuk kepada alat seperti MHM AI Content Studio.",
+    "challenge": "Menjual produk digital secara manual — terima bayaran, sahkan, kemudian hantar bahan satu per satu — tidak boleh berkembang dan mudah tersilap.",
+    "solution": "Kedai dengan katalog modul, pembayaran sekali bagi setiap modul, dan akses bahan yang dibuka secara automatik selepas bayaran disahkan. Pembeli boleh melihat pembelian mereka sendiri dan belajar mengikut masa sendiri.",
+    "features": [
+      {
+        "title": "Katalog modul",
+        "description": "Modul marketing, iklan, AI dan automasi dengan penapis Semua, Boleh beli, Percuma dan Akan datang, serta carian."
+      },
+      {
+        "title": "Bayar sekali, akses terus",
+        "description": "Akses bahan dibuka untuk modul yang dibeli selepas bayaran disahkan — tiada langganan."
+      },
+      {
+        "title": "Akaun pembeli",
+        "description": "Log masuk dan halaman Pembelian Saya untuk mengakses semula bahan yang dibeli."
+      },
+      {
+        "title": "Program affiliate",
+        "description": "Bahagian Affiliate untuk mempromosikan modul."
+      },
+      {
+        "title": "Pintu masuk ke Studio",
+        "description": "Akaun pembelian yang sama memberi akses kepada MHM AI Content Studio."
+      }
+    ],
+    "demoNotes": [
+      "Tangkapan skrin daripada halaman awam sahaja; notifikasi pembelian yang memaparkan nama pembeli disembunyikan."
+    ]
+  }
 }

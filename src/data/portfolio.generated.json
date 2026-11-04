@@ -478,6 +478,186 @@
   {
     "approvedForPublic": true,
     "caseStudy": {
+      "challenge": "Pencipta kandungan dan affiliate perlu menghasilkan banyak video produk dengan cepat. Menulis prompt AI secara manual memakan masa, hasilnya tidak konsisten, dan maklumat produk mudah tersilap atau direka.",
+      "demoNotes": [
+        "Studio digunakan oleh pembeli melalui MHM Academy dan memerlukan log masuk; tiada demo awam.",
+        "Tangkapan skrin diambil daripada mod demo aplikasi yang menggunakan database sementara dan akaun ujian — tiada data pengguna sebenar.",
+        "Senarai jenama dan produk dalam katalog ialah data contoh aplikasi."
+      ],
+      "features": [
+        {
+          "description": "Brand Product Studio (katalog jenama & USP), TikTok Affiliate Studio (import link TikTok Shop) dan Open Creative Studio (video bebas & storytelling).",
+          "title": "Tiga workspace"
+        },
+        {
+          "description": "01 Produk / Idea, 02 Gaya Video dan 03 CTA & Branding — sama di setiap workspace supaya mudah dipelajari.",
+          "title": "Aliran tiga langkah"
+        },
+        {
+          "description": "Prompt dibina semasa pengguna memilih, dengan kiraan aksara (had 900), serta butang salin, jana variasi lain dan simpan .txt.",
+          "title": "AI Prompt Preview langsung"
+        },
+        {
+          "description": "Selain video tunggal, pengguna boleh menjana storyboard berbilang scene, menambah scene dan mengeksport semua sekali gus.",
+          "title": "Multi-Scene Story"
+        },
+        {
+          "description": "Simpan rujukan rupa produk sebenar dan gambar supaya video AI kekal setia kepada produk; boleh dimuat turun sebagai .html.",
+          "title": "Product Reference Sheet"
+        },
+        {
+          "description": "Pembaca metadata awam (dengan semakan URL/SSRF) untuk halaman produk dan TikTok Shop; jika disekat, pengguna boleh menampal teks halaman.",
+          "title": "Import produk melalui link"
+        },
+        {
+          "description": "Official MHM Library, Public Library komuniti dan My Library peribadi, dengan carian serta import/export JSON.",
+          "title": "Content Library"
+        },
+        {
+          "description": "Log masuk, pentadbir dan akses yang disemak daripada pembelian MHM Academy.",
+          "title": "Akaun & akses berbayar"
+        }
+      ],
+      "intro": "MHM AI Content Studio ialah produk MHM sendiri yang digunakan oleh pembeli MHM Academy. Ia membantu pencipta kandungan menghasilkan prompt video AI yang konsisten tanpa perlu menulis dari kosong setiap kali.",
+      "solution": "Satu ruang kerja dengan tiga mod — produk jenama, link TikTok Shop dan idea bebas — yang semuanya mengikut aliran tiga langkah: produk, gaya video, CTA. Prompt dibina dan dipratonton secara langsung dengan had aksara, dan pengguna boleh menyimpan, berkongsi atau mengeksport hasil. Maklumat produk sentiasa boleh diedit dan disahkan, dan sistem tidak mendakwa sesuatu link berjaya dibaca jika import gagal.",
+      "tryIt": [
+        "Lihat cara akses Studio di MHM Academy."
+      ]
+    },
+    "category": "saas",
+    "demoUrl": "https://mhmacademy.site/",
+    "description": "Aplikasi web untuk pencipta kandungan dan affiliate: pilih produk atau tampal link TikTok Shop, tetapkan gaya video dan CTA, dan dapatkan prompt video AI yang tersusun, termasuk cerita berbilang scene. Akses untuk pembeli melalui MHM Academy.",
+    "displayOrder": 18,
+    "featured": false,
+    "galleryImages": [
+      {
+        "alt": "Brand Product Studio dengan pilihan jenama, kategori dan model produk serta AI Prompt Preview",
+        "caption": "Brand Product Studio: pilih jenama dan model, semak USP, dan lihat prompt terbentuk serta-merta.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-ai-content-studio/brand-product-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-ai-content-studio/brand-product-800.webp",
+          "1600": "/projects/mhm-ai-content-studio/brand-product-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Langkah 2 Gaya Video dengan jenis video, headline, gerakan tangan dan kedudukan headline",
+        "caption": "Langkah 02 — Gaya Video: jenis video, headline, gerakan dan avatar.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-ai-content-studio/gaya-video-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-ai-content-studio/gaya-video-800.webp",
+          "1600": "/projects/mhm-ai-content-studio/gaya-video-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Langkah 3 CTA dan branding dengan watermark dan butang Generate Prompt",
+        "caption": "Langkah 03 — CTA & Branding, termasuk watermark akaun TikTok.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-ai-content-studio/cta-branding-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-ai-content-studio/cta-branding-800.webp",
+          "1600": "/projects/mhm-ai-content-studio/cta-branding-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "TikTok Affiliate Studio dengan medan link TikTok Shop dan butang baca link produk",
+        "caption": "TikTok Affiliate Studio: tampal link TikTok Shop, sistem cuba baca maklumat produk.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-ai-content-studio/tiktok-affiliate-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-ai-content-studio/tiktok-affiliate-800.webp",
+          "1600": "/projects/mhm-ai-content-studio/tiktok-affiliate-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Open Creative Studio dengan pilihan Single Video atau Multi-Scene Story serta Simple dan Advanced Mode",
+        "caption": "Open Creative Studio: Single Video atau Multi-Scene Story, Simple atau Advanced Mode.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-ai-content-studio/open-creative-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-ai-content-studio/open-creative-800.webp",
+          "1600": "/projects/mhm-ai-content-studio/open-creative-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Content Library dengan Official MHM Library, carian dan kad produk",
+        "caption": "Content Library: Official, Public dan My Library dengan carian.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-ai-content-studio/library-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-ai-content-studio/library-800.webp",
+          "1600": "/projects/mhm-ai-content-studio/library-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Borang tambah jenama atau produk melalui link dengan baca info rasmi dan ekstrak info asas",
+        "caption": "Tambah produk melalui link atau tampal teks halaman; sistem tidak mendakwa link dibaca jika import gagal.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-ai-content-studio/import-produk-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-ai-content-studio/import-produk-800.webp",
+          "1600": "/projects/mhm-ai-content-studio/import-produk-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Skrin log masuk MHM AI Content Studio",
+        "caption": "Log masuk menggunakan akaun pembelian MHM Academy.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-ai-content-studio/log-masuk-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-ai-content-studio/log-masuk-800.webp",
+          "1600": "/projects/mhm-ai-content-studio/log-masuk-1600.webp"
+        },
+        "width": 1600
+      }
+    ],
+    "id": "mhm-ai-content-studio",
+    "projectType": "SaaS / AI Content Workspace",
+    "repositoryReference": "marketerhubmy-dotcom/mhm-ai-content-studio",
+    "slug": "mhm-ai-content-studio",
+    "source": "manual",
+    "status": "production",
+    "tagline": "Ruang kerja yang menukar maklumat produk kepada prompt video AI — dalam tiga langkah.",
+    "technologies": [
+      "Node.js",
+      "PostgreSQL",
+      "Python (resolver)",
+      "Docker"
+    ],
+    "thumbnail": {
+      "alt": "Brand Product Studio dengan pilihan jenama, kategori dan model produk serta AI Prompt Preview",
+      "caption": "Brand Product Studio: pilih jenama dan model, semak USP, dan lihat prompt terbentuk serta-merta.",
+      "frame": "desktop",
+      "height": 1000,
+      "src": "/projects/mhm-ai-content-studio/brand-product-1600.webp",
+      "srcset": {
+        "800": "/projects/mhm-ai-content-studio/brand-product-800.webp",
+        "1600": "/projects/mhm-ai-content-studio/brand-product-1600.webp"
+      },
+      "width": 1600
+    },
+    "title": "MHM AI Content Studio",
+    "updatedAt": "2026-11-04"
+  },
+  {
+    "approvedForPublic": true,
+    "caseStudy": {
       "challenge": "Pembeli produk kesihatan di Malaysia kebanyakannya membeli melalui telefon dan biasa dengan susun atur marketplace. Halaman perlu meyakinkan tanpa dakwaan berlebihan, menerangkan harga pakej dengan jelas dan memudahkan pesanan COD.",
       "demoNotes": [
         "Dihoskan sebagai demo portfolio di demo-aina-herb.pages.dev.",
@@ -610,5 +790,212 @@
     },
     "title": "Aina Herb — Susu Kacha",
     "updatedAt": "2026-11-04"
+  },
+  {
+    "approvedForPublic": true,
+    "caseStudy": {
+      "challenge": "Menjual produk digital secara manual — terima bayaran, sahkan, kemudian hantar bahan satu per satu — tidak boleh berkembang dan mudah tersilap.",
+      "demoNotes": [
+        "Tangkapan skrin daripada halaman awam sahaja; notifikasi pembelian yang memaparkan nama pembeli disembunyikan."
+      ],
+      "features": [
+        {
+          "description": "Modul marketing, iklan, AI dan automasi dengan penapis Semua, Boleh beli, Percuma dan Akan datang, serta carian.",
+          "title": "Katalog modul"
+        },
+        {
+          "description": "Akses bahan dibuka untuk modul yang dibeli selepas bayaran disahkan — tiada langganan.",
+          "title": "Bayar sekali, akses terus"
+        },
+        {
+          "description": "Log masuk dan halaman Pembelian Saya untuk mengakses semula bahan yang dibeli.",
+          "title": "Akaun pembeli"
+        },
+        {
+          "description": "Bahagian Affiliate untuk mempromosikan modul.",
+          "title": "Program affiliate"
+        },
+        {
+          "description": "Akaun pembelian yang sama memberi akses kepada MHM AI Content Studio.",
+          "title": "Pintu masuk ke Studio"
+        }
+      ],
+      "intro": "MHM Academy ialah platform jualan produk digital milik MHM sendiri, dan pintu masuk kepada alat seperti MHM AI Content Studio.",
+      "solution": "Kedai dengan katalog modul, pembayaran sekali bagi setiap modul, dan akses bahan yang dibuka secara automatik selepas bayaran disahkan. Pembeli boleh melihat pembelian mereka sendiri dan belajar mengikut masa sendiri."
+    },
+    "category": "ecommerce",
+    "demoUrl": "https://mhmacademy.site/",
+    "description": "Platform ekosistem MHM untuk menjual modul praktikal marketing, iklan, AI dan automasi. Pembeli memilih modul, membayar sekali dan mendapat akses bahan selepas bayaran disahkan — termasuk akses kepada MHM AI Content Studio.",
+    "displayOrder": 22,
+    "featured": false,
+    "galleryImages": [
+      {
+        "alt": "Laman utama MHM Academy dengan tajuk beli modul praktikal dan modul pilihan",
+        "caption": "Laman utama kedai modul digital.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-academy/laman-utama-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-academy/laman-utama-800.webp",
+          "1600": "/projects/mhm-academy/laman-utama-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Katalog modul dengan penapis Semua, Boleh beli, Percuma, Akan datang dan carian",
+        "caption": "Katalog modul dengan penapis status dan carian.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-academy/katalog-modul-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-academy/katalog-modul-800.webp",
+          "1600": "/projects/mhm-academy/katalog-modul-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Bahagian cara beli tiga langkah: pilih modul, bayar sekali, akses bahan",
+        "caption": "Aliran pembelian tiga langkah.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-academy/cara-beli-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-academy/cara-beli-800.webp",
+          "1600": "/projects/mhm-academy/cara-beli-1600.webp"
+        },
+        "width": 1600
+      }
+    ],
+    "id": "mhm-academy",
+    "projectType": "Digital Product Platform",
+    "repositoryReference": null,
+    "slug": "mhm-academy",
+    "source": "manual",
+    "status": "production",
+    "tagline": "Kedai modul digital dengan akses bahan terus selepas bayaran disahkan.",
+    "technologies": [],
+    "thumbnail": {
+      "alt": "Laman utama MHM Academy dengan tajuk beli modul praktikal dan modul pilihan",
+      "caption": "Laman utama kedai modul digital.",
+      "frame": "desktop",
+      "height": 1000,
+      "src": "/projects/mhm-academy/laman-utama-1600.webp",
+      "srcset": {
+        "800": "/projects/mhm-academy/laman-utama-800.webp",
+        "1600": "/projects/mhm-academy/laman-utama-1600.webp"
+      },
+      "width": 1600
+    },
+    "title": "MHM Academy — Kedai Modul Digital",
+    "updatedAt": "2026-11-04"
+  },
+  {
+    "approvedForPublic": true,
+    "caseStudy": {
+      "challenge": "Selepas setiap sesi live, staf perlu menghantar screenshot dashboard dan seseorang menyalin angka secara manual ke spreadsheet. Proses ini lambat, mudah tersilap, dan maklumat seperti staf, host dan sesi sering tidak lengkap.",
+      "demoNotes": [
+        "Sistem dalaman — tiada pautan awam disediakan.",
+        "Tangkapan skrin menunjukkan panel tanpa data dan borang kosong; tiada data staf, affiliate atau jualan dipaparkan."
+      ],
+      "features": [
+        {
+          "description": "Webhook WhatsApp menerima screenshot dan meminta metadata wajib (staff, host, live, tarikh) jika belum lengkap.",
+          "title": "Laporan melalui WhatsApp"
+        },
+        {
+          "description": "Metrik utama dashboard live diekstrak secara berstruktur daripada screenshot menggunakan model vision.",
+          "title": "Ekstrak metrik dengan AI vision"
+        },
+        {
+          "description": "Panel admin untuk semak, edit, luluskan, tolak atau cuba semula — dengan status dari ‘awaiting metadata’ hingga ‘approved’.",
+          "title": "Semakan manusia"
+        },
+        {
+          "description": "Screenshot disimpan ke Google Drive dan rekod hanya disegerakkan ke Google Sheets selepas diluluskan.",
+          "title": "Google Sheets & Drive"
+        },
+        {
+          "description": "Sambungan akaun TikTok melalui OAuth, borang pendaftaran affiliate, dan penugasan affiliate kepada akaun.",
+          "title": "Akaun TikTok & affiliate"
+        },
+        {
+          "description": "Jana caption dan copy untuk content kit menggunakan Claude, dengan sejarah copy disimpan.",
+          "title": "Content kit & copywriting AI"
+        },
+        {
+          "description": "Chrome extension yang menerbitkan content kit ke TikTok secara berkumpulan daripada web app.",
+          "title": "Batch Publisher"
+        },
+        {
+          "description": "Panel admin dilindungi kunci API; data boleh dieksport dan diimport.",
+          "title": "Akses terkawal"
+        }
+      ],
+      "intro": "Sistem ini mengautomasikan kerja paling berulang dalam operasi TikTok live: mengumpul dan menyalin metrik daripada screenshot ke dalam laporan.",
+      "solution": "Pasukan hanya menghantar screenshot ke WhatsApp. Sistem meminta metadata yang wajib, AI vision mengekstrak metrik berstruktur, dan setiap rekod melalui panel semakan sebelum disegerakkan ke Google Sheets — jadi automasi mempercepatkan kerja tanpa membuang kawalan manusia."
+    },
+    "category": "ai-automation",
+    "demoUrl": null,
+    "description": "Sistem dalaman untuk operasi TikTok affiliate: pasukan menghantar screenshot dashboard live melalui WhatsApp, AI vision mengekstrak metrik, admin menyemak dan meluluskan, dan data disegerakkan ke Google Sheets. Turut mengurus akaun TikTok, affiliate dan penerbitan kandungan.",
+    "displayOrder": 25,
+    "featured": false,
+    "galleryImages": [
+      {
+        "alt": "Panel TikTok Affiliate Admin dengan tab Laporan, Data TikTok, Akaun TikTok, Affiliate, Mastermind dan Batch Publisher",
+        "caption": "Panel admin: laporan live, akaun TikTok, affiliate dan Batch Publisher dalam satu dashboard (dipaparkan tanpa data).",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/tiktok-affiliate-admin/panel-admin-1600.webp",
+        "srcset": {
+          "800": "/projects/tiktok-affiliate-admin/panel-admin-800.webp",
+          "1600": "/projects/tiktok-affiliate-admin/panel-admin-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Borang pendaftaran affiliate dengan maklumat peribadi dan alamat penghantaran",
+        "caption": "Borang pendaftaran affiliate untuk disemak oleh admin.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/tiktok-affiliate-admin/pendaftaran-affiliate-1600.webp",
+        "srcset": {
+          "800": "/projects/tiktok-affiliate-admin/pendaftaran-affiliate-800.webp",
+          "1600": "/projects/tiktok-affiliate-admin/pendaftaran-affiliate-1600.webp"
+        },
+        "width": 1600
+      }
+    ],
+    "id": "tiktok-affiliate-admin",
+    "projectType": "Automasi AI / Sistem Dalaman",
+    "repositoryReference": null,
+    "slug": "tiktok-affiliate-admin",
+    "source": "manual",
+    "status": "production",
+    "tagline": "Screenshot live dari WhatsApp, metrik diekstrak oleh AI, disemak manusia, terus ke Google Sheets.",
+    "technologies": [
+      "Node.js",
+      "Express",
+      "OpenAI Vision",
+      "Claude API",
+      "WhatsApp Cloud API",
+      "Google Sheets API",
+      "Google Drive API",
+      "TikTok OAuth",
+      "Chrome Extension"
+    ],
+    "thumbnail": {
+      "alt": "Panel TikTok Affiliate Admin dengan tab Laporan, Data TikTok, Akaun TikTok, Affiliate, Mastermind dan Batch Publisher",
+      "caption": "Panel admin: laporan live, akaun TikTok, affiliate dan Batch Publisher dalam satu dashboard (dipaparkan tanpa data).",
+      "frame": "desktop",
+      "height": 1000,
+      "src": "/projects/tiktok-affiliate-admin/panel-admin-1600.webp",
+      "srcset": {
+        "800": "/projects/tiktok-affiliate-admin/panel-admin-800.webp",
+        "1600": "/projects/tiktok-affiliate-admin/panel-admin-1600.webp"
+      },
+      "width": 1600
+    },
+    "title": "TikTok Affiliate Admin — Automasi Laporan Live",
+    "updatedAt": "2026-05-21"
   }
 ]
