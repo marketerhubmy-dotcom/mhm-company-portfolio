@@ -96,7 +96,9 @@ async function main() {
       wanted.add(file);
       if (writeIfChanged(join(SYNCED_DIR, file), stableStringify(p))) changed.push(`content/synced/${file}`);
     }
-    for (const file of readdirSync(SYNCED_DIR).filter((f) => f.endsWith('.json'))) {
+    // The folder may not exist yet (git does not track empty folders), e.g. in --dry-run.
+    const existing = existsSync(SYNCED_DIR) ? readdirSync(SYNCED_DIR).filter((f) => f.endsWith('.json')) : [];
+    for (const file of existing) {
       if (!wanted.has(file)) { if (!dryRun) rmSync(join(SYNCED_DIR, file)); changed.push(`content/synced/${file} (dibuang)`); }
     }
   }
