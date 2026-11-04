@@ -32,3 +32,13 @@ describe('portfolio filtering', () => {
     expect(filterProjects(projects, { ...all, q: 'tiada-padanan-xyz' })).toHaveLength(0);
   });
 });
+
+describe('service related examples', () => {
+  it('every related example points to a published project and carries a note', async () => {
+    const { services } = await import('../src/data/services');
+    for (const s of services) for (const r of s.relatedExamples ?? []) {
+      expect(projects.some((p) => p.slug === r.slug), `${s.id} -> ${r.slug}`).toBe(true);
+      expect(r.note.length).toBeGreaterThan(10);
+    }
+  });
+});

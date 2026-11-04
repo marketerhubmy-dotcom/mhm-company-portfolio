@@ -11,6 +11,9 @@ export type Service = {
   deliverables: string[];
   /** Configurable: leave null to show "Sebut harga ikut skop". Never invent prices. */
   priceNote: string | null;
+  /** Projects in another category that show part of this service. `note` must say
+   *  exactly which part, so a related example is never presented as more than it is. */
+  relatedExamples?: { slug: string; note: string }[];
 };
 
 export const services: Service[] = [
@@ -125,5 +128,9 @@ export const services: Service[] = [
     ],
     deliverables: ['Aliran follow-up prospek', 'Segmentasi & penjejakan sumber', 'Templat mesej kempen', 'Integrasi borang & CRM', 'Dashboard ringkas'],
     priceNote: null,
+    relatedExamples: [
+      { slug: 'synax-landing-page', note: 'Prospek separa siap dihantar automatik ke ERP; acara Lead & Purchase ke Meta Pixel.' },
+      { slug: 'odajah-erp-demo', note: 'Modul Prospect: follow-up stage, tugasan staf dan sumber lead (diurus staf).' },
+    ],
   },
 ];

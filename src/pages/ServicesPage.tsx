@@ -51,7 +51,11 @@ export default function ServicesPage() {
 
         <div className="lg:col-span-9">
           {services.map((s, i) => {
-            const examples = projects.filter((p) => s.categories.includes(p.category));
+            const direct = projects.filter((p) => s.categories.includes(p.category)).map((p) => ({ p, note: null as string | null }));
+            const related = (s.relatedExamples ?? [])
+              .map((r) => ({ p: projects.find((x) => x.slug === r.slug), note: r.note }))
+              .filter((r): r is { p: (typeof projects)[number]; note: string } => !!r.p && !direct.some((d) => d.p.slug === r.p!.slug));
+            const examples = [...direct, ...related];
             return (
               <section key={s.id} id={s.id} aria-labelledby={`${s.id}-t`} className="scroll-mt-24 border-t border-ink py-14 first:pt-10 md:py-20">
                 <div className="grid gap-8 md:grid-cols-12" data-reveal>
@@ -77,11 +81,14 @@ export default function ServicesPage() {
                     </ul>
                     <h3 className="label mt-8 text-muted">Contoh kerja</h3>
                     {examples.length ? (
-                      <ul className="mt-3 space-y-2">
-                        {examples.map((p) => (
-                          <li key={p.slug} className="flex flex-wrap items-center gap-3">
-                            <Link to={`/kerja/${p.slug}`} viewTransition className="link-underline font-medium">{p.title}</Link>
-                            <StatusBadge status={p.status} />
+                      <ul className="mt-3 space-y-4">
+                        {examples.map(({ p, note }) => (
+                          <li key={p.slug}>
+                            <span className="flex flex-wrap items-center gap-3">
+                              <Link to={`/kerja/${p.slug}`} viewTransition className="link-underline font-medium">{p.title}</Link>
+                              <StatusBadge status={p.status} />
+                            </span>
+                            {note && <span className="mt-1 block text-sm text-muted"><span className="label mr-2 text-ink-soft">Bahagian berkaitan</span>{note}</span>}
                           </li>
                         ))}
                       </ul>
