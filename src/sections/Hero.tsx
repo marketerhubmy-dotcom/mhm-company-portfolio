@@ -29,7 +29,7 @@ export function Hero() {
           <span className="line-mask"><span style={{ ['--i' as string]: 1 }}>Kami jadikan sistem</span></span>
           <span className="line-mask">
             <span style={{ ['--i' as string]: 2 }}>
-              yang <span className="serif-accent text-saga-deep">berfungsi.</span>
+              yang <span className="serif-accent text-brand-deep">berfungsi.</span>
             </span>
           </span>
         </h1>
@@ -55,7 +55,7 @@ export function Hero() {
             {services.map((s, i) => (
               <li key={s.id} className="shrink-0 border-r border-line last:border-r-0 md:border-b md:[&:nth-child(4n)]:border-r-0 xl:border-b-0 xl:[&:nth-child(4n)]:border-r">
                 <Link to={`/servis#${s.id}`} className="group flex h-full min-w-[10.5rem] flex-col gap-3 px-4 py-5 transition-colors hover:bg-paper-2 md:min-w-0">
-                  <span className="label text-muted transition-colors group-hover:text-saga-deep">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="label text-muted transition-colors group-hover:text-brand-deep">{String(i + 1).padStart(2, '0')}</span>
                   <span className="text-[0.92rem] font-medium leading-snug">{s.title}</span>
                 </Link>
               </li>

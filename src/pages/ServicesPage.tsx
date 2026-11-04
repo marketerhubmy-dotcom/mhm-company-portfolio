@@ -28,7 +28,7 @@ export default function ServicesPage() {
           <SectionLabel n="S">Servis</SectionLabel>
           <h1 className="display-xl mt-8">
             <span className="line-mask"><span>Dari halaman jualan</span></span>
-            <span className="line-mask"><span style={{ ['--i' as string]: 1 }}>kepada <span className="serif-accent text-saga-deep">sistem penuh.</span></span></span>
+            <span className="line-mask"><span style={{ ['--i' as string]: 1 }}>kepada <span className="serif-accent text-brand-deep">sistem penuh.</span></span></span>
           </h1>
           <p className="enter lede mt-10 max-w-2xl text-ink-soft" style={{ ['--i' as string]: 1 }}>
             Lapan servis, satu pendekatan: fahami bisnes dahulu, kemudian bina apa yang benar-benar diperlukan. Harga diberikan selepas skop dipersetujui — tiada pakej tetap yang memaksa.
@@ -41,7 +41,7 @@ export default function ServicesPage() {
           <ol className="sticky top-28 space-y-1 border-l border-line">
             {services.map((s, i) => (
               <li key={s.id}>
-                <a href={`#${s.id}`} className="group -ml-px flex gap-3 border-l border-transparent py-1.5 pl-4 text-[0.93rem] text-ink-soft transition-colors hover:border-saga hover:text-ink">
+                <a href={`#${s.id}`} className="group -ml-px flex gap-3 border-l border-transparent py-1.5 pl-4 text-[0.93rem] text-ink-soft transition-colors hover:border-brand hover:text-ink">
                   <span className="label pt-0.5 text-muted">{pad2(i + 1)}</span>{s.title}
                 </a>
               </li>
@@ -59,7 +59,7 @@ export default function ServicesPage() {
             return (
               <section key={s.id} id={s.id} aria-labelledby={`${s.id}-t`} className="scroll-mt-24 border-t border-ink py-14 first:pt-10 md:py-20">
                 <div className="grid gap-8 md:grid-cols-12" data-reveal>
-                  <span className="label text-saga-deep md:col-span-1">{pad2(i + 1)}</span>
+                  <span className="label text-brand-deep md:col-span-1">{pad2(i + 1)}</span>
                   <div className="md:col-span-11">
                     <h2 id={`${s.id}-t`} className="display-m">{s.title}</h2>
                     <p className="lede mt-4 max-w-2xl text-ink-soft">{s.short}</p>
@@ -71,7 +71,7 @@ export default function ServicesPage() {
                     <p className="mt-3">{s.who}</p>
                     <h3 className="label mt-8 text-muted">Masalah yang diselesaikan</h3>
                     <ul className="mt-3 space-y-2.5">
-                      {s.problems.map((p) => <li key={p} className="grid grid-cols-[1.2rem_1fr] text-ink-soft"><span aria-hidden="true" className="text-saga">—</span>{p}</li>)}
+                      {s.problems.map((p) => <li key={p} className="grid grid-cols-[1.2rem_1fr] text-ink-soft"><span aria-hidden="true" className="text-brand">—</span>{p}</li>)}
                     </ul>
                   </div>
                   <div className="md:col-span-5 md:col-start-8">

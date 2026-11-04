@@ -39,11 +39,11 @@ export function FeaturePlate({ project, index, flip, priority }: { project: Proj
       </Link>
       <div className={cn('lg:col-span-5', flip && 'lg:order-1')}>
         <div className="flex items-center gap-4">
-          <span className="label text-saga-deep">{pad2(index + 1)}</span>
+          <span className="label text-brand-deep">{pad2(index + 1)}</span>
           <StatusBadge status={project.status} />
         </div>
         <h3 className="display-m mt-5">
-          <Link to={`/kerja/${project.slug}`} viewTransition className="transition-colors hover:text-saga-deep">{project.title}</Link>
+          <Link to={`/kerja/${project.slug}`} viewTransition className="transition-colors hover:text-brand-deep">{project.title}</Link>
         </h3>
         {project.tagline && <p className="lede mt-4 text-ink-soft">{project.tagline}</p>}
         <ProjectMeta project={project} className="mt-7" />

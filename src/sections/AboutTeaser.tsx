@@ -17,7 +17,7 @@ export function AboutTeaser() {
         <div className="lg:col-span-7" data-reveal>
           <SectionLabel n="07">Tentang MHM Center</SectionLabel>
           <h2 id="about-title" className="display-l mt-6 max-w-[14ch]">
-            Kami bermula dengan masalah bisnes, <span className="serif-accent text-saga-deep">bukan template.</span>
+            Kami bermula dengan masalah bisnes, <span className="serif-accent text-brand-deep">bukan template.</span>
           </h2>
         </div>
         <div className="lg:col-span-5 lg:pt-16" data-reveal style={{ ['--d' as string]: 1 }}>

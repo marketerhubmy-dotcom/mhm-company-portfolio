@@ -48,7 +48,7 @@ export function Header() {
       >
         <div className="container-x flex h-[var(--header-h)] items-center justify-between gap-6">
           <Link to="/" viewTransition className={cn('relative z-[60] transition-colors', open ? 'text-paper' : 'text-ink')} aria-label={`${site.name} — laman utama`}>
-            <Logo />
+            <Logo onDark={open} />
           </Link>
 
           <nav aria-label="Utama" className="hidden md:block">
@@ -65,7 +65,7 @@ export function Header() {
                     {({ isActive }) => (
                       <>
                         {n.label}
-                        <span aria-hidden="true" className={cn('absolute inset-x-4 -bottom-0.5 h-px origin-left bg-saga transition-transform duration-500 ease-out-expo', isActive ? 'scale-x-100' : 'scale-x-0')} />
+                        <span aria-hidden="true" className={cn('absolute inset-x-4 -bottom-0.5 h-px origin-left bg-brand transition-transform duration-500 ease-out-expo', isActive ? 'scale-x-100' : 'scale-x-0')} />
                       </>
                     )}
                   </NavLink>
@@ -105,7 +105,7 @@ export function Header() {
           <ul className="border-t border-line-dark">
             {[{ to: '/', label: 'Utama' }, ...nav].map((n, i) => (
               <li key={n.to} className="enter border-b border-line-dark" style={{ ['--i' as string]: i - 4 }}>
-                <NavLink to={n.to} viewTransition className={({ isActive }) => cn('flex items-baseline justify-between py-5 font-display text-[2.1rem] font-semibold tracking-[-0.03em]', isActive && 'text-saga-bright')}>
+                <NavLink to={n.to} viewTransition className={({ isActive }) => cn('flex items-baseline justify-between py-5 font-display text-[2.1rem] font-semibold tracking-[-0.03em]', isActive && 'text-brand-bright')}>
                   {n.label}
                   <span className="label text-muted-dark">0{i + 1}</span>
                 </NavLink>

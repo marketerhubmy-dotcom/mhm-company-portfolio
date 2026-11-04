@@ -1,34 +1,51 @@
 import { cn } from '@/utils/cn';
 
-/** Original MHM CENTER mark: a 3×3 grid with the centre cell lit — "the center". */
-export function LogoMark({ className }: { className?: string }) {
+/**
+ * Official MHM CENTER logo assets (source: brand/logo-mhm-center.png).
+ * The navy lettering is invisible on dark surfaces, so every placement picks
+ * the light or the on-dark variant explicitly.
+ */
+const MARK = { light: '/brand/mhm-mark.png', dark: '/brand/mhm-mark-on-dark.png', w: 204, h: 96 } as const;
+const FULL = { light: '/brand/mhm-center-logo.png', dark: '/brand/mhm-center-logo-on-dark.png', w: 631, h: 480 } as const;
+
+/** The "MHM" mark with swoosh and pixels. */
+export function LogoMark({ className, onDark, alt = '' }: { className?: string; onDark?: boolean; alt?: string }) {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className={cn('size-6', className)}>
-      {[0, 1, 2].flatMap((r) =>
-        [0, 1, 2].map((c) => (
-          <rect
-            key={`${r}${c}`}
-            x={1 + c * 8}
-            y={1 + r * 8}
-            width="6"
-            height="6"
-            rx={r === 1 && c === 1 ? 3 : 1}
-            className={r === 1 && c === 1 ? 'fill-saga' : 'fill-current'}
-            opacity={r === 1 && c === 1 ? 1 : (r + c) % 2 === 0 ? 1 : 0.35}
-          />
-        )),
-      )}
-    </svg>
+    <img
+      src={onDark ? MARK.dark : MARK.light}
+      width={MARK.w}
+      height={MARK.h}
+      alt={alt}
+      aria-hidden={alt ? undefined : true}
+      decoding="async"
+      className={cn('h-8 w-auto select-none', className)}
+      draggable={false}
+    />
   );
 }
 
-export function Logo({ className }: { className?: string }) {
+/** Horizontal lockup for the header: mark + "CENTER" set like the logo (wide tracking). */
+export function Logo({ className, onDark }: { className?: string; onDark?: boolean }) {
   return (
     <span className={cn('inline-flex items-center gap-2.5', className)}>
-      <LogoMark />
-      <span className="font-display text-[1.05rem] font-[680] leading-none tracking-[-0.03em]">
-        MHM<span className="font-[480] opacity-70"> CENTER</span>
-      </span>
+      <LogoMark onDark={onDark} className="h-9" />
+      <span className="sr-only">MHM</span>
+      <span className={cn('font-display text-[0.95rem] font-[650] uppercase leading-none tracking-[0.32em]', onDark ? 'text-paper' : 'text-ink')}>Center</span>
     </span>
+  );
+}
+
+/** Full stacked logo including the tagline. */
+export function LogoFull({ className, onDark }: { className?: string; onDark?: boolean }) {
+  return (
+    <img
+      src={onDark ? FULL.dark : FULL.light}
+      width={FULL.w}
+      height={FULL.h}
+      alt="MHM CENTER — Digital Products, Better Future"
+      decoding="async"
+      className={cn('h-auto w-48 select-none', className)}
+      draggable={false}
+    />
   );
 }

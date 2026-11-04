@@ -17,7 +17,7 @@ export function Capabilities() {
         <ol className="grid border-l border-t border-line sm:grid-cols-2 lg:col-span-8">
           {capabilities.map((c, i) => (
             <li key={c.n} className="group relative border-b border-r border-line p-7 transition-colors duration-500 hover:bg-paper md:p-9" data-reveal style={{ ['--d' as string]: i }}>
-              <span className="font-display text-[clamp(3.5rem,2.5rem+3vw,5.5rem)] font-[300] leading-none tracking-[-0.05em] text-ink/15 transition-colors duration-500 group-hover:text-saga">{c.n}</span>
+              <span className="font-display text-[clamp(3.5rem,2.5rem+3vw,5.5rem)] font-[300] leading-none tracking-[-0.05em] text-ink/15 transition-colors duration-500 group-hover:text-brand">{c.n}</span>
               <h3 className="display-s mt-8">{c.title}</h3>
               <p className="mt-3 text-ink-soft">{c.body}</p>
               <ul className="mt-6 flex flex-wrap gap-x-4 gap-y-1">
