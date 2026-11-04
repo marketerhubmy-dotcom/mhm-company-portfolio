@@ -15,7 +15,6 @@ const ERP = 'https://demo-odajah-erp.marketerhubmy.workers.dev';
 const AINA = 'https://demo-aina-herb.pages.dev';
 const SMS = 'https://sms.mhmacademy.site';
 const SYNAX = 'https://synaxhq.site';
-const TT = 'https://tiktok-affiliate-2uuc.onrender.com';
 const ACADEMY = 'https://mhmacademy.site';
 
 /** MHM Academy shows live "X telah membeli ..." purchase toasts with buyer names.
@@ -99,9 +98,6 @@ const SHOTS = [
     } },
   { slug: 'synax-landing-page', name: 'pilih-pakej', ctx: mobile, run: (p) => synax(p, '/lp/spm', '#pakej') },
   { slug: 'synax-landing-page', name: 'borang-pesanan', ctx: mobile, run: (p) => synax(p, '/lp/spm', '#order') },
-  // ---- TikTok Affiliate Admin (internal tool): empty shells only, never an API key or data ----
-  { slug: 'tiktok-affiliate-admin', name: 'panel-admin', ctx: desktop, run: async (p) => { await p.goto(TT, { waitUntil: 'networkidle', timeout: 90000 }); await p.waitForTimeout(1500); } },
-  { slug: 'tiktok-affiliate-admin', name: 'pendaftaran-affiliate', ctx: desktop, run: async (p) => { await p.goto(`${TT}/daftar.html`, { waitUntil: 'networkidle', timeout: 90000 }); await p.waitForTimeout(1200); } },
   // ---- MHM Academy (public pages only) ----
   { slug: 'mhm-academy', name: 'laman-utama', ctx: desktop, run: (p) => academy(p) },
   { slug: 'mhm-academy', name: 'katalog-modul', ctx: desktop, run: (p) => academy(p, 'Pilih modul ikut masalah') },
