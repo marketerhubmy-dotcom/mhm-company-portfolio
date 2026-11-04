@@ -1,0 +1,195 @@
+{
+  "$schema": "../../schema/project.schema.json",
+  "id": "tiktok-affiliate-commission-system",
+  "slug": "tiktok-affiliate-commission-system",
+  "title": "Sistem Komisyen Affiliate TikTok",
+  "tagline": "Import order TikTok, kira komisyen bertingkat secara automatik, dan beri setiap affiliate portal sendiri.",
+  "description": "Web app Laravel untuk mengurus rangkaian affiliate TikTok: hierarki upline/downline, akaun TikTok setiap affiliate, import CSV order TikTok, pengiraan komisyen bulanan bertingkat, laporan untuk admin dan portal untuk affiliate.",
+  "category": "web-app",
+  "projectType": "Web App Custom / Sistem Komisyen",
+  "technologies": [
+    "Laravel",
+    "PHP",
+    "MySQL",
+    "Blade",
+    "Tailwind CSS",
+    "TikTok OAuth"
+  ],
+  "demoUrl": null,
+  "repositoryReference": null,
+  "thumbnail": {
+    "src": "/projects/tiktok-affiliate-commission-system/dashboard-admin-1600.webp",
+    "alt": "Admin Dashboard dengan jumlah jualan, jualan affiliate, jualan tanpa upline dan jumlah komisyen",
+    "width": 1600,
+    "height": 1000,
+    "caption": "Admin Dashboard: jualan, komisyen, order diimport dan jualan ‘No Upline’ (data rekaan).",
+    "frame": "desktop",
+    "srcset": {
+      "800": "/projects/tiktok-affiliate-commission-system/dashboard-admin-800.webp",
+      "1600": "/projects/tiktok-affiliate-commission-system/dashboard-admin-1600.webp"
+    }
+  },
+  "galleryImages": [
+    {
+      "src": "/projects/tiktok-affiliate-commission-system/dashboard-admin-1600.webp",
+      "alt": "Admin Dashboard dengan jumlah jualan, jualan affiliate, jualan tanpa upline dan jumlah komisyen",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Admin Dashboard: jualan, komisyen, order diimport dan jualan ‘No Upline’ (data rekaan).",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/tiktok-affiliate-commission-system/dashboard-admin-800.webp",
+        "1600": "/projects/tiktok-affiliate-commission-system/dashboard-admin-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/tiktok-affiliate-commission-system/hierarki-affiliate-1600.webp",
+      "alt": "Paparan hierarki affiliate dalam bentuk pokok dengan root manager dan tahap",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Affiliate Hierarchy: struktur upline/downline sebagai pokok atau jadual.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/tiktok-affiliate-commission-system/hierarki-affiliate-800.webp",
+        "1600": "/projects/tiktok-affiliate-commission-system/hierarki-affiliate-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/tiktok-affiliate-commission-system/laporan-komisyen-1600.webp",
+      "alt": "Laporan komisyen April 2026 dengan ringkasan pendapatan setiap affiliate",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Laporan komisyen bulanan dengan pecahan personal, manager bonus dan overriding L1–L3.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/tiktok-affiliate-commission-system/laporan-komisyen-800.webp",
+        "1600": "/projects/tiktok-affiliate-commission-system/laporan-komisyen-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/tiktok-affiliate-commission-system/import-order-1600.webp",
+      "alt": "Sejarah muat naik CSV order dengan bilangan order, padanan dan tanpa upline",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Sejarah muat naik CSV: order baharu, yang dipadankan, ‘No Upline’ dan yang dilangkau.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/tiktok-affiliate-commission-system/import-order-800.webp",
+        "1600": "/projects/tiktok-affiliate-commission-system/import-order-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/tiktok-affiliate-commission-system/profil-affiliate-1600.webp",
+      "alt": "Profil affiliate dengan upline, akaun TikTok, pautan referral dan downline langsung",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Profil affiliate: upline, akaun TikTok, pautan referral dan downline.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/tiktok-affiliate-commission-system/profil-affiliate-800.webp",
+        "1600": "/projects/tiktok-affiliate-commission-system/profil-affiliate-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/tiktok-affiliate-commission-system/dashboard-affiliate-1600.webp",
+      "alt": "Dashboard affiliate dengan tier, kemajuan ke tier seterusnya dan ringkasan komisyen bulanan",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Portal affiliate: tier, kemajuan ke tier seterusnya dan ringkasan komisyen.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/tiktok-affiliate-commission-system/dashboard-affiliate-800.webp",
+        "1600": "/projects/tiktok-affiliate-commission-system/dashboard-affiliate-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/tiktok-affiliate-commission-system/komisyen-affiliate-1600.webp",
+      "alt": "Halaman komisyen affiliate dengan jumlah personal, overriding dan pecahan komisyen",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Pecahan komisyen affiliate mengikut jenis dan sumber.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/tiktok-affiliate-commission-system/komisyen-affiliate-800.webp",
+        "1600": "/projects/tiktok-affiliate-commission-system/komisyen-affiliate-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/tiktok-affiliate-commission-system/team-affiliate-1600.webp",
+      "alt": "Halaman pasukan affiliate dengan downline langsung dan prestasi pasukan",
+      "width": 1600,
+      "height": 1000,
+      "caption": "My Team: hanya cabang downline sendiri, tanpa data peribadi sensitif.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/tiktok-affiliate-commission-system/team-affiliate-800.webp",
+        "1600": "/projects/tiktok-affiliate-commission-system/team-affiliate-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/tiktok-affiliate-commission-system/leaderboard-1600.webp",
+      "alt": "Leaderboard bulanan dengan ranking dan tier, jualan affiliate lain dirahsiakan",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Leaderboard dengan privasi: jualan affiliate lain dirahsiakan.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/tiktok-affiliate-commission-system/leaderboard-800.webp",
+        "1600": "/projects/tiktok-affiliate-commission-system/leaderboard-1600.webp"
+      }
+    }
+  ],
+  "featured": false,
+  "displayOrder": 16,
+  "approvedForPublic": true,
+  "status": "production",
+  "updatedAt": "2026-10-05",
+  "caseStudy": {
+    "intro": "Sistem ini menggantikan pengiraan komisyen affiliate yang biasanya dibuat dalam spreadsheet dengan satu web app yang mengira setiap ringgit mengikut peraturan yang sama, setiap bulan.",
+    "challenge": "Rangkaian affiliate TikTok mempunyai hierarki beberapa tahap, ramai affiliate dengan lebih daripada satu akaun TikTok, dan peraturan komisyen yang berubah mengikut jualan. Mengira secara manual daripada eksport order TikTok mudah tersilap, sukar disemak, dan affiliate tidak dapat melihat pendapatan mereka sendiri.",
+    "solution": "Admin memuat naik CSV order TikTok; sistem memadankan setiap order kepada affiliate melalui username TikTok, kemudian mengira komisyen bulanan secara automatik — personal, manager bonus, overriding tiga tahap dan pembahagian khas apabila sasaran jualan dicapai. Setiap affiliate log masuk ke portal sendiri untuk melihat jualan, pasukan dan pecahan komisyen.",
+    "features": [
+      {
+        "title": "Komisyen bertingkat automatik",
+        "description": "Personal 10%, Manager Bonus 1%, Overriding L1 1%, L2 0.3% dan L3 0.2% — dikira untuk setiap order Settled dalam tempoh."
+      },
+      {
+        "title": "Split L1 70/30 ikut sasaran",
+        "description": "Apabila jualan personal ≥ RM20,000 dan jualan bersama downline langsung ≥ RM100,000, Overriding L1 dibahagi 70% kepada seller dan 30% kepada upline."
+      },
+      {
+        "title": "Import CSV order TikTok",
+        "description": "Username dinormalkan, order dipadankan kepada akaun TikTok berdaftar, Order ID pendua dilangkau, dan order tanpa affiliate disimpan sebagai ‘No Upline’ untuk pemantauan tanpa komisyen."
+      },
+      {
+        "title": "Hierarki upline/downline",
+        "description": "Pokok hierarki dengan penapis kumpulan, jenis dan status; status manager dikira secara dinamik daripada struktur, bukan flag manual."
+      },
+      {
+        "title": "Laporan provisional & final",
+        "description": "Pengiraan bulanan boleh dijalankan sebagai provisional atau final, dengan laporan pendapatan setiap affiliate."
+      },
+      {
+        "title": "Portal affiliate",
+        "description": "Dashboard, pecahan komisyen, pasukan dan leaderboard — setiap affiliate hanya melihat data dan cabangnya sendiri."
+      },
+      {
+        "title": "Tier & leaderboard dengan privasi",
+        "description": "Tier Bronze hingga Diamond dengan kemajuan ke tier seterusnya; leaderboard merahsiakan jualan sebenar affiliate lain."
+      },
+      {
+        "title": "Pendaftaran melalui referral",
+        "description": "Pautan referral bagi setiap affiliate, permohonan pendaftaran dan permintaan akaun TikTok yang diluluskan oleh admin."
+      },
+      {
+        "title": "Keselamatan akaun",
+        "description": "Affiliate baharu wajib menukar kata laluan pada log masuk pertama; admin boleh reset kata laluan dan melihat laporan log masuk."
+      }
+    ],
+    "demoNotes": [
+      "Sistem dalaman — tiada pautan awam disediakan.",
+      "Tangkapan skrin diambil daripada salinan tempatan dengan data rekaan sepenuhnya (affiliate ‘Demo’, order ‘DEMO-’), bukan daripada sistem production.",
+      "Angka komisyen dalam tangkapan skrin dikira oleh sistem itu sendiri dan disemak semula secara manual."
+    ]
+  }
+}
