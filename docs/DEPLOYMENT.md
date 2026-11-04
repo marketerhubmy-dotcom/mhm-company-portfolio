@@ -18,8 +18,8 @@ The site is fully static (prerendered HTML + assets). It does not use the OVH VP
 | Name | Example | Notes |
 |---|---|---|
 | `VITE_SITE_URL` | `https://web.mhmacademy.site` | canonical, OG, sitemap |
-| `VITE_WHATSAPP_NUMBER` | `60XXXXXXXXX` | digits only; empty → copy-message fallback |
-| `VITE_CONTACT_EMAIL` | — | empty → hidden |
+| `VITE_WHATSAPP_NUMBER` | `601111141772` | digits only; defaults to this number when empty |
+| `VITE_CONTACT_EMAIL` | `support@mhmacademy.site` | defaults to this address when empty |
 | `VITE_ACADEMY_URL` | `https://mhmacademy.site` | |
 
 ## Routing
