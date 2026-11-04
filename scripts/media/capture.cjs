@@ -14,6 +14,25 @@ const path = require('node:path');
 const ERP = 'https://demo-odajah-erp.marketerhubmy.workers.dev';
 const AINA = 'https://demo-aina-herb.pages.dev';
 const SMS = 'https://sms.mhmacademy.site';
+const SYNAX = 'https://synaxhq.site';
+
+/** Live client site: block ads pixels and the client ERP so captures never create
+ *  fake page views, leads or prospects. Never type into its order form. */
+async function synax(page, path, anchor) {
+  await page.route(/facebook\.(net|com)|rolevisionerp\.com|googletagmanager|google-analytics/, (r) => r.abort());
+  // Hide the live site's promo popup so it never covers a capture (not part of this project).
+  await page.addInitScript(() => {
+    const css = '.vv{display:none!important}';
+    document.addEventListener('DOMContentLoaded', () => { const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st); });
+  });
+  await page.goto(`${SYNAX}${path}`, { waitUntil: 'networkidle' });
+  await page.waitForTimeout(1200);
+  if (anchor) {
+    await page.locator(anchor).first().scrollIntoViewIfNeeded();
+    await page.evaluate(() => window.scrollBy(0, -60));
+    await page.waitForTimeout(1200);
+  }
+}
 
 const desktop = { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1.5 };
 const mobile = { viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true };
@@ -49,6 +68,18 @@ const SHOTS = [
   { slug: 'mhm-sms', name: 'harga-stok', ctx: desktop, run: async (p) => { await p.goto(`${SMS}/harga`, { waitUntil: 'networkidle' }); await p.waitForTimeout(1500); } },
   { slug: 'mhm-sms', name: 'cara-guna', ctx: desktop, run: async (p) => { await p.goto(`${SMS}/cara-guna`, { waitUntil: 'networkidle' }); await p.waitForTimeout(1200); } },
   { slug: 'mhm-sms', name: 'daftar', ctx: desktop, run: async (p) => { await p.goto(`${SMS}/daftar`, { waitUntil: 'networkidle' }); await p.waitForTimeout(1200); } },
+  // ---- SYNAX landing pages (client site, mobile-first) ----
+  { slug: 'synax-landing-page', name: 'prasekolah', ctx: mobile, run: (p) => synax(p, '/lp/prasekolah') },
+  { slug: 'synax-landing-page', name: 'sekolah-rendah', ctx: mobile, run: (p) => synax(p, '/lp/sekolah-rendah') },
+  { slug: 'synax-landing-page', name: 'spm', ctx: mobile, run: (p) => synax(p, '/lp/spm') },
+  { slug: 'synax-landing-page', name: 'semakan-interaktif', ctx: mobile, run: async (p) => {
+      await synax(p, '/lp/sekolah-rendah', 'text=SAYA PUN!');
+      const btns = p.getByText('SAYA PUN!');
+      for (const i of [0, 1, 3]) await btns.nth(i).tap();
+      await p.waitForTimeout(900);
+    } },
+  { slug: 'synax-landing-page', name: 'pilih-pakej', ctx: mobile, run: (p) => synax(p, '/lp/spm', '#pakej') },
+  { slug: 'synax-landing-page', name: 'borang-pesanan', ctx: mobile, run: (p) => synax(p, '/lp/spm', '#order') },
 ];
 
 (async () => {

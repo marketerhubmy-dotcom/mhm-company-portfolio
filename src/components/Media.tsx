@@ -6,7 +6,8 @@ import { LogoMark } from './Logo';
 
 export function Img({ image, sizes, priority, className, imgClassName }: { image: ProjectImage; sizes: string; priority?: boolean; className?: string; imgClassName?: string }) {
   const ref = useRef<HTMLImageElement>(null);
-  const [loaded, setLoaded] = useState(false);
+  // Above-the-fold (priority) images are never hidden while loading — only lazy ones fade in.
+  const [loaded, setLoaded] = useState(!!priority);
   useEffect(() => { if (ref.current?.complete) setLoaded(true); }, []);
   const srcSet = image.srcset ? Object.entries(image.srcset).map(([w, s]) => `${s} ${w}w`).join(', ') : undefined;
   return (
