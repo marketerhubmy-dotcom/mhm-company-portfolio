@@ -186,6 +186,140 @@
   {
     "approvedForPublic": true,
     "caseStudy": {
+      "challenge": "Pengguna di Malaysia yang memerlukan nombor sementara untuk pengesahan biasanya terpaksa menggunakan servis luar negara dengan harga dalam mata wang asing, sistem dompet prabayar dan sokongan yang tidak jelas. Servis seperti ini juga perlu dikawal supaya tidak disalah guna.",
+      "demoNotes": [
+        "Laman sudah dihoskan di sms.mhmacademy.site dan pendaftaran akaun dibuka, tetapi pembelian belum dibuka buat masa ini.",
+        "Tangkapan skrin diambil daripada halaman awam sahaja; tiada log masuk atau data pengguna dipaparkan.",
+        "Nombor dibekalkan oleh pembekal pihak ketiga; penghantaran OTP bergantung kepada platform dan rangkaian mereka."
+      ],
+      "features": [
+        {
+          "description": "Pilih negara, cari servis, dan lihat harga dalam RM serta baki stok semasa — termasuk status ‘Stok habis’ — sebelum membuat pesanan.",
+          "title": "Harga & stok mengikut negara"
+        },
+        {
+          "description": "Tiada langganan atau dompet tambahan. Bayaran disahkan oleh sistem sebelum nombor ditempah.",
+          "title": "Bayar per pesanan"
+        },
+        {
+          "description": "Pesanan aktif kekal dalam akaun walaupun halaman ditutup atau dimuat semula; kod SMS boleh disalin dengan satu klik.",
+          "title": "Pesanan yang tidak hilang"
+        },
+        {
+          "description": "Pengguna menandakan pesanan selesai, atau membatalkan jika tiada SMS selepas tempoh minimum (biasanya 2 minit; WhatsApp 5 minit).",
+          "title": "Selesai atau batal terkawal"
+        },
+        {
+          "description": "Pendaftaran dan log masuk, dengan persetujuan Terma Penggunaan, Dasar Privasi dan Polisi Refund semasa mendaftar.",
+          "title": "Akaun pengguna"
+        },
+        {
+          "description": "Servis bank, pembayaran, institusi kewangan, kripto dan e-wallet tidak ditawarkan; amaran penggunaan dipaparkan sebelum membeli.",
+          "title": "Kawalan penyalahgunaan"
+        },
+        {
+          "description": "Maklumat perniagaan penjual, terma, dasar privasi, polisi refund dan soalan lazim dipaparkan di setiap halaman.",
+          "title": "Pematuhan e-dagang"
+        },
+        {
+          "description": "Antara muka, panduan Cara Guna dan sokongan melalui WhatsApp dan emel dalam Bahasa Melayu.",
+          "title": "Sokongan Bahasa Melayu"
+        }
+      ],
+      "intro": "MHM SMS ialah produk MHM Center sendiri — platform transaksi lengkap dengan akaun pengguna, katalog harga dan stok, pembayaran per pesanan dan paparan kod SMS masa nyata.",
+      "solution": "Platform berbahasa Melayu dengan harga dalam Ringgit yang dipaparkan sebelum bayaran, bayaran untuk satu pesanan sahaja tanpa langganan atau baki tersimpan, dan pesanan yang kekal dalam akaun. Kategori berisiko seperti perbankan, pembayaran, kripto dan e-wallet tidak ditawarkan, dan maklumat penjual serta polisi dipaparkan dengan jelas.",
+      "tryIt": [
+        "Buka Harga & Stok dan tukar negara untuk melihat harga serta stok berubah.",
+        "Taip nama servis dalam kotak carian untuk menapis senarai.",
+        "Baca Cara Guna untuk melihat aliran pesanan penuh."
+      ]
+    },
+    "category": "saas",
+    "demoUrl": "https://sms.mhmacademy.site/",
+    "description": "Produk SaaS milik MHM Center: pengguna memilih negara dan servis, membayar untuk satu pesanan, dan menerima kod SMS pengesahan pada nombor maya sementara. Laman sudah dihoskan dan pendaftaran dibuka; pembelian belum dibuka.",
+    "displayOrder": 15,
+    "featured": true,
+    "galleryImages": [
+      {
+        "alt": "Laman utama MHM SMS dengan tajuk, butang daftar dan contoh paparan nombor sementara",
+        "caption": "Laman utama: tawaran jelas, contoh paparan berlabel ilustrasi, dan notis bahawa pembelian belum dibuka.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-sms/laman-utama-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-sms/laman-utama-800.webp",
+          "1600": "/projects/mhm-sms/laman-utama-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Halaman Harga & Stok dengan pilihan negara, carian servis, harga RM dan baki stok",
+        "caption": "Harga & Stok: pilih negara, cari servis, harga dalam RM dan stok semasa — termasuk status ‘Stok habis’.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-sms/harga-stok-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-sms/harga-stok-800.webp",
+          "1600": "/projects/mhm-sms/harga-stok-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Halaman Cara Guna dengan enam langkah bernombor dan tip penggunaan",
+        "caption": "Cara Guna: aliran pesanan enam langkah dan tip penggunaan.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-sms/cara-guna-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-sms/cara-guna-800.webp",
+          "1600": "/projects/mhm-sms/cara-guna-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Borang Daftar Akaun dengan nama, emel, kata laluan dan persetujuan terma",
+        "caption": "Pendaftaran akaun dengan persetujuan Terma, Dasar Privasi dan Polisi Refund.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/mhm-sms/daftar-1600.webp",
+        "srcset": {
+          "800": "/projects/mhm-sms/daftar-800.webp",
+          "1600": "/projects/mhm-sms/daftar-1600.webp"
+        },
+        "width": 1600
+      }
+    ],
+    "id": "mhm-sms",
+    "projectType": "SaaS / Platform Transaksi",
+    "repositoryReference": "marketerhubmy-dotcom/mhm-sms",
+    "slug": "mhm-sms",
+    "source": "manual",
+    "status": "in-development",
+    "tagline": "Platform nombor maya sementara untuk menerima SMS pengesahan, dengan harga dalam RM dan bayaran per pesanan.",
+    "technologies": [
+      "TypeScript",
+      "Cloudflare Workers",
+      "Cloudflare D1",
+      "Pembayaran FPX"
+    ],
+    "thumbnail": {
+      "alt": "Laman utama MHM SMS dengan tajuk, butang daftar dan contoh paparan nombor sementara",
+      "caption": "Laman utama: tawaran jelas, contoh paparan berlabel ilustrasi, dan notis bahawa pembelian belum dibuka.",
+      "frame": "desktop",
+      "height": 1000,
+      "src": "/projects/mhm-sms/laman-utama-1600.webp",
+      "srcset": {
+        "800": "/projects/mhm-sms/laman-utama-800.webp",
+        "1600": "/projects/mhm-sms/laman-utama-1600.webp"
+      },
+      "width": 1600
+    },
+    "title": "MHM SMS — Nombor SMS Sementara",
+    "updatedAt": "2026-11-04"
+  },
+  {
+    "approvedForPublic": true,
+    "caseStudy": {
       "challenge": "Pembeli produk kesihatan di Malaysia kebanyakannya membeli melalui telefon dan biasa dengan susun atur marketplace. Halaman perlu meyakinkan tanpa dakwaan berlebihan, menerangkan harga pakej dengan jelas dan memudahkan pesanan COD.",
       "demoNotes": [
         "Dihoskan sebagai demo portfolio di demo-aina-herb.pages.dev.",

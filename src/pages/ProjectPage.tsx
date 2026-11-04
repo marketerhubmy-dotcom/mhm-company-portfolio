@@ -50,7 +50,8 @@ export default function ProjectPage() {
   const cs = p.caseStudy ?? {};
   const related = relatedProjects(p);
   const service = services.find((s) => s.categories.includes(p.category));
-  const isDemo = p.status !== 'production';
+  const isDemo = p.status === 'demo';
+  const notLive = p.status !== 'production';
 
   const meta: [string, React.ReactNode][] = [
     ['Status', <StatusBadge key="s" status={p.status} />],
@@ -136,7 +137,7 @@ export default function ProjectPage() {
               )}
               {cs.tryIt && cs.tryIt.length > 0 && (
                 <div className="rounded-xl border border-line bg-paper-2 p-6" data-reveal>
-                  <p className="label text-ink">Cuba ini dalam demo</p>
+                  <p className="label text-ink">{isDemo ? 'Cuba ini dalam demo' : 'Cuba ini di laman'}</p>
                   <ol className="mt-4 space-y-3 text-sm text-ink-soft">
                     {cs.tryIt.map((t, i) => (
                       <li key={t} className="grid grid-cols-[1.5rem_1fr] gap-2"><span className="label pt-0.5 text-saga-deep">{i + 1}</span>{t}</li>
@@ -208,7 +209,7 @@ export default function ProjectPage() {
       )}
 
       {/* Honesty notes */}
-      {(cs.demoNotes?.length || isDemo) && (
+      {(cs.demoNotes?.length || notLive) && (
         <section className="pb-[var(--section-y)]" aria-labelledby="notes-title">
           <div className="container-x">
             <div className="grid gap-6 rounded-2xl border border-amber/30 bg-[#f7eedc] p-7 md:grid-cols-12 md:p-10" data-reveal>
