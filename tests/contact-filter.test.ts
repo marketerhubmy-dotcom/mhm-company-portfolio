@@ -42,3 +42,19 @@ describe('service related examples', () => {
     }
   });
 });
+
+describe('service price ranges', () => {
+  it('every service has a sane owner-approved MYR range and formats correctly', async () => {
+    const { services, formatPriceRange } = await import('../src/data/services');
+    for (const s of services) {
+      expect(s.priceRange, s.id).not.toBeNull();
+      const r = s.priceRange!;
+      expect(Number.isInteger(r.min) && Number.isInteger(r.max), s.id).toBe(true);
+      expect(r.min).toBeGreaterThan(0);
+      expect(r.max).toBeGreaterThan(r.min);
+    }
+    expect(formatPriceRange({ min: 800, max: 2500 })).toBe('RM800 – RM2,500');
+    expect(formatPriceRange({ min: 8000, max: 30000, openEnded: true })).toBe('RM8,000 – RM30,000+');
+    expect(formatPriceRange(null)).toBeNull();
+  });
+});

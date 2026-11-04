@@ -33,7 +33,7 @@ export const techGroups = [
 ] as const;
 
 export const faqs = [
-  { q: 'Berapa kos untuk membina website atau sistem?', a: 'Kos bergantung pada skop — bilangan halaman, modul, integrasi dan tahap automasi. Kami beri sebut harga bertulis selepas sesi perbincangan supaya anda tahu apa yang termasuk sebelum projek bermula.' },
+  { q: 'Berapa kos untuk membina website atau sistem?', a: 'Setiap servis mempunyai anggaran harga di halaman Servis — contohnya landing page jualan RM800 – RM2,500. Kos sebenar bergantung pada skop: bilangan halaman, modul, integrasi dan tahap automasi. Kami beri sebut harga bertulis selepas sesi perbincangan supaya anda tahu apa yang termasuk sebelum projek bermula.' },
   { q: 'Berapa lama masa yang diperlukan?', a: 'Landing page biasanya jauh lebih cepat berbanding sistem seperti CRM atau ERP. Anggaran masa diberikan bersama skop kerja, dan projek besar dibahagikan kepada fasa supaya anda boleh mula guna lebih awal.' },
   { q: 'Adakah demo dalam portfolio ini sistem sebenar?', a: 'Setiap projek dilabel dengan jelas: Sistem Sebenar, Demo Portfolio atau Prototaip. Demo seperti ODAJAH ERP menggunakan data rekaan sepenuhnya supaya anda boleh mencuba fungsinya dengan selamat.' },
   { q: 'Boleh guna domain dan akaun hosting sendiri?', a: 'Boleh. Kami boleh memasang projek pada domain anda dan membincangkan pilihan hosting yang sesuai dengan saiz serta bajet bisnes.' },

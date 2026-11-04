@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import { ArrowUpRight } from 'lucide-react';
 import { SectionLabel } from '@/components/SectionLabel';
 import { ButtonLink } from '@/components/Button';
-import { services } from '@/data/services';
+import { formatPriceRange, services } from '@/data/services';
 
 export function ServicesIndex() {
   return (
@@ -26,8 +26,12 @@ export function ServicesIndex() {
                 <span className="label relative text-muted-dark">{String(i + 1).padStart(2, '0')}</span>
                 <span className="relative font-display text-[clamp(1.4rem,1.1rem+1.3vw,2.3rem)] font-semibold leading-none tracking-[-0.03em] transition-transform duration-700 ease-out-expo group-hover:translate-x-2">
                   {s.title}
+                  {s.priceRange && <span className="label mt-2 block font-sans !tracking-[0.08em] text-brand-bright md:hidden">Anggaran {formatPriceRange(s.priceRange)}</span>}
                 </span>
-                <span className="relative hidden text-paper/65 md:block">{s.short}</span>
+                <span className="relative hidden md:block">
+                  <span className="block text-paper/65">{s.short}</span>
+                  {s.priceRange && <span className="label mt-2 block text-brand-bright">Anggaran {formatPriceRange(s.priceRange)}</span>}
+                </span>
                 <span aria-hidden="true" className="relative grid size-10 place-items-center rounded-full border border-line-dark transition-[background-color,color,transform] duration-500 ease-out-expo group-hover:rotate-45 group-hover:bg-brand group-hover:text-paper">
                   <ArrowUpRight className="size-4" />
                 </span>

@@ -1,0 +1,3 @@
+# Old favicon paths (browsers request these automatically / from cache).
+/favicon.svg /brand/favicon-48.png 301
+/favicon.ico /brand/favicon-48.png 301
