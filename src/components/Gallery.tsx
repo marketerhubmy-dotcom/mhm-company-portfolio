@@ -5,11 +5,15 @@ import { cn } from '@/utils/cn';
 import { Img } from './Media';
 
 /** Screenshot gallery with an accessible <dialog> lightbox (keyboard + swipe). */
-export function Gallery({ images, title }: { images: ProjectImage[]; title: string }) {
+export function Gallery({ images: input, title }: { images: ProjectImage[]; title: string }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const [index, setIndex] = useState(0);
   const touch = useRef<number | null>(null);
-  const mobile = images.every((i) => i.frame === 'mobile');
+  // Desktop and phone captures need different grids: phones in a full-width
+  // column become huge. Desktop first, then phones; the lightbox follows this order.
+  const desktop = input.filter((i) => i.frame !== 'mobile');
+  const phones = input.filter((i) => i.frame === 'mobile');
+  const images = [...desktop, ...phones];
 
   const open = (i: number) => { setIndex(i); dialog.current?.showModal(); };
   const go = useCallback((d: number) => setIndex((i) => (i + d + images.length) % images.length), [images.length]);
@@ -28,21 +32,16 @@ export function Gallery({ images, title }: { images: ProjectImage[]; title: stri
   const current = images[index];
   return (
     <>
-      <ul className={cn('grid gap-5', mobile ? 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-5' : 'sm:grid-cols-2')}>
-        {images.map((img, i) => (
-          <li key={img.src} data-reveal style={{ ['--d' as string]: i % 3 }}>
-            <figure>
-              <button type="button" onClick={() => open(i)} className="group relative block w-full overflow-hidden rounded-xl border border-line text-left" aria-label={`Besarkan: ${img.alt}`}>
-                <Img image={img} sizes={mobile ? '(min-width: 1024px) 18vw, 45vw' : '(min-width: 640px) 45vw, 100vw'} imgClassName="transition-[transform,opacity] duration-[1.2s] ease-out-expo group-hover:scale-[1.03]" />
-                <span aria-hidden="true" className="absolute right-3 top-3 grid size-9 place-items-center rounded-full bg-ink/80 text-paper opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
-                  <Maximize2 className="size-4" />
-                </span>
-              </button>
-              {img.caption && <figcaption className="mt-3 text-sm text-muted"><span className="label mr-2 text-ink">{String(i + 1).padStart(2, '0')}</span>{img.caption}</figcaption>}
-            </figure>
-          </li>
-        ))}
-      </ul>
+      {desktop.length > 0 && (
+        <ul className="grid gap-5 sm:grid-cols-2">
+          {desktop.map((img, i) => <Thumb key={img.src} img={img} i={i} phone={false} onOpen={open} />)}
+        </ul>
+      )}
+      {phones.length > 0 && (
+        <ul className={cn('grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5', desktop.length > 0 && 'mt-10')}>
+          {phones.map((img, j) => <Thumb key={img.src} img={img} i={desktop.length + j} phone onOpen={open} />)}
+        </ul>
+      )}
 
       <dialog
         ref={dialog}
@@ -89,5 +88,21 @@ export function Gallery({ images, title }: { images: ProjectImage[]; title: stri
         )}
       </dialog>
     </>
+  );
+}
+
+function Thumb({ img, i, phone, onOpen }: { img: ProjectImage; i: number; phone: boolean; onOpen: (i: number) => void }) {
+  return (
+    <li data-reveal style={{ ['--d' as string]: i % 3 }}>
+      <figure>
+        <button type="button" onClick={() => onOpen(i)} className="group relative block w-full overflow-hidden rounded-xl border border-line text-left" aria-label={`Besarkan: ${img.alt}`}>
+          <Img image={img} sizes={phone ? '(min-width: 1024px) 18vw, 45vw' : '(min-width: 640px) 45vw, 100vw'} imgClassName="transition-[transform,opacity] duration-[1.2s] ease-out-expo group-hover:scale-[1.03]" />
+          <span aria-hidden="true" className="absolute right-3 top-3 grid size-9 place-items-center rounded-full bg-ink/80 text-paper opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
+            <Maximize2 className="size-4" />
+          </span>
+        </button>
+        {img.caption && <figcaption className="mt-3 text-sm text-muted"><span className="label mr-2 text-ink">{String(i + 1).padStart(2, '0')}</span>{img.caption}</figcaption>}
+      </figure>
+    </li>
   );
 }

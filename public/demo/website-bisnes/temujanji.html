@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Temujanji — Klinik Nadi Harmoni (Demo)</title>
+<meta name="description" content="Buat temujanji di Klinik Nadi Harmoni (Demo): pilih rawatan, tarikh dan slot masa.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b4a44">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230f6b61'/%3E%3Cpath d='M10 5h4v5h5v4h-5v5h-4v-5H5v-4h5z' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Langkau ke kandungan</a>
+<div class="demo-bar" role="note"><strong>DEMO</strong> — klinik rekaan untuk portfolio website bisnes oleh <a href="https://web.mhmacademy.site/kerja/website-bisnes-klinik-demo">MHM CENTER</a>. Semua nama, alamat dan maklumat adalah rekaan.</div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></span><span>Klinik Nadi Harmoni<small>Klinik keluarga · Demo</small></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Buka menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <nav class="nav" id="nav" aria-label="Utama">
+      <a href="./">Utama</a><a href="perkhidmatan">Perkhidmatan</a><a href="doktor">Doktor</a><a href="hubungi">Hubungi</a>
+      <a class="btn btn-primary" href="temujanji">Buat temujanji</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head"><div class="wrap"><p class="crumbs"><a href="./">Utama</a> / Buat temujanji</p><h1>Buat temujanji</h1><p class="lead">Pilih rawatan, tarikh dan masa. Slot dipaparkan mengikut waktu operasi klinik.</p></div></section>
+<section class="section"><div class="wrap" style="display:grid;gap:2rem;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)" id="appt-wrap">
+<form class="form" id="appt-form" novalidate>
+  <div class="row2">
+    <div class="field"><label for="appt-nama">Nama pesakit</label><input id="appt-nama" name="nama" autocomplete="name" maxlength="80"><p class="err" data-err="nama" aria-live="polite"></p></div>
+    <div class="field"><label for="appt-tel">No. telefon</label><input id="appt-tel" name="telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder="01X-XXX XXXX" maxlength="20"><p class="err" data-err="telefon" aria-live="polite"></p></div>
+  </div>
+  <div class="field"><label for="appt-svc">Jenis rawatan</label><select id="appt-svc" name="perkhidmatan"><option value="">— Pilih —</option><option>Rawatan am</option><option>Pemeriksaan kesihatan</option><option>Vaksinasi</option><option>Kesihatan ibu & anak</option><option>Ujian makmal asas</option><option>Rawatan luka & prosedur kecil</option></select><p class="err" data-err="perkhidmatan" aria-live="polite"></p></div>
+  <div class="field"><label for="appt-date">Tarikh</label><input id="appt-date" name="tarikh" type="date"><p class="err" data-err="tarikh" aria-live="polite"></p></div>
+  <fieldset class="field" style="border:0;padding:0;margin:0 0 1.1rem"><legend>Masa <span class="hint">(slot 30 minit)</span></legend><div class="slots" id="appt-slots" tabindex="-1"></div><p class="err" data-err="slot" aria-live="polite"></p></fieldset>
+  <div class="field"><label for="appt-note">Catatan <span class="hint">(pilihan)</span></label><textarea id="appt-note" name="catatan" rows="3" maxlength="300" placeholder="Contoh: demam sejak semalam"></textarea></div>
+  <button class="btn btn-primary" type="submit">Sediakan mesej temujanji</button>
+  <div class="preview" id="appt-preview" tabindex="-1" hidden role="status">
+    <strong>Pratonton mesej (demo)</strong>
+    <pre></pre>
+    <p style="margin:.7rem 0 0;font-size:.88rem;color:var(--muted)">Pada laman sebenar, butang ini membuka WhatsApp klinik dengan mesej di atas. Dalam demo ini tiada apa-apa dihantar.</p>
+  </div>
+</form>
+<aside class="hero-card" style="align-self:start" aria-labelledby="hrs2">
+  <span class="eyebrow" data-open-status><span class="dot"></span><span data-status-text>Waktu operasi</span></span>
+  <h2 id="hrs2">Waktu operasi</h2>
+  <table class="hours"><caption class="sr-only">Waktu operasi</caption><tbody><tr data-day="1"><td>Isnin</td><td>8:30 pagi – 9:00 malam</td></tr><tr data-day="2"><td>Selasa</td><td>8:30 pagi – 9:00 malam</td></tr><tr data-day="3"><td>Rabu</td><td>8:30 pagi – 9:00 malam</td></tr><tr data-day="4"><td>Khamis</td><td>8:30 pagi – 9:00 malam</td></tr><tr data-day="5"><td>Jumaat</td><td>8:30 pagi – 9:00 malam</td></tr><tr data-day="6"><td>Sabtu</td><td>9:00 pagi – 5:00 petang</td></tr><tr data-day="0"><td>Ahad</td><td>9:00 pagi – 1:00 petang</td></tr></tbody></table><p style="margin:.8rem 0 0;font-size:.85rem;color:var(--muted)">Tutup pada cuti umum (contoh).</p>
+</aside>
+</div></section></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h3>Klinik Nadi Harmoni <span style="opacity:.7">(Demo)</span></h3>
+      <p>Klinik keluarga rekaan untuk menunjukkan contoh website bisnes: maklumat jelas, waktu operasi semasa dan temujanji mudah.</p>
+    </div>
+    <div>
+      <h3>Halaman</h3>
+      <ul><li><a href="./">Utama</a></li><li><a href="perkhidmatan">Perkhidmatan</a></li><li><a href="doktor">Doktor</a></li><li><a href="temujanji">Temujanji</a></li><li><a href="hubungi">Hubungi</a></li></ul>
+    </div>
+    <div>
+      <h3>Hubungi (rekaan)</h3>
+      <ul><li>No. 12, Jalan Contoh 3, Bandar Contoh, 12345 Negeri Demo</li><li>Tel: 01X-XXX XXXX</li><li>Kecemasan: 999</li></ul>
+    </div>
+  </div>
+  <div class="footnote"><div class="wrap">© Demo portfolio. Laman ini dibina oleh MHM CENTER sebagai contoh dan bukan klinik sebenar. Maklumat kesihatan di sini adalah umum dan bukan nasihat perubatan.</div></div>
+</footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

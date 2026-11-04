@@ -16,6 +16,8 @@ const AINA = 'https://demo-aina-herb.pages.dev';
 const SMS = 'https://sms.mhmacademy.site';
 const SYNAX = 'https://synaxhq.site';
 const ACADEMY = 'https://mhmacademy.site';
+// Clinic demo lives inside this site; override with KLINIK_BASE=http://localhost:4173/demo/website-bisnes/ before deploy.
+const KLINIK = process.env.KLINIK_BASE || 'https://web.mhmacademy.site/demo/website-bisnes/';
 
 /** MHM Academy shows live "X telah membeli ..." purchase toasts with buyer names.
  *  Those are personal data: hide them before any capture. */
@@ -102,6 +104,26 @@ const SHOTS = [
   { slug: 'mhm-academy', name: 'laman-utama', ctx: desktop, run: (p) => academy(p) },
   { slug: 'mhm-academy', name: 'katalog-modul', ctx: desktop, run: (p) => academy(p, 'Pilih modul ikut masalah') },
   { slug: 'mhm-academy', name: 'cara-beli', ctx: desktop, run: (p) => academy(p, 'Tiga langkah ringkas') },
+  // ---- Website bisnes demo: fictional clinic (desktop + mobile) ----
+  { slug: 'website-bisnes-klinik-demo', name: 'laman-utama', ctx: desktop, run: async (p) => { await p.goto(KLINIK, { waitUntil: 'networkidle' }); await p.waitForTimeout(600); } },
+  { slug: 'website-bisnes-klinik-demo', name: 'perkhidmatan', ctx: desktop, run: async (p) => { await p.goto(KLINIK + 'perkhidmatan', { waitUntil: 'networkidle' }); await p.evaluate(() => scrollTo(0, 330)); await p.waitForTimeout(500); } },
+  { slug: 'website-bisnes-klinik-demo', name: 'doktor', ctx: desktop, run: async (p) => { await p.goto(KLINIK + 'doktor', { waitUntil: 'networkidle' }); await p.waitForTimeout(500); } },
+  { slug: 'website-bisnes-klinik-demo', name: 'temujanji', ctx: desktop, run: async (p) => {
+      await p.goto(KLINIK + 'temujanji', { waitUntil: 'networkidle' });
+      await p.fill('#appt-nama', 'Pesakit Demo'); await p.fill('#appt-tel', '012-345 6789'); await p.selectOption('#appt-svc', { index: 2 });
+      const d = await p.evaluate(() => { const x = new Date(document.querySelector('#appt-date').min + 'T00:00:00'); x.setDate(x.getDate() + 2); return x.toISOString().slice(0, 10); });
+      await p.fill('#appt-date', d); await p.locator('#appt-date').dispatchEvent('change'); await p.locator('#appt-slots .slot').nth(3).click();
+      await p.locator('button[type=submit]').click(); await p.waitForTimeout(400);
+      await p.locator('#appt-preview').scrollIntoViewIfNeeded(); await p.evaluate(() => scrollBy(0, 160)); await p.waitForTimeout(400);
+    } },
+  { slug: 'website-bisnes-klinik-demo', name: 'hubungi', ctx: desktop, run: async (p) => { await p.goto(KLINIK + 'hubungi', { waitUntil: 'networkidle' }); await p.evaluate(() => scrollTo(0, 300)); await p.waitForTimeout(500); } },
+  { slug: 'website-bisnes-klinik-demo', name: 'mobile-utama', ctx: mobile, run: async (p) => { await p.goto(KLINIK, { waitUntil: 'networkidle' }); await p.waitForTimeout(600); } },
+  { slug: 'website-bisnes-klinik-demo', name: 'mobile-temujanji', ctx: mobile, run: async (p) => {
+      await p.goto(KLINIK + 'temujanji', { waitUntil: 'networkidle' });
+      const d = await p.evaluate(() => { const x = new Date(document.querySelector('#appt-date').min + 'T00:00:00'); x.setDate(x.getDate() + 1); return x.toISOString().slice(0, 10); });
+      await p.fill('#appt-date', d); await p.locator('#appt-date').dispatchEvent('change');
+      await p.locator('#appt-slots').scrollIntoViewIfNeeded(); await p.evaluate(() => scrollBy(0, -260)); await p.waitForTimeout(500);
+    } },
 ];
 
 (async () => {
