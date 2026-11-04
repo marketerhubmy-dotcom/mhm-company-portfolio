@@ -86,6 +86,9 @@ export const services: Service[] = [
     ],
     deliverables: ['Modul order & pelanggan', 'Pengesahan bayaran', 'Pipeline logistik & stok', 'Modul HR (ikut keperluan)', 'Dashboard & laporan mengikut role'],
     priceNote: null,
+    relatedExamples: [
+      { slug: 'mhm-business-suite', note: 'Modul CRM (pelanggan, peluang jualan, pipeline, follow-up) dan Order Management.' },
+    ],
   },
   {
     id: 'saas',
