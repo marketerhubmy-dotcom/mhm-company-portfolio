@@ -25,7 +25,10 @@ describe('portfolio filtering', () => {
     expect(filterProjects(projects, all)).toHaveLength(projects.length);
     expect(filterProjects(projects, { ...all, category: 'crm-erp' }).map((p) => p.slug)).toEqual(['odajah-erp-demo']);
     expect(filterProjects(projects, { ...all, q: 'SUSU kacha' }).map((p) => p.slug)).toEqual(['aina-herb-susu-kacha']);
-    expect(filterProjects(projects, { ...all, status: 'production' }).map((p) => p.slug)).toEqual(['synax-landing-page']);
+    const live = filterProjects(projects, { ...all, status: 'production' });
+    expect(live.length).toBeGreaterThan(0);
+    expect(live.every((p) => p.status === 'production')).toBe(true);
+    expect(live.map((p) => p.slug)).toContain('synax-landing-page');
     expect(filterProjects(projects, { ...all, q: 'tiada-padanan-xyz' })).toHaveLength(0);
   });
 });

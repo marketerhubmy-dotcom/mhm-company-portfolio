@@ -1,0 +1,180 @@
+{
+  "$schema": "../../schema/project.schema.json",
+  "id": "mhm-ai-content-studio",
+  "slug": "mhm-ai-content-studio",
+  "title": "MHM AI Content Studio",
+  "tagline": "Ruang kerja yang menukar maklumat produk kepada prompt video AI — dalam tiga langkah.",
+  "description": "Aplikasi web untuk pencipta kandungan dan affiliate: pilih produk atau tampal link TikTok Shop, tetapkan gaya video dan CTA, dan dapatkan prompt video AI yang tersusun, termasuk cerita berbilang scene. Akses untuk pembeli melalui MHM Academy.",
+  "category": "saas",
+  "projectType": "SaaS / AI Content Workspace",
+  "technologies": [
+    "Node.js",
+    "PostgreSQL",
+    "Python (resolver)",
+    "Docker"
+  ],
+  "demoUrl": "https://mhmacademy.site",
+  "repositoryReference": "marketerhubmy-dotcom/mhm-ai-content-studio",
+  "thumbnail": {
+    "src": "/projects/mhm-ai-content-studio/brand-product-1600.webp",
+    "alt": "Brand Product Studio dengan pilihan jenama, kategori dan model produk serta AI Prompt Preview",
+    "width": 1600,
+    "height": 1000,
+    "caption": "Brand Product Studio: pilih jenama dan model, semak USP, dan lihat prompt terbentuk serta-merta.",
+    "frame": "desktop",
+    "srcset": {
+      "800": "/projects/mhm-ai-content-studio/brand-product-800.webp",
+      "1600": "/projects/mhm-ai-content-studio/brand-product-1600.webp"
+    }
+  },
+  "galleryImages": [
+    {
+      "src": "/projects/mhm-ai-content-studio/brand-product-1600.webp",
+      "alt": "Brand Product Studio dengan pilihan jenama, kategori dan model produk serta AI Prompt Preview",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Brand Product Studio: pilih jenama dan model, semak USP, dan lihat prompt terbentuk serta-merta.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-ai-content-studio/brand-product-800.webp",
+        "1600": "/projects/mhm-ai-content-studio/brand-product-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-ai-content-studio/gaya-video-1600.webp",
+      "alt": "Langkah 2 Gaya Video dengan jenis video, headline, gerakan tangan dan kedudukan headline",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Langkah 02 — Gaya Video: jenis video, headline, gerakan dan avatar.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-ai-content-studio/gaya-video-800.webp",
+        "1600": "/projects/mhm-ai-content-studio/gaya-video-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-ai-content-studio/cta-branding-1600.webp",
+      "alt": "Langkah 3 CTA dan branding dengan watermark dan butang Generate Prompt",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Langkah 03 — CTA & Branding, termasuk watermark akaun TikTok.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-ai-content-studio/cta-branding-800.webp",
+        "1600": "/projects/mhm-ai-content-studio/cta-branding-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-ai-content-studio/tiktok-affiliate-1600.webp",
+      "alt": "TikTok Affiliate Studio dengan medan link TikTok Shop dan butang baca link produk",
+      "width": 1600,
+      "height": 1000,
+      "caption": "TikTok Affiliate Studio: tampal link TikTok Shop, sistem cuba baca maklumat produk.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-ai-content-studio/tiktok-affiliate-800.webp",
+        "1600": "/projects/mhm-ai-content-studio/tiktok-affiliate-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-ai-content-studio/open-creative-1600.webp",
+      "alt": "Open Creative Studio dengan pilihan Single Video atau Multi-Scene Story serta Simple dan Advanced Mode",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Open Creative Studio: Single Video atau Multi-Scene Story, Simple atau Advanced Mode.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-ai-content-studio/open-creative-800.webp",
+        "1600": "/projects/mhm-ai-content-studio/open-creative-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-ai-content-studio/library-1600.webp",
+      "alt": "Content Library dengan Official MHM Library, carian dan kad produk",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Content Library: Official, Public dan My Library dengan carian.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-ai-content-studio/library-800.webp",
+        "1600": "/projects/mhm-ai-content-studio/library-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-ai-content-studio/import-produk-1600.webp",
+      "alt": "Borang tambah jenama atau produk melalui link dengan baca info rasmi dan ekstrak info asas",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Tambah produk melalui link atau tampal teks halaman; sistem tidak mendakwa link dibaca jika import gagal.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-ai-content-studio/import-produk-800.webp",
+        "1600": "/projects/mhm-ai-content-studio/import-produk-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-ai-content-studio/log-masuk-1600.webp",
+      "alt": "Skrin log masuk MHM AI Content Studio",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Log masuk menggunakan akaun pembelian MHM Academy.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-ai-content-studio/log-masuk-800.webp",
+        "1600": "/projects/mhm-ai-content-studio/log-masuk-1600.webp"
+      }
+    }
+  ],
+  "featured": false,
+  "displayOrder": 18,
+  "approvedForPublic": true,
+  "status": "production",
+  "updatedAt": "2026-11-04",
+  "caseStudy": {
+    "intro": "MHM AI Content Studio ialah produk MHM sendiri yang digunakan oleh pembeli MHM Academy. Ia membantu pencipta kandungan menghasilkan prompt video AI yang konsisten tanpa perlu menulis dari kosong setiap kali.",
+    "challenge": "Pencipta kandungan dan affiliate perlu menghasilkan banyak video produk dengan cepat. Menulis prompt AI secara manual memakan masa, hasilnya tidak konsisten, dan maklumat produk mudah tersilap atau direka.",
+    "solution": "Satu ruang kerja dengan tiga mod — produk jenama, link TikTok Shop dan idea bebas — yang semuanya mengikut aliran tiga langkah: produk, gaya video, CTA. Prompt dibina dan dipratonton secara langsung dengan had aksara, dan pengguna boleh menyimpan, berkongsi atau mengeksport hasil. Maklumat produk sentiasa boleh diedit dan disahkan, dan sistem tidak mendakwa sesuatu link berjaya dibaca jika import gagal.",
+    "features": [
+      {
+        "title": "Tiga workspace",
+        "description": "Brand Product Studio (katalog jenama & USP), TikTok Affiliate Studio (import link TikTok Shop) dan Open Creative Studio (video bebas & storytelling)."
+      },
+      {
+        "title": "Aliran tiga langkah",
+        "description": "01 Produk / Idea, 02 Gaya Video dan 03 CTA & Branding — sama di setiap workspace supaya mudah dipelajari."
+      },
+      {
+        "title": "AI Prompt Preview langsung",
+        "description": "Prompt dibina semasa pengguna memilih, dengan kiraan aksara (had 900), serta butang salin, jana variasi lain dan simpan .txt."
+      },
+      {
+        "title": "Multi-Scene Story",
+        "description": "Selain video tunggal, pengguna boleh menjana storyboard berbilang scene, menambah scene dan mengeksport semua sekali gus."
+      },
+      {
+        "title": "Product Reference Sheet",
+        "description": "Simpan rujukan rupa produk sebenar dan gambar supaya video AI kekal setia kepada produk; boleh dimuat turun sebagai .html."
+      },
+      {
+        "title": "Import produk melalui link",
+        "description": "Pembaca metadata awam (dengan semakan URL/SSRF) untuk halaman produk dan TikTok Shop; jika disekat, pengguna boleh menampal teks halaman."
+      },
+      {
+        "title": "Content Library",
+        "description": "Official MHM Library, Public Library komuniti dan My Library peribadi, dengan carian serta import/export JSON."
+      },
+      {
+        "title": "Akaun & akses berbayar",
+        "description": "Log masuk, pentadbir dan akses yang disemak daripada pembelian MHM Academy."
+      }
+    ],
+    "demoNotes": [
+      "Studio digunakan oleh pembeli melalui MHM Academy dan memerlukan log masuk; tiada demo awam.",
+      "Tangkapan skrin diambil daripada mod demo aplikasi yang menggunakan database sementara dan akaun ujian — tiada data pengguna sebenar.",
+      "Senarai jenama dan produk dalam katalog ialah data contoh aplikasi."
+    ],
+    "tryIt": [
+      "Lihat cara akses Studio di MHM Academy."
+    ]
+  }
+}
