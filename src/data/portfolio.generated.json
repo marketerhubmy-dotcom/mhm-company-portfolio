@@ -2,6 +2,164 @@
   {
     "approvedForPublic": true,
     "caseStudy": {
+      "challenge": "Kebimbangan mak ayah anak tadika, anak sekolah rendah dan calon SPM sangat berbeza, begitu juga arahan pengambilan dan pakej yang sesuai. Pada masa yang sama, setiap pesanan perlu masuk terus ke sistem ERP klien dengan harga yang betul, tanpa kerja manual, dan prospek yang tidak menghabiskan borang tidak boleh hilang.",
+      "demoNotes": [
+        "Laman jualan langsung milik klien di synaxhq.site. Harga, testimoni dan maklumat produk adalah kandungan klien.",
+        "Skop projek ini ialah tiga landing page segmen di /lp/; halaman produk utama synaxhq.site adalah laman klien yang berasingan.",
+        "Tangkapan skrin diambil tanpa mengisi borang pesanan dan dengan penjejakan iklan disekat, supaya tiada data palsu masuk ke sistem klien."
+      ],
+      "features": [
+        {
+          "description": "Prasekolah (3–6), sekolah rendah (7–12) dan SPM (13+) — setiap satu dengan masalah, visual, arahan pengambilan dan pakej tersendiri.",
+          "title": "Tiga segmen, tiga halaman"
+        },
+        {
+          "description": "Pelawat menanda situasi yang mereka lalui dan meter tahap cabaran dikemas kini serta-merta — melibatkan pelawat sebelum tawaran dipaparkan.",
+          "title": "Semakan interaktif ‘SAYA PUN!’"
+        },
+        {
+          "description": "Borang dalam halaman menghantar pesanan ke API checkout ERP. Harga dikira oleh pelayan, dan halaman membatalkan proses jika harga tidak sepadan sebelum pelanggan dicaj.",
+          "title": "Pesanan terus ke ERP klien"
+        },
+        {
+          "description": "Online melalui Billplz dengan halaman terima kasih, COD, dan COD Time Gaji dengan tarikh penghantaran yang dipilih pelanggan.",
+          "title": "Tiga cara bayaran"
+        },
+        {
+          "description": "Butiran yang sudah diisi dihantar sebagai prospek ke ERP apabila pelawat berhenti menaip atau meninggalkan halaman, supaya pasukan jualan boleh membuat susulan.",
+          "title": "Tangkapan prospek automatik"
+        },
+        {
+          "description": "Acara Lead dan Purchase dihantar ke Meta Pixel dengan ID acara; pembelian online hanya dikira selepas pembayaran disahkan.",
+          "title": "Penjejakan iklan yang tepat"
+        },
+        {
+          "description": "Kos penghantaran dianggarkan secara automatik berdasarkan poskod Semenanjung atau Sabah/Sarawak.",
+          "title": "Kos penghantaran ikut poskod"
+        },
+        {
+          "description": "HTML, CSS dan JavaScript statik dengan imej WebP — tiada framework atau langkah build, mudah dideploy ke pelayan sedia ada.",
+          "title": "Laju & tanpa build"
+        }
+      ],
+      "intro": "SYNAX menjual produk yang sama kepada mak ayah dengan anak berbeza umur. Satu halaman untuk semua tidak dapat bercakap dengan tepat kepada setiap kumpulan — jadi kami bina tiga.",
+      "solution": "Tiga landing page statik yang laju, masing-masing dengan masalah, visual, arahan dan pakej mengikut segmen. Borang pesanan dibina dalam halaman dan dihantar ke API ERP klien yang mengira harga sendiri; halaman menyemak semula harga sebelum pembayaran. Prospek separa siap direkod secara automatik, dan acara Meta Pixel dihantar dengan ID yang mengelakkan kiraan berganda.",
+      "tryIt": [
+        "Buka ketiga-tiga segmen dan bandingkan cara setiap halaman bercakap kepada mak ayah.",
+        "Tekan beberapa kad ‘SAYA PUN!’ dan lihat meter berubah.",
+        "Sila jangan hantar borang pesanan — ia laman jualan sebenar."
+      ]
+    },
+    "category": "landing-page",
+    "demoUrl": "https://synaxhq.site/lp/sekolah-rendah",
+    "description": "Tiga landing page jualan untuk produk SYNAX — prasekolah, sekolah rendah dan SPM — masing-masing dengan mesej, pakej dan arahan tersendiri. Pesanan dihantar terus ke sistem ERP klien dengan pilihan bayaran online, COD dan COD Time Gaji.",
+    "displayOrder": 5,
+    "featured": true,
+    "galleryImages": [
+      {
+        "alt": "Hero landing page SYNAX untuk mak ayah anak prasekolah 3 hingga 6 tahun",
+        "caption": "Segmen prasekolah (3–6 tahun): mesej, visual dan arahan pengambilan khusus.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/synax-landing-page/prasekolah-780.webp",
+        "srcset": {
+          "390": "/projects/synax-landing-page/prasekolah-390.webp",
+          "780": "/projects/synax-landing-page/prasekolah-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Hero landing page SYNAX untuk mak ayah anak sekolah rendah 7 hingga 12 tahun",
+        "caption": "Segmen sekolah rendah (7–12 tahun).",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/synax-landing-page/sekolah-rendah-780.webp",
+        "srcset": {
+          "390": "/projects/synax-landing-page/sekolah-rendah-390.webp",
+          "780": "/projects/synax-landing-page/sekolah-rendah-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Hero landing page SYNAX untuk mak ayah calon SPM dan remaja",
+        "caption": "Segmen SPM / remaja 13+.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/synax-landing-page/spm-780.webp",
+        "srcset": {
+          "390": "/projects/synax-landing-page/spm-390.webp",
+          "780": "/projects/synax-landing-page/spm-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Kad semakan interaktif SAYA PUN! dengan beberapa situasi ditanda",
+        "caption": "Semakan interaktif ‘SAYA PUN!’: pelawat menanda situasi yang mereka lalui.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/synax-landing-page/semakan-interaktif-780.webp",
+        "srcset": {
+          "390": "/projects/synax-landing-page/semakan-interaktif-390.webp",
+          "780": "/projects/synax-landing-page/semakan-interaktif-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Pilihan pakej mengikut tempoh penggunaan dengan pakej paling popular diserlahkan",
+        "caption": "Pakej mengikut tempoh penggunaan, berbeza bagi setiap segmen.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/synax-landing-page/pilih-pakej-780.webp",
+        "srcset": {
+          "390": "/projects/synax-landing-page/pilih-pakej-390.webp",
+          "780": "/projects/synax-landing-page/pilih-pakej-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Borang pesanan dalam halaman dengan bilangan set, maklumat penghantaran dan cara bayaran",
+        "caption": "Borang pesanan tiga langkah terus dalam halaman.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/synax-landing-page/borang-pesanan-780.webp",
+        "srcset": {
+          "390": "/projects/synax-landing-page/borang-pesanan-390.webp",
+          "780": "/projects/synax-landing-page/borang-pesanan-780.webp"
+        },
+        "width": 780
+      }
+    ],
+    "id": "synax-landing-page",
+    "projectType": "Sales Landing Pages + Integrasi ERP",
+    "repositoryReference": null,
+    "slug": "synax-landing-page",
+    "source": "manual",
+    "status": "production",
+    "tagline": "Tiga landing page jualan untuk tiga kumpulan umur, disambung terus ke ERP dan pembayaran klien.",
+    "technologies": [
+      "HTML/CSS/JavaScript",
+      "Integrasi API ERP",
+      "Billplz",
+      "Meta Pixel"
+    ],
+    "thumbnail": {
+      "alt": "Hero landing page SYNAX untuk mak ayah anak prasekolah 3 hingga 6 tahun",
+      "caption": "Segmen prasekolah (3–6 tahun): mesej, visual dan arahan pengambilan khusus.",
+      "frame": "mobile",
+      "height": 1688,
+      "src": "/projects/synax-landing-page/prasekolah-780.webp",
+      "srcset": {
+        "390": "/projects/synax-landing-page/prasekolah-390.webp",
+        "780": "/projects/synax-landing-page/prasekolah-780.webp"
+      },
+      "width": 780
+    },
+    "title": "SYNAX — Landing Page Mengikut Segmen",
+    "updatedAt": "2026-10-27"
+  },
+  {
+    "approvedForPublic": true,
+    "caseStudy": {
       "challenge": "Bisnes yang menjual melalui Facebook, TikTok, Shopee dan website biasanya mengurus order dalam WhatsApp dan spreadsheet yang berasingan. Bayaran sukar disemak, status penghantaran tidak jelas dan setiap jabatan bekerja dengan data yang berbeza.",
       "demoNotes": [
         "Ini demo interaktif, bukan sistem production. Tiada sambungan ke server, database atau API sebenar.",

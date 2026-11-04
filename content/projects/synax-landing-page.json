@@ -1,0 +1,158 @@
+{
+  "$schema": "../../schema/project.schema.json",
+  "id": "synax-landing-page",
+  "slug": "synax-landing-page",
+  "title": "SYNAX — Landing Page Mengikut Segmen",
+  "tagline": "Tiga landing page jualan untuk tiga kumpulan umur, disambung terus ke ERP dan pembayaran klien.",
+  "description": "Tiga landing page jualan untuk produk SYNAX — prasekolah, sekolah rendah dan SPM — masing-masing dengan mesej, pakej dan arahan tersendiri. Pesanan dihantar terus ke sistem ERP klien dengan pilihan bayaran online, COD dan COD Time Gaji.",
+  "category": "landing-page",
+  "projectType": "Sales Landing Pages + Integrasi ERP",
+  "technologies": [
+    "HTML/CSS/JavaScript",
+    "Integrasi API ERP",
+    "Billplz",
+    "Meta Pixel"
+  ],
+  "demoUrl": "https://synaxhq.site/lp/sekolah-rendah",
+  "repositoryReference": null,
+  "thumbnail": {
+    "src": "/projects/synax-landing-page/prasekolah-780.webp",
+    "alt": "Hero landing page SYNAX untuk mak ayah anak prasekolah 3 hingga 6 tahun",
+    "width": 780,
+    "height": 1688,
+    "caption": "Segmen prasekolah (3–6 tahun): mesej, visual dan arahan pengambilan khusus.",
+    "frame": "mobile",
+    "srcset": {
+      "390": "/projects/synax-landing-page/prasekolah-390.webp",
+      "780": "/projects/synax-landing-page/prasekolah-780.webp"
+    }
+  },
+  "galleryImages": [
+    {
+      "src": "/projects/synax-landing-page/prasekolah-780.webp",
+      "alt": "Hero landing page SYNAX untuk mak ayah anak prasekolah 3 hingga 6 tahun",
+      "width": 780,
+      "height": 1688,
+      "caption": "Segmen prasekolah (3–6 tahun): mesej, visual dan arahan pengambilan khusus.",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/synax-landing-page/prasekolah-390.webp",
+        "780": "/projects/synax-landing-page/prasekolah-780.webp"
+      }
+    },
+    {
+      "src": "/projects/synax-landing-page/sekolah-rendah-780.webp",
+      "alt": "Hero landing page SYNAX untuk mak ayah anak sekolah rendah 7 hingga 12 tahun",
+      "width": 780,
+      "height": 1688,
+      "caption": "Segmen sekolah rendah (7–12 tahun).",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/synax-landing-page/sekolah-rendah-390.webp",
+        "780": "/projects/synax-landing-page/sekolah-rendah-780.webp"
+      }
+    },
+    {
+      "src": "/projects/synax-landing-page/spm-780.webp",
+      "alt": "Hero landing page SYNAX untuk mak ayah calon SPM dan remaja",
+      "width": 780,
+      "height": 1688,
+      "caption": "Segmen SPM / remaja 13+.",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/synax-landing-page/spm-390.webp",
+        "780": "/projects/synax-landing-page/spm-780.webp"
+      }
+    },
+    {
+      "src": "/projects/synax-landing-page/semakan-interaktif-780.webp",
+      "alt": "Kad semakan interaktif SAYA PUN! dengan beberapa situasi ditanda",
+      "width": 780,
+      "height": 1688,
+      "caption": "Semakan interaktif ‘SAYA PUN!’: pelawat menanda situasi yang mereka lalui.",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/synax-landing-page/semakan-interaktif-390.webp",
+        "780": "/projects/synax-landing-page/semakan-interaktif-780.webp"
+      }
+    },
+    {
+      "src": "/projects/synax-landing-page/pilih-pakej-780.webp",
+      "alt": "Pilihan pakej mengikut tempoh penggunaan dengan pakej paling popular diserlahkan",
+      "width": 780,
+      "height": 1688,
+      "caption": "Pakej mengikut tempoh penggunaan, berbeza bagi setiap segmen.",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/synax-landing-page/pilih-pakej-390.webp",
+        "780": "/projects/synax-landing-page/pilih-pakej-780.webp"
+      }
+    },
+    {
+      "src": "/projects/synax-landing-page/borang-pesanan-780.webp",
+      "alt": "Borang pesanan dalam halaman dengan bilangan set, maklumat penghantaran dan cara bayaran",
+      "width": 780,
+      "height": 1688,
+      "caption": "Borang pesanan tiga langkah terus dalam halaman.",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/synax-landing-page/borang-pesanan-390.webp",
+        "780": "/projects/synax-landing-page/borang-pesanan-780.webp"
+      }
+    }
+  ],
+  "featured": true,
+  "displayOrder": 5,
+  "approvedForPublic": true,
+  "status": "production",
+  "updatedAt": "2026-10-27",
+  "caseStudy": {
+    "intro": "SYNAX menjual produk yang sama kepada mak ayah dengan anak berbeza umur. Satu halaman untuk semua tidak dapat bercakap dengan tepat kepada setiap kumpulan — jadi kami bina tiga.",
+    "challenge": "Kebimbangan mak ayah anak tadika, anak sekolah rendah dan calon SPM sangat berbeza, begitu juga arahan pengambilan dan pakej yang sesuai. Pada masa yang sama, setiap pesanan perlu masuk terus ke sistem ERP klien dengan harga yang betul, tanpa kerja manual, dan prospek yang tidak menghabiskan borang tidak boleh hilang.",
+    "solution": "Tiga landing page statik yang laju, masing-masing dengan masalah, visual, arahan dan pakej mengikut segmen. Borang pesanan dibina dalam halaman dan dihantar ke API ERP klien yang mengira harga sendiri; halaman menyemak semula harga sebelum pembayaran. Prospek separa siap direkod secara automatik, dan acara Meta Pixel dihantar dengan ID yang mengelakkan kiraan berganda.",
+    "features": [
+      {
+        "title": "Tiga segmen, tiga halaman",
+        "description": "Prasekolah (3–6), sekolah rendah (7–12) dan SPM (13+) — setiap satu dengan masalah, visual, arahan pengambilan dan pakej tersendiri."
+      },
+      {
+        "title": "Semakan interaktif ‘SAYA PUN!’",
+        "description": "Pelawat menanda situasi yang mereka lalui dan meter tahap cabaran dikemas kini serta-merta — melibatkan pelawat sebelum tawaran dipaparkan."
+      },
+      {
+        "title": "Pesanan terus ke ERP klien",
+        "description": "Borang dalam halaman menghantar pesanan ke API checkout ERP. Harga dikira oleh pelayan, dan halaman membatalkan proses jika harga tidak sepadan sebelum pelanggan dicaj."
+      },
+      {
+        "title": "Tiga cara bayaran",
+        "description": "Online melalui Billplz dengan halaman terima kasih, COD, dan COD Time Gaji dengan tarikh penghantaran yang dipilih pelanggan."
+      },
+      {
+        "title": "Tangkapan prospek automatik",
+        "description": "Butiran yang sudah diisi dihantar sebagai prospek ke ERP apabila pelawat berhenti menaip atau meninggalkan halaman, supaya pasukan jualan boleh membuat susulan."
+      },
+      {
+        "title": "Penjejakan iklan yang tepat",
+        "description": "Acara Lead dan Purchase dihantar ke Meta Pixel dengan ID acara; pembelian online hanya dikira selepas pembayaran disahkan."
+      },
+      {
+        "title": "Kos penghantaran ikut poskod",
+        "description": "Kos penghantaran dianggarkan secara automatik berdasarkan poskod Semenanjung atau Sabah/Sarawak."
+      },
+      {
+        "title": "Laju & tanpa build",
+        "description": "HTML, CSS dan JavaScript statik dengan imej WebP — tiada framework atau langkah build, mudah dideploy ke pelayan sedia ada."
+      }
+    ],
+    "demoNotes": [
+      "Laman jualan langsung milik klien di synaxhq.site. Harga, testimoni dan maklumat produk adalah kandungan klien.",
+      "Skop projek ini ialah tiga landing page segmen di /lp/; halaman produk utama synaxhq.site adalah laman klien yang berasingan.",
+      "Tangkapan skrin diambil tanpa mengisi borang pesanan dan dengan penjejakan iklan disekat, supaya tiada data palsu masuk ke sistem klien."
+    ],
+    "tryIt": [
+      "Buka ketiga-tiga segmen dan bandingkan cara setiap halaman bercakap kepada mak ayah.",
+      "Tekan beberapa kad ‘SAYA PUN!’ dan lihat meter berubah.",
+      "Sila jangan hantar borang pesanan — ia laman jualan sebenar."
+    ]
+  }
+}
