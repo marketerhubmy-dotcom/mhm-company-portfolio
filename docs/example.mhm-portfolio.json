@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/marketerhubmy-dotcom/mhm-company-portfolio/main/schema/project.schema.json",
+  "slug": "contoh-crm-klinik",
+  "title": "CRM Klinik — Prototaip",
+  "tagline": "Temu janji, rekod pesakit dan peringatan dalam satu dashboard.",
+  "description": "Prototaip CRM untuk klinik kecil: temu janji, rekod pelanggan dan peringatan susulan. Data contoh sahaja.",
+  "category": "crm-erp",
+  "projectType": "CRM Prototype",
+  "technologies": [
+    "React",
+    "TypeScript"
+  ],
+  "demoUrl": "https://contoh.pages.dev",
+  "thumbnail": {
+    "src": "https://raw.githubusercontent.com/marketerhubmy-dotcom/contoh-crm-klinik/main/docs/cover.webp",
+    "alt": "Dashboard temu janji",
+    "width": 1600,
+    "height": 1000
+  },
+  "galleryImages": [],
+  "status": "prototype",
+  "updatedAt": "2026-11-01",
+  "caseStudy": {
+    "challenge": "…",
+    "solution": "…",
+    "features": [
+      {
+        "title": "Kalendar temu janji",
+        "description": "…"
+      }
+    ],
+    "demoNotes": [
+      "Data rekaan sahaja."
+    ]
+  }
+}

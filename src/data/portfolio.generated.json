@@ -1,0 +1,322 @@
+[
+  {
+    "approvedForPublic": true,
+    "caseStudy": {
+      "challenge": "Bisnes yang menjual melalui Facebook, TikTok, Shopee dan website biasanya mengurus order dalam WhatsApp dan spreadsheet yang berasingan. Bayaran sukar disemak, status penghantaran tidak jelas dan setiap jabatan bekerja dengan data yang berbeza.",
+      "demoNotes": [
+        "Ini demo interaktif, bukan sistem production. Tiada sambungan ke server, database atau API sebenar.",
+        "Semua nama, nombor telefon, alamat dan angka adalah rekaan dan disimpan dalam browser anda sahaja (boleh ‘Reset Demo’).",
+        "Inbox WhatsApp Team ialah mockup — tiada mesej sebenar dihantar.",
+        "Data kehadiran dan slip gaji adalah simulasi; P&L menggunakan pengiraan yang dipermudahkan."
+      ],
+      "features": [
+        {
+          "description": "Admin, Sales, Accounting, Logistik, HR dan Master Admin (baca-sahaja) — setiap satu dengan menu dan dashboard sendiri.",
+          "title": "Enam role, satu sistem"
+        },
+        {
+          "description": "Buat Order dengan maklumat pelanggan, sumber order (platform, objektif, channel), produk, pakej promo, bayaran dan courier.",
+          "title": "Aliran order lengkap"
+        },
+        {
+          "description": "Accounting menyemak resit transfer, kemudian Sahkan (order ke Logistik) atau Tolak dengan sebab; termasuk remittance TikTok/Shopee.",
+          "title": "Pengesahan bayaran"
+        },
+        {
+          "description": "Status Pos Pada, Awaiting, Processing, On Hold, Delivering, Delivered dan Returned, serta Stock Take untuk kiraan fizikal.",
+          "title": "Pipeline logistik"
+        },
+        {
+          "description": "Produk dengan SKU dan stok, Free Gift, Pakej Promo bertempoh, dan Kos Produk (COGS) untuk anggaran margin.",
+          "title": "Katalog & margin"
+        },
+        {
+          "description": "Kehadiran, permohonan cuti dan shift, baki cuti, prestasi pasukan sales dan slip gaji.",
+          "title": "Modul HR"
+        },
+        {
+          "description": "Kad ringkasan, carta hasil 12 bulan, pecahan status, carta penghantaran harian dan P&L anggaran untuk Sales.",
+          "title": "Dashboard & laporan"
+        },
+        {
+          "description": "Senarai lead daripada website atau iklan yang belum checkout, dengan status proses dan penukaran.",
+          "title": "Prospect"
+        }
+      ],
+      "intro": "ODAJAH ERP menunjukkan bagaimana satu bisnes jualan online boleh menyatukan kerja beberapa jabatan — sales, akaun, logistik dan HR — dalam satu sistem berasaskan role.",
+      "solution": "Satu aplikasi dengan akses mengikut role. Order dicipta sekali dan bergerak melalui aliran kerja: order transfer menunggu pengesahan Accounting, manakala COD dan marketplace terus ke Logistik. Setiap role nampak skrin dan tindakan yang relevan dengan kerjanya.",
+      "tryIt": [
+        "Pilih satu role di skrin login — tiada kata laluan diperlukan.",
+        "Sebagai Admin, cuba ‘Buat Order’ dan klik ‘Isi Contoh’.",
+        "Tukar ke role Accounting untuk mengesahkan bayaran, kemudian ke Logistik untuk melihat order bergerak.",
+        "Guna ‘Reset Demo’ untuk kembali ke data asal."
+      ]
+    },
+    "category": "crm-erp",
+    "demoUrl": "https://demo-odajah-erp.marketerhubmy.workers.dev/",
+    "description": "Demo interaktif sistem ERP untuk bisnes jualan online — daripada order dan pengesahan bayaran hingga logistik, stok dan HR. Semua data adalah rekaan dan disimpan dalam browser pengguna sahaja.",
+    "displayOrder": 10,
+    "featured": true,
+    "galleryImages": [
+      {
+        "alt": "Dashboard Syarikat ODAJAH ERP dengan kad ringkasan order, sales dan kutipan serta carta hasil bulanan",
+        "caption": "Dashboard Admin: ringkasan order, sales, kutipan dan carta 12 bulan.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/odajah-erp-demo/dashboard-admin-1600.webp",
+        "srcset": {
+          "800": "/projects/odajah-erp-demo/dashboard-admin-800.webp",
+          "1600": "/projects/odajah-erp-demo/dashboard-admin-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Skrin login demo ODAJAH ERP dengan enam pilihan role satu klik",
+        "caption": "Login demo satu klik — enam role berbeza.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/odajah-erp-demo/login-1600.webp",
+        "srcset": {
+          "800": "/projects/odajah-erp-demo/login-800.webp",
+          "1600": "/projects/odajah-erp-demo/login-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Senarai Semua Order dengan penapis status, platform dan tarikh",
+        "caption": "Semua Order: carian, penapis status/platform/tarikh dan status berwarna.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/odajah-erp-demo/semua-order-1600.webp",
+        "srcset": {
+          "800": "/projects/odajah-erp-demo/semua-order-800.webp",
+          "1600": "/projects/odajah-erp-demo/semua-order-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Borang Buat Order dengan maklumat pelanggan, sumber order, produk, bayaran dan penghantaran",
+        "caption": "Buat Order: borang lengkap daripada pelanggan hingga courier.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/odajah-erp-demo/buat-order-1600.webp",
+        "srcset": {
+          "800": "/projects/odajah-erp-demo/buat-order-800.webp",
+          "1600": "/projects/odajah-erp-demo/buat-order-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Skrin Verify Payment untuk role Accounting dengan butang Sahkan dan Tolak",
+        "caption": "Accounting: sahkan atau tolak bayaran transfer sebelum order ke Logistik.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/odajah-erp-demo/verify-payment-1600.webp",
+        "srcset": {
+          "800": "/projects/odajah-erp-demo/verify-payment-800.webp",
+          "1600": "/projects/odajah-erp-demo/verify-payment-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Dashboard Logistik dengan kiraan status order dan carta penghantaran harian",
+        "caption": "Logistik: pipeline status order dan carta penghantaran 14 hari.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/odajah-erp-demo/dashboard-logistik-1600.webp",
+        "srcset": {
+          "800": "/projects/odajah-erp-demo/dashboard-logistik-800.webp",
+          "1600": "/projects/odajah-erp-demo/dashboard-logistik-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Rekod kehadiran staf untuk role HR berlabel data simulasi",
+        "caption": "HR: rekod kehadiran (data simulasi).",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/odajah-erp-demo/kehadiran-hr-1600.webp",
+        "srcset": {
+          "800": "/projects/odajah-erp-demo/kehadiran-hr-800.webp",
+          "1600": "/projects/odajah-erp-demo/kehadiran-hr-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Mockup inbox WhatsApp Team berkongsi untuk pasukan",
+        "caption": "Mockup inbox WhatsApp berkongsi — tiada mesej sebenar dihantar.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/odajah-erp-demo/whatsapp-team-1600.webp",
+        "srcset": {
+          "800": "/projects/odajah-erp-demo/whatsapp-team-800.webp",
+          "1600": "/projects/odajah-erp-demo/whatsapp-team-1600.webp"
+        },
+        "width": 1600
+      }
+    ],
+    "id": "odajah-erp-demo",
+    "projectType": "ERP / Business Application Demo",
+    "repositoryReference": null,
+    "slug": "odajah-erp-demo",
+    "source": "manual",
+    "status": "demo",
+    "tagline": "Sistem pengurusan order & operasi: Sales, Payment, Logistik dan HR dalam satu aplikasi.",
+    "technologies": [
+      "React",
+      "Cloudflare Workers",
+      "Carta interaktif",
+      "Browser localStorage"
+    ],
+    "thumbnail": {
+      "alt": "Dashboard Syarikat ODAJAH ERP dengan kad ringkasan order, sales dan kutipan serta carta hasil bulanan",
+      "caption": "Dashboard Admin: ringkasan order, sales, kutipan dan carta 12 bulan.",
+      "frame": "desktop",
+      "height": 1000,
+      "src": "/projects/odajah-erp-demo/dashboard-admin-1600.webp",
+      "srcset": {
+        "800": "/projects/odajah-erp-demo/dashboard-admin-800.webp",
+        "1600": "/projects/odajah-erp-demo/dashboard-admin-1600.webp"
+      },
+      "width": 1600
+    },
+    "title": "ODAJAH ERP — Demo Interaktif",
+    "updatedAt": "2026-11-04"
+  },
+  {
+    "approvedForPublic": true,
+    "caseStudy": {
+      "challenge": "Pembeli produk kesihatan di Malaysia kebanyakannya membeli melalui telefon dan biasa dengan susun atur marketplace. Halaman perlu meyakinkan tanpa dakwaan berlebihan, menerangkan harga pakej dengan jelas dan memudahkan pesanan COD.",
+      "demoNotes": [
+        "Dihoskan sebagai demo portfolio di demo-aina-herb.pages.dev.",
+        "Harga, testimoni dan maklumat produk adalah kandungan halaman tersebut; MHM Center memaparkannya sebagai contoh reka bentuk dan struktur jualan."
+      ],
+      "features": [
+        {
+          "description": "Karusel imej produk dengan penunjuk kedudukan di bahagian atas halaman.",
+          "title": "Galeri produk 11 imej"
+        },
+        {
+          "description": "Panel pesanan dengan pakej 1, 2 atau 3 balang, harga asal berbanding harga promosi, dan pilihan perisa Susu atau Coklat.",
+          "title": "Pilihan pakej & perisa"
+        },
+        {
+          "description": "Butang ‘Beli Sekarang’ dan pautan Chat kekal di bawah skrin sepanjang pembeli menatal.",
+          "title": "Bar beli sentiasa kelihatan"
+        },
+        {
+          "description": "Butiran pesanan disusun dan dihantar melalui WhatsApp, dengan pilihan untuk menyalin pesanan.",
+          "title": "Pesanan ke WhatsApp"
+        },
+        {
+          "description": "Ringkasan, Ulasan, Butiran dan Jaminan — pembeli boleh lompat terus ke bahagian yang mereka mahu.",
+          "title": "Tab navigasi kandungan"
+        },
+        {
+          "description": "Testimoni berstruktur (nama, umur, negeri) disertakan kenyataan bahawa pengalaman setiap individu berbeza, serta penafian bahawa produk bukan ubat.",
+          "title": "Bukti dengan penafian"
+        }
+      ],
+      "intro": "Halaman ini dibina untuk satu tugas: membantu pembeli yang datang daripada iklan memahami produk, memilih pakej dan membuat pesanan — terus dari telefon.",
+      "solution": "Struktur gaya halaman produk marketplace: galeri imej di atas, harga promosi yang jelas, isyarat kepercayaan (COD, penghantaran), tab navigasi ke ringkasan, ulasan, butiran dan jaminan, serta butang beli yang sentiasa kelihatan. Pesanan dilengkapkan melalui panel pilihan pakej dan dihantar ke WhatsApp.",
+      "tryIt": [
+        "Buka demo pada telefon untuk pengalaman sebenar.",
+        "Tekan ‘Beli Sekarang’ untuk melihat panel pilihan pakej dan perisa.",
+        "Guna tab Ringkasan / Ulasan / Butiran / Jaminan untuk melompat antara bahagian."
+      ]
+    },
+    "category": "landing-page",
+    "demoUrl": "https://demo-aina-herb.pages.dev/",
+    "description": "Landing page jualan untuk produk Susu Kacha Probiotik Tanpa Gula. Disusun seperti halaman produk marketplace yang biasa digunakan pembeli Malaysia — galeri, tawaran, bukti, butiran dan pesanan dalam satu aliran.",
+    "displayOrder": 20,
+    "featured": true,
+    "galleryImages": [
+      {
+        "alt": "Bahagian atas landing page Susu Kacha: galeri produk, tajuk dan harga promosi",
+        "caption": "Bahagian atas: galeri 11 imej, tawaran promosi dan butang beli yang sentiasa kelihatan.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/aina-herb-susu-kacha/hero-780.webp",
+        "srcset": {
+          "390": "/projects/aina-herb-susu-kacha/hero-390.webp",
+          "780": "/projects/aina-herb-susu-kacha/hero-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Panel pilihan pakej 1, 2 atau 3 balang dan pilihan perisa Susu atau Coklat",
+        "caption": "Panel pesanan: pilih pakej dan perisa tanpa meninggalkan halaman.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/aina-herb-susu-kacha/pilih-pakej-780.webp",
+        "srcset": {
+          "390": "/projects/aina-herb-susu-kacha/pilih-pakej-390.webp",
+          "780": "/projects/aina-herb-susu-kacha/pilih-pakej-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Bahagian testimoni pelanggan dengan nama, umur dan negeri",
+        "caption": "Testimoni berstruktur, disertakan penafian bahawa pengalaman setiap individu berbeza.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/aina-herb-susu-kacha/testimoni-780.webp",
+        "srcset": {
+          "390": "/projects/aina-herb-susu-kacha/testimoni-390.webp",
+          "780": "/projects/aina-herb-susu-kacha/testimoni-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Langkah cara minum bernombor 1 hingga 3",
+        "caption": "Arahan penggunaan langkah demi langkah.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/aina-herb-susu-kacha/cara-minum-780.webp",
+        "srcset": {
+          "390": "/projects/aina-herb-susu-kacha/cara-minum-390.webp",
+          "780": "/projects/aina-herb-susu-kacha/cara-minum-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Jadual butiran produk dan kad penjual Aina Herb",
+        "caption": "Butiran produk ringkas dan penafian kesihatan yang jelas.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/aina-herb-susu-kacha/butiran-780.webp",
+        "srcset": {
+          "390": "/projects/aina-herb-susu-kacha/butiran-390.webp",
+          "780": "/projects/aina-herb-susu-kacha/butiran-780.webp"
+        },
+        "width": 780
+      }
+    ],
+    "id": "aina-herb-susu-kacha",
+    "projectType": "Sales Landing Page",
+    "repositoryReference": null,
+    "slug": "aina-herb-susu-kacha",
+    "source": "manual",
+    "status": "demo",
+    "tagline": "Landing page jualan mobile-first yang membawa pembeli terus daripada tawaran kepada pesanan.",
+    "technologies": [
+      "Cloudflare Pages",
+      "Mobile-first UI",
+      "WhatsApp Click-to-Chat"
+    ],
+    "thumbnail": {
+      "alt": "Bahagian atas landing page Susu Kacha: galeri produk, tajuk dan harga promosi",
+      "caption": "Bahagian atas: galeri 11 imej, tawaran promosi dan butang beli yang sentiasa kelihatan.",
+      "frame": "mobile",
+      "height": 1688,
+      "src": "/projects/aina-herb-susu-kacha/hero-780.webp",
+      "srcset": {
+        "390": "/projects/aina-herb-susu-kacha/hero-390.webp",
+        "780": "/projects/aina-herb-susu-kacha/hero-780.webp"
+      },
+      "width": 780
+    },
+    "title": "Aina Herb — Susu Kacha",
+    "updatedAt": "2026-11-04"
+  }
+]

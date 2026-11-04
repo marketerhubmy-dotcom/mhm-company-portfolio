@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/project.schema.json",
+  "id": "mhm-academy",
+  "slug": "mhm-academy",
+  "title": "MHM Academy — Kedai Modul Digital",
+  "description": "Platform kedai modul digital dalam ekosistem MHM: modul praktikal marketing, iklan, AI dan automasi, dengan akses bahan selepas bayaran disahkan.",
+  "category": "ecommerce",
+  "projectType": "Digital Product Platform",
+  "technologies": [],
+  "demoUrl": "https://mhmacademy.site",
+  "repositoryReference": null,
+  "thumbnail": null,
+  "galleryImages": [],
+  "featured": false,
+  "displayOrder": 30,
+  "approvedForPublic": false,
+  "status": "production",
+  "updatedAt": "2026-11-04"
+}

@@ -1,0 +1,4 @@
+{
+  "$comment": "Approval registry for repositories discovered via the 'mhm-portfolio' GitHub topic. A discovered repository is published ONLY when it is listed here with approvedForPublic: true. Edit this file in a commit/PR to approve, feature, reorder or block a project. Editorial overrides here win over the repository's own metadata.",
+  "repositories": {}
+}

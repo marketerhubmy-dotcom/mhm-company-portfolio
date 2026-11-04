@@ -1,0 +1,136 @@
+{
+  "$schema": "../../schema/project.schema.json",
+  "id": "aina-herb-susu-kacha",
+  "slug": "aina-herb-susu-kacha",
+  "title": "Aina Herb — Susu Kacha",
+  "tagline": "Landing page jualan mobile-first yang membawa pembeli terus daripada tawaran kepada pesanan.",
+  "description": "Landing page jualan untuk produk Susu Kacha Probiotik Tanpa Gula. Disusun seperti halaman produk marketplace yang biasa digunakan pembeli Malaysia — galeri, tawaran, bukti, butiran dan pesanan dalam satu aliran.",
+  "category": "landing-page",
+  "projectType": "Sales Landing Page",
+  "technologies": [
+    "Cloudflare Pages",
+    "Mobile-first UI",
+    "WhatsApp Click-to-Chat"
+  ],
+  "demoUrl": "https://demo-aina-herb.pages.dev",
+  "repositoryReference": null,
+  "thumbnail": {
+    "src": "/projects/aina-herb-susu-kacha/hero-780.webp",
+    "alt": "Bahagian atas landing page Susu Kacha: galeri produk, tajuk dan harga promosi",
+    "width": 780,
+    "height": 1688,
+    "caption": "Bahagian atas: galeri 11 imej, tawaran promosi dan butang beli yang sentiasa kelihatan.",
+    "frame": "mobile",
+    "srcset": {
+      "390": "/projects/aina-herb-susu-kacha/hero-390.webp",
+      "780": "/projects/aina-herb-susu-kacha/hero-780.webp"
+    }
+  },
+  "galleryImages": [
+    {
+      "src": "/projects/aina-herb-susu-kacha/hero-780.webp",
+      "alt": "Bahagian atas landing page Susu Kacha: galeri produk, tajuk dan harga promosi",
+      "width": 780,
+      "height": 1688,
+      "caption": "Bahagian atas: galeri 11 imej, tawaran promosi dan butang beli yang sentiasa kelihatan.",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/aina-herb-susu-kacha/hero-390.webp",
+        "780": "/projects/aina-herb-susu-kacha/hero-780.webp"
+      }
+    },
+    {
+      "src": "/projects/aina-herb-susu-kacha/pilih-pakej-780.webp",
+      "alt": "Panel pilihan pakej 1, 2 atau 3 balang dan pilihan perisa Susu atau Coklat",
+      "width": 780,
+      "height": 1688,
+      "caption": "Panel pesanan: pilih pakej dan perisa tanpa meninggalkan halaman.",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/aina-herb-susu-kacha/pilih-pakej-390.webp",
+        "780": "/projects/aina-herb-susu-kacha/pilih-pakej-780.webp"
+      }
+    },
+    {
+      "src": "/projects/aina-herb-susu-kacha/testimoni-780.webp",
+      "alt": "Bahagian testimoni pelanggan dengan nama, umur dan negeri",
+      "width": 780,
+      "height": 1688,
+      "caption": "Testimoni berstruktur, disertakan penafian bahawa pengalaman setiap individu berbeza.",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/aina-herb-susu-kacha/testimoni-390.webp",
+        "780": "/projects/aina-herb-susu-kacha/testimoni-780.webp"
+      }
+    },
+    {
+      "src": "/projects/aina-herb-susu-kacha/cara-minum-780.webp",
+      "alt": "Langkah cara minum bernombor 1 hingga 3",
+      "width": 780,
+      "height": 1688,
+      "caption": "Arahan penggunaan langkah demi langkah.",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/aina-herb-susu-kacha/cara-minum-390.webp",
+        "780": "/projects/aina-herb-susu-kacha/cara-minum-780.webp"
+      }
+    },
+    {
+      "src": "/projects/aina-herb-susu-kacha/butiran-780.webp",
+      "alt": "Jadual butiran produk dan kad penjual Aina Herb",
+      "width": 780,
+      "height": 1688,
+      "caption": "Butiran produk ringkas dan penafian kesihatan yang jelas.",
+      "frame": "mobile",
+      "srcset": {
+        "390": "/projects/aina-herb-susu-kacha/butiran-390.webp",
+        "780": "/projects/aina-herb-susu-kacha/butiran-780.webp"
+      }
+    }
+  ],
+  "featured": true,
+  "displayOrder": 20,
+  "approvedForPublic": true,
+  "status": "demo",
+  "updatedAt": "2026-11-04",
+  "caseStudy": {
+    "intro": "Halaman ini dibina untuk satu tugas: membantu pembeli yang datang daripada iklan memahami produk, memilih pakej dan membuat pesanan — terus dari telefon.",
+    "challenge": "Pembeli produk kesihatan di Malaysia kebanyakannya membeli melalui telefon dan biasa dengan susun atur marketplace. Halaman perlu meyakinkan tanpa dakwaan berlebihan, menerangkan harga pakej dengan jelas dan memudahkan pesanan COD.",
+    "solution": "Struktur gaya halaman produk marketplace: galeri imej di atas, harga promosi yang jelas, isyarat kepercayaan (COD, penghantaran), tab navigasi ke ringkasan, ulasan, butiran dan jaminan, serta butang beli yang sentiasa kelihatan. Pesanan dilengkapkan melalui panel pilihan pakej dan dihantar ke WhatsApp.",
+    "features": [
+      {
+        "title": "Galeri produk 11 imej",
+        "description": "Karusel imej produk dengan penunjuk kedudukan di bahagian atas halaman."
+      },
+      {
+        "title": "Pilihan pakej & perisa",
+        "description": "Panel pesanan dengan pakej 1, 2 atau 3 balang, harga asal berbanding harga promosi, dan pilihan perisa Susu atau Coklat."
+      },
+      {
+        "title": "Bar beli sentiasa kelihatan",
+        "description": "Butang ‘Beli Sekarang’ dan pautan Chat kekal di bawah skrin sepanjang pembeli menatal."
+      },
+      {
+        "title": "Pesanan ke WhatsApp",
+        "description": "Butiran pesanan disusun dan dihantar melalui WhatsApp, dengan pilihan untuk menyalin pesanan."
+      },
+      {
+        "title": "Tab navigasi kandungan",
+        "description": "Ringkasan, Ulasan, Butiran dan Jaminan — pembeli boleh lompat terus ke bahagian yang mereka mahu."
+      },
+      {
+        "title": "Bukti dengan penafian",
+        "description": "Testimoni berstruktur (nama, umur, negeri) disertakan kenyataan bahawa pengalaman setiap individu berbeza, serta penafian bahawa produk bukan ubat."
+      }
+    ],
+    "demoNotes": [
+      "Dihoskan sebagai demo portfolio di demo-aina-herb.pages.dev.",
+      "Harga, testimoni dan maklumat produk adalah kandungan halaman tersebut; MHM Center memaparkannya sebagai contoh reka bentuk dan struktur jualan."
+    ],
+    "tryIt": [
+      "Buka demo pada telefon untuk pengalaman sebenar.",
+      "Tekan ‘Beli Sekarang’ untuk melihat panel pilihan pakej dan perisa.",
+      "Guna tab Ringkasan / Ulasan / Butiran / Jaminan untuk melompat antara bahagian."
+    ]
+  }
+}

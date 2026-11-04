@@ -1,0 +1,184 @@
+{
+  "$schema": "../../schema/project.schema.json",
+  "id": "odajah-erp-demo",
+  "slug": "odajah-erp-demo",
+  "title": "ODAJAH ERP — Demo Interaktif",
+  "tagline": "Sistem pengurusan order & operasi: Sales, Payment, Logistik dan HR dalam satu aplikasi.",
+  "description": "Demo interaktif sistem ERP untuk bisnes jualan online — daripada order dan pengesahan bayaran hingga logistik, stok dan HR. Semua data adalah rekaan dan disimpan dalam browser pengguna sahaja.",
+  "category": "crm-erp",
+  "projectType": "ERP / Business Application Demo",
+  "technologies": [
+    "React",
+    "Cloudflare Workers",
+    "Carta interaktif",
+    "Browser localStorage"
+  ],
+  "demoUrl": "https://demo-odajah-erp.marketerhubmy.workers.dev",
+  "repositoryReference": null,
+  "thumbnail": {
+    "src": "/projects/odajah-erp-demo/dashboard-admin-1600.webp",
+    "alt": "Dashboard Syarikat ODAJAH ERP dengan kad ringkasan order, sales dan kutipan serta carta hasil bulanan",
+    "width": 1600,
+    "height": 1000,
+    "caption": "Dashboard Admin: ringkasan order, sales, kutipan dan carta 12 bulan.",
+    "frame": "desktop",
+    "srcset": {
+      "800": "/projects/odajah-erp-demo/dashboard-admin-800.webp",
+      "1600": "/projects/odajah-erp-demo/dashboard-admin-1600.webp"
+    }
+  },
+  "galleryImages": [
+    {
+      "src": "/projects/odajah-erp-demo/dashboard-admin-1600.webp",
+      "alt": "Dashboard Syarikat ODAJAH ERP dengan kad ringkasan order, sales dan kutipan serta carta hasil bulanan",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Dashboard Admin: ringkasan order, sales, kutipan dan carta 12 bulan.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/odajah-erp-demo/dashboard-admin-800.webp",
+        "1600": "/projects/odajah-erp-demo/dashboard-admin-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/odajah-erp-demo/login-1600.webp",
+      "alt": "Skrin login demo ODAJAH ERP dengan enam pilihan role satu klik",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Login demo satu klik — enam role berbeza.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/odajah-erp-demo/login-800.webp",
+        "1600": "/projects/odajah-erp-demo/login-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/odajah-erp-demo/semua-order-1600.webp",
+      "alt": "Senarai Semua Order dengan penapis status, platform dan tarikh",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Semua Order: carian, penapis status/platform/tarikh dan status berwarna.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/odajah-erp-demo/semua-order-800.webp",
+        "1600": "/projects/odajah-erp-demo/semua-order-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/odajah-erp-demo/buat-order-1600.webp",
+      "alt": "Borang Buat Order dengan maklumat pelanggan, sumber order, produk, bayaran dan penghantaran",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Buat Order: borang lengkap daripada pelanggan hingga courier.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/odajah-erp-demo/buat-order-800.webp",
+        "1600": "/projects/odajah-erp-demo/buat-order-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/odajah-erp-demo/verify-payment-1600.webp",
+      "alt": "Skrin Verify Payment untuk role Accounting dengan butang Sahkan dan Tolak",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Accounting: sahkan atau tolak bayaran transfer sebelum order ke Logistik.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/odajah-erp-demo/verify-payment-800.webp",
+        "1600": "/projects/odajah-erp-demo/verify-payment-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/odajah-erp-demo/dashboard-logistik-1600.webp",
+      "alt": "Dashboard Logistik dengan kiraan status order dan carta penghantaran harian",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Logistik: pipeline status order dan carta penghantaran 14 hari.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/odajah-erp-demo/dashboard-logistik-800.webp",
+        "1600": "/projects/odajah-erp-demo/dashboard-logistik-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/odajah-erp-demo/kehadiran-hr-1600.webp",
+      "alt": "Rekod kehadiran staf untuk role HR berlabel data simulasi",
+      "width": 1600,
+      "height": 1000,
+      "caption": "HR: rekod kehadiran (data simulasi).",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/odajah-erp-demo/kehadiran-hr-800.webp",
+        "1600": "/projects/odajah-erp-demo/kehadiran-hr-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/odajah-erp-demo/whatsapp-team-1600.webp",
+      "alt": "Mockup inbox WhatsApp Team berkongsi untuk pasukan",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Mockup inbox WhatsApp berkongsi — tiada mesej sebenar dihantar.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/odajah-erp-demo/whatsapp-team-800.webp",
+        "1600": "/projects/odajah-erp-demo/whatsapp-team-1600.webp"
+      }
+    }
+  ],
+  "featured": true,
+  "displayOrder": 10,
+  "approvedForPublic": true,
+  "status": "demo",
+  "updatedAt": "2026-11-04",
+  "caseStudy": {
+    "intro": "ODAJAH ERP menunjukkan bagaimana satu bisnes jualan online boleh menyatukan kerja beberapa jabatan — sales, akaun, logistik dan HR — dalam satu sistem berasaskan role.",
+    "challenge": "Bisnes yang menjual melalui Facebook, TikTok, Shopee dan website biasanya mengurus order dalam WhatsApp dan spreadsheet yang berasingan. Bayaran sukar disemak, status penghantaran tidak jelas dan setiap jabatan bekerja dengan data yang berbeza.",
+    "solution": "Satu aplikasi dengan akses mengikut role. Order dicipta sekali dan bergerak melalui aliran kerja: order transfer menunggu pengesahan Accounting, manakala COD dan marketplace terus ke Logistik. Setiap role nampak skrin dan tindakan yang relevan dengan kerjanya.",
+    "features": [
+      {
+        "title": "Enam role, satu sistem",
+        "description": "Admin, Sales, Accounting, Logistik, HR dan Master Admin (baca-sahaja) — setiap satu dengan menu dan dashboard sendiri."
+      },
+      {
+        "title": "Aliran order lengkap",
+        "description": "Buat Order dengan maklumat pelanggan, sumber order (platform, objektif, channel), produk, pakej promo, bayaran dan courier."
+      },
+      {
+        "title": "Pengesahan bayaran",
+        "description": "Accounting menyemak resit transfer, kemudian Sahkan (order ke Logistik) atau Tolak dengan sebab; termasuk remittance TikTok/Shopee."
+      },
+      {
+        "title": "Pipeline logistik",
+        "description": "Status Pos Pada, Awaiting, Processing, On Hold, Delivering, Delivered dan Returned, serta Stock Take untuk kiraan fizikal."
+      },
+      {
+        "title": "Katalog & margin",
+        "description": "Produk dengan SKU dan stok, Free Gift, Pakej Promo bertempoh, dan Kos Produk (COGS) untuk anggaran margin."
+      },
+      {
+        "title": "Modul HR",
+        "description": "Kehadiran, permohonan cuti dan shift, baki cuti, prestasi pasukan sales dan slip gaji."
+      },
+      {
+        "title": "Dashboard & laporan",
+        "description": "Kad ringkasan, carta hasil 12 bulan, pecahan status, carta penghantaran harian dan P&L anggaran untuk Sales."
+      },
+      {
+        "title": "Prospect",
+        "description": "Senarai lead daripada website atau iklan yang belum checkout, dengan status proses dan penukaran."
+      }
+    ],
+    "demoNotes": [
+      "Ini demo interaktif, bukan sistem production. Tiada sambungan ke server, database atau API sebenar.",
+      "Semua nama, nombor telefon, alamat dan angka adalah rekaan dan disimpan dalam browser anda sahaja (boleh ‘Reset Demo’).",
+      "Inbox WhatsApp Team ialah mockup — tiada mesej sebenar dihantar.",
+      "Data kehadiran dan slip gaji adalah simulasi; P&L menggunakan pengiraan yang dipermudahkan."
+    ],
+    "tryIt": [
+      "Pilih satu role di skrin login — tiada kata laluan diperlukan.",
+      "Sebagai Admin, cuba ‘Buat Order’ dan klik ‘Isi Contoh’.",
+      "Tukar ke role Accounting untuk mengesahkan bayaran, kemudian ke Logistik untuk melihat order bergerak.",
+      "Guna ‘Reset Demo’ untuk kembali ke data asal."
+    ]
+  }
+}
