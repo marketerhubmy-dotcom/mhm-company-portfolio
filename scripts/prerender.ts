@@ -61,11 +61,12 @@ const inline = [...template.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) =
 const hashes = inline.map((s) => `'sha256-${createHash('sha256').update(s).digest('base64')}'`).join(' ');
 const csp = [
   "default-src 'self'",
-  `script-src 'self' ${hashes}`,
+  // Cloudflare Web Analytics (auto-injected by the zone) is allowed explicitly.
+  `script-src 'self' ${hashes} https://static.cloudflareinsights.com`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: https://raw.githubusercontent.com",
   "font-src 'self'",
-  "connect-src 'self'",
+  "connect-src 'self' https://cloudflareinsights.com",
   "frame-ancestors 'none'",
   "base-uri 'self'",
   "form-action 'self'",
