@@ -1,0 +1,201 @@
+{
+  "$schema": "../../schema/project.schema.json",
+  "id": "mhm-business-suite",
+  "slug": "mhm-business-suite",
+  "title": "MHM Business Suite — WhatsApp Team, OMS & CRM",
+  "tagline": "Satu ruang kerja untuk pasukan: inbox WhatsApp bersama, pesanan dan CRM — untuk banyak organisasi.",
+  "description": "Platform SaaS berbilang organisasi berbahasa Melayu. Pasukan berkongsi satu inbox WhatsApp dengan kawalan akses, mengurus pesanan fizikal dan digital, serta menjejak pelanggan, peluang jualan dan follow-up — dengan peranan, langganan dan audit bersama.",
+  "category": "saas",
+  "projectType": "SaaS Berbilang Organisasi",
+  "technologies": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Fastify",
+    "PostgreSQL",
+    "Background worker",
+    "Baileys (WhatsApp Web)",
+    "Playwright"
+  ],
+  "demoUrl": "https://app.mhmacademy.site",
+  "repositoryReference": "marketerhubmy-dotcom/mhm-business-suite",
+  "thumbnail": {
+    "src": "/projects/mhm-business-suite/whatsapp-inbox-1600.webp",
+    "alt": "Inbox WhatsApp bersama dengan senarai perbualan, mod kolaborasi dan perbualan pelanggan",
+    "width": 1600,
+    "height": 1000,
+    "caption": "WhatsApp Team: satu inbox untuk seluruh pasukan, dengan mod kolaborasi SHARED, ASSIGNED atau EXCLUSIVE.",
+    "frame": "desktop",
+    "srcset": {
+      "800": "/projects/mhm-business-suite/whatsapp-inbox-800.webp",
+      "1600": "/projects/mhm-business-suite/whatsapp-inbox-1600.webp"
+    }
+  },
+  "galleryImages": [
+    {
+      "src": "/projects/mhm-business-suite/whatsapp-inbox-1600.webp",
+      "alt": "Inbox WhatsApp bersama dengan senarai perbualan, mod kolaborasi dan perbualan pelanggan",
+      "width": 1600,
+      "height": 1000,
+      "caption": "WhatsApp Team: satu inbox untuk seluruh pasukan, dengan mod kolaborasi SHARED, ASSIGNED atau EXCLUSIVE.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-business-suite/whatsapp-inbox-800.webp",
+        "1600": "/projects/mhm-business-suite/whatsapp-inbox-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-business-suite/ringkasan-1600.webp",
+      "alt": "Ringkasan ruang kerja organisasi dengan modul WhatsApp Team, Order Management dan CRM",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Ruang kerja organisasi: satu akaun, beberapa modul.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-business-suite/ringkasan-800.webp",
+        "1600": "/projects/mhm-business-suite/ringkasan-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-business-suite/pemantauan-team-1600.webp",
+      "alt": "Pemantauan team dengan bilangan perbualan, belum dibalas dan purata masa respons",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Pemantauan team: perbualan belum dibalas, purata masa respons dan atribusi balasan ejen.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-business-suite/pemantauan-team-800.webp",
+        "1600": "/projects/mhm-business-suite/pemantauan-team-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-business-suite/crm-pipeline-1600.webp",
+      "alt": "Pipeline CRM dalam paparan Kanban mengikut peringkat Baharu, Berminat, Panas dan Sebut harga",
+      "width": 1600,
+      "height": 1000,
+      "caption": "CRM Pipeline: peluang jualan mengikut peringkat dalam paparan Kanban.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-business-suite/crm-pipeline-800.webp",
+        "1600": "/projects/mhm-business-suite/crm-pipeline-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-business-suite/crm-leads-1600.webp",
+      "alt": "Senarai peluang jualan dengan pelanggan, peringkat, ejen dan keutamaan",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Peluang jualan: seorang pelanggan boleh ada beberapa peluang, setiap satu dengan ejen dan keutamaan.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-business-suite/crm-leads-800.webp",
+        "1600": "/projects/mhm-business-suite/crm-leads-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-business-suite/crm-follow-up-1600.webp",
+      "alt": "Senarai follow-up dengan jadual, pemilik dan status",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Follow-up: peringatan untuk pasukan; mesej kepada pelanggan dihantar selepas semakan ejen.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-business-suite/crm-follow-up-800.webp",
+        "1600": "/projects/mhm-business-suite/crm-follow-up-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-business-suite/pesanan-1600.webp",
+      "alt": "Senarai pesanan dengan status pesanan dan status bayaran",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Order Management: status pesanan dan status bayaran yang berasingan.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-business-suite/pesanan-800.webp",
+        "1600": "/projects/mhm-business-suite/pesanan-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-business-suite/pesanan-detail-1600.webp",
+      "alt": "Butiran pesanan dengan item, jumlah dan tab bayaran, penghantaran dan akses digital",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Butiran pesanan: bayaran, penghantaran, akses digital dan sejarah.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-business-suite/pesanan-detail-800.webp",
+        "1600": "/projects/mhm-business-suite/pesanan-detail-1600.webp"
+      }
+    },
+    {
+      "src": "/projects/mhm-business-suite/produk-1600.webp",
+      "alt": "Katalog produk fizikal dan digital dengan harga dan status",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Katalog produk fizikal dan digital.",
+      "frame": "desktop",
+      "srcset": {
+        "800": "/projects/mhm-business-suite/produk-800.webp",
+        "1600": "/projects/mhm-business-suite/produk-1600.webp"
+      }
+    }
+  ],
+  "featured": false,
+  "displayOrder": 14,
+  "approvedForPublic": true,
+  "status": "production",
+  "updatedAt": "2026-11-05",
+  "caseStudy": {
+    "intro": "MHM Business Suite ialah produk MHM sendiri untuk pasukan jualan yang bekerja melalui WhatsApp: perbualan, pesanan dan pelanggan berada dalam satu ruang kerja, bukan bertaburan di telefon setiap staf.",
+    "challenge": "Banyak bisnes menjalankan jualan melalui satu nombor WhatsApp yang dipegang oleh beberapa staf. Perbualan terlepas, tiada siapa tahu siapa yang patut membalas, pesanan dicatat secara manual dan pemilik tidak dapat melihat prestasi pasukan.",
+    "solution": "Satu platform berbilang organisasi dengan tiga modul yang berkongsi teras yang sama: WhatsApp Team untuk inbox bersama dan pemantauan respons, Order Management untuk pesanan dan bayaran, dan CRM untuk pelanggan, peluang jualan dan follow-up. Pesanan, peluang dan follow-up boleh dicipta terus daripada perbualan WhatsApp.",
+    "features": [
+      {
+        "title": "Inbox WhatsApp bersama",
+        "description": "Satu inbox untuk pasukan dengan penapis nombor dan ejen, tugasan perbualan, label dan arkib."
+      },
+      {
+        "title": "Mod kolaborasi",
+        "description": "SHARED, ASSIGNED atau EXCLUSIVE — menentukan siapa boleh membalas setiap perbualan."
+      },
+      {
+        "title": "Akses nombor terkawal",
+        "description": "Akses kepada setiap nombor WhatsApp diberikan secara berasingan; tugasan perbualan sahaja tidak memberi akses."
+      },
+      {
+        "title": "Pemantauan team",
+        "description": "Perbualan belum dibalas, purata masa respons dan atribusi balasan kepada ejen."
+      },
+      {
+        "title": "Order Management",
+        "description": "Pesanan fizikal dan digital, status pesanan dan bayaran yang berasingan, rekod bayaran manual, refund, penghantaran dan akses digital."
+      },
+      {
+        "title": "CRM & pipeline",
+        "description": "Profil pelanggan, beberapa peluang jualan bagi setiap pelanggan, peringkat, keutamaan, ejen dan paparan Kanban."
+      },
+      {
+        "title": "Follow-up",
+        "description": "Peringatan follow-up untuk pasukan dengan pemilik dan jadual; mesej kepada pelanggan dihantar selepas semakan ejen."
+      },
+      {
+        "title": "Terus daripada perbualan",
+        "description": "Cipta peluang jualan, pesanan atau follow-up terus daripada perbualan WhatsApp."
+      },
+      {
+        "title": "Teras berbilang organisasi",
+        "description": "Pendaftaran organisasi, ahli pasukan, peranan, pelan langganan dan audit — setiap organisasi dengan ruang kerja sendiri."
+      }
+    ],
+    "demoNotes": [
+      "Tangkapan skrin diambil daripada salinan tempatan dengan organisasi dan data rekaan sepenuhnya (‘Kedai Rekaan Demo’, ‘Pelanggan Demo’), bukan daripada app.mhmacademy.site.",
+      "Gateway WhatsApp dimatikan semasa tangkapan skrin; perbualan contoh dimasukkan ke database tempatan mengikut corak ujian sintetik repo.",
+      "Sambungan WhatsApp menggunakan Baileys (WhatsApp Web tidak rasmi), seperti yang dinyatakan dalam aplikasi.",
+      "Modul bertanda ‘Akan datang’ dalam aplikasi (contoh: Finance, HR, AI Sales Closer) belum tersedia dan tidak didakwa di sini."
+    ],
+    "tryIt": [
+      "Daftar organisasi di app.mhmacademy.site untuk mencuba modul percubaan."
+    ]
+  }
+}
