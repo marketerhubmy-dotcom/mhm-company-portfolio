@@ -2,27 +2,30 @@
 
 /* ------------------------------------------------------------------ *
  * MHM CENTER — design tokens
- * "Kertas & Dakwat": warm paper + deep ink, one signal accent (Saga red,
- * after the saga seed). Editorial, engineered, quiet until it matters.
+ * Navy & electric blue from the MHM CENTER logo on a cool paper base.
+ * Editorial, engineered, quiet until it matters.
  * ------------------------------------------------------------------ */
 @theme {
-  --color-paper: #f3f0e8;
-  --color-paper-2: #ebe7dc;
-  --color-paper-3: #ded9cb;
-  --color-ink: #121311;
-  --color-ink-2: #1c1d1a;
-  --color-ink-3: #2a2b27;
-  --color-ink-soft: #45463f;
-  --color-muted: #66655d;
-  --color-muted-dark: #a3a298;
-  --color-line: rgb(18 19 17 / 0.13);
-  --color-line-strong: rgb(18 19 17 / 0.28);
-  --color-line-dark: rgb(243 240 232 / 0.14);
-  --color-saga: #d9461f;
-  --color-saga-deep: #ae3617;
-  --color-saga-bright: #f2693f;
-  --color-saga-wash: #f6ddd1;
-  --color-signal: #2c7a4b;
+  /* MHM CENTER brand — taken from the official logo: deep navy + electric blue
+     (gradient #0078fc → #00b4fc). Contrast checked: all body/text pairs ≥ WCAG AA. */
+  --color-paper: #f5f8fc;
+  --color-paper-2: #eaf0f8;
+  --color-paper-3: #dbe5f2;
+  --color-ink: #0a1a33;
+  --color-ink-2: #13284a;
+  --color-ink-3: #1d3660;
+  --color-ink-soft: #34476a;
+  --color-muted: #5a6b85;
+  --color-muted-dark: #9fb0c8;
+  --color-line: rgb(10 26 51 / 0.12);
+  --color-line-strong: rgb(10 26 51 / 0.26);
+  --color-line-dark: rgb(245 248 252 / 0.14);
+  --color-brand: #0066e6;
+  --color-brand-deep: #0057d9;
+  --color-brand-bright: #3db8ff;
+  --color-brand-wash: #dcebff;
+  --color-brand-cyan: #00b4fc;
+  --color-signal: #1f7a4d;
   --color-amber: #9a6410;
   --color-slate: #4f5a66;
 
@@ -62,9 +65,9 @@
     -webkit-font-smoothing: antialiased;
     font-feature-settings: "ss01", "cv11";
   }
-  ::selection { background: var(--color-saga); color: var(--color-paper); }
+  ::selection { background: var(--color-brand); color: var(--color-paper); }
   :focus-visible {
-    outline: 2px solid var(--color-saga);
+    outline: 2px solid var(--color-brand);
     outline-offset: 3px;
     border-radius: 2px;
   }
@@ -181,8 +184,8 @@
   100% { top: 100%; opacity: 0; }
 }
 @keyframes pulse-ring {
-  0% { box-shadow: 0 0 0 0 rgb(217 70 31 / 0.45); }
-  100% { box-shadow: 0 0 0 10px rgb(217 70 31 / 0); }
+  0% { box-shadow: 0 0 0 0 rgb(0 102 230 / 0.45); }
+  100% { box-shadow: 0 0 0 10px rgb(0 102 230 / 0); }
 }
 @keyframes shimmer {
   from { background-position: -200% 0; }
@@ -255,7 +258,7 @@ dialog::backdrop { background: rgb(18 19 17 / 0.88); backdrop-filter: blur(6px);
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: radial-gradient(520px circle at var(--mx) var(--my), rgb(217 70 31 / 0.07), transparent 65%);
+    background: radial-gradient(520px circle at var(--mx) var(--my), rgb(0 120 252 / 0.08), transparent 65%);
     z-index: 0;
   }
 }

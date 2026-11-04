@@ -6,7 +6,7 @@ export function FinalCta({ title, accent = 'sistem.' }: { title?: string; accent
   return (
     <section className="pb-[var(--section-y)]" aria-labelledby="cta-title">
       <div className="container-x">
-        <div className="paper-grain relative overflow-hidden rounded-[1.5rem] bg-saga px-6 py-16 text-paper sm:px-12 md:py-24 lg:px-20" data-reveal>
+        <div className="paper-grain relative overflow-hidden rounded-[1.5rem] bg-brand px-6 py-16 text-paper sm:px-12 md:py-24 lg:px-20" data-reveal>
           <div aria-hidden="true" className="guides-dark absolute inset-0 opacity-50" />
           <div className="relative grid gap-10 lg:grid-cols-12 lg:items-end">
             <h2 id="cta-title" className="display-l lg:col-span-8">

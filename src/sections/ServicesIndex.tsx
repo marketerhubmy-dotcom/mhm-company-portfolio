@@ -13,7 +13,7 @@ export function ServicesIndex() {
           <div className="md:col-span-8">
             <SectionLabel n="04" dark>Servis</SectionLabel>
             <h2 id="svc-title" className="display-l mt-6">
-              Lapan cara kami <span className="serif-accent text-saga-bright">membantu.</span>
+              Lapan cara kami <span className="serif-accent text-brand-bright">membantu.</span>
             </h2>
           </div>
           <p className="text-paper/70 md:col-span-4 md:pb-2">Pilih titik permulaan anda. Banyak projek bermula dengan satu servis dan berkembang menjadi sistem yang lebih lengkap.</p>
@@ -28,7 +28,7 @@ export function ServicesIndex() {
                   {s.title}
                 </span>
                 <span className="relative hidden text-paper/65 md:block">{s.short}</span>
-                <span aria-hidden="true" className="relative grid size-10 place-items-center rounded-full border border-line-dark transition-[background-color,color,transform] duration-500 ease-out-expo group-hover:rotate-45 group-hover:bg-saga group-hover:text-paper">
+                <span aria-hidden="true" className="relative grid size-10 place-items-center rounded-full border border-line-dark transition-[background-color,color,transform] duration-500 ease-out-expo group-hover:rotate-45 group-hover:bg-brand group-hover:text-paper">
                   <ArrowUpRight className="size-4" />
                 </span>
               </Link>

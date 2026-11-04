@@ -73,7 +73,7 @@ export default function ContactPage() {
             <SectionLabel n="H">Hubungi</SectionLabel>
             <h1 className="display-l mt-8">
               <span className="line-mask"><span>Ceritakan</span></span>
-              <span className="line-mask"><span style={{ ['--i' as string]: 1 }}>projek <span className="serif-accent text-saga-deep">anda.</span></span></span>
+              <span className="line-mask"><span style={{ ['--i' as string]: 1 }}>projek <span className="serif-accent text-brand-deep">anda.</span></span></span>
             </h1>
             <p className="enter lede mt-8 max-w-md text-ink-soft" style={{ ['--i' as string]: 1 }}>
               Isi borang ringkas ini. Mesej anda akan disusun secara automatik dan dihantar melalui WhatsApp — tiada akaun atau log masuk diperlukan.
@@ -95,7 +95,7 @@ export default function ContactPage() {
               <p className="label text-ink">Apa yang berlaku seterusnya</p>
               <ol className="mt-4 space-y-3 text-sm text-ink-soft">
                 {['Kami baca keperluan anda dan tanya soalan susulan jika perlu.', 'Sesi perbincangan ringkas untuk memahami bisnes dan skop.', 'Anda terima cadangan dan sebut harga bertulis.'].map((t, i) => (
-                  <li key={t} className="grid grid-cols-[1.5rem_1fr] gap-2"><span className="label pt-0.5 text-saga-deep">{i + 1}</span>{t}</li>
+                  <li key={t} className="grid grid-cols-[1.5rem_1fr] gap-2"><span className="label pt-0.5 text-brand-deep">{i + 1}</span>{t}</li>
                 ))}
               </ol>
             </div>
@@ -119,13 +119,13 @@ export default function ContactPage() {
                 <legend className="text-sm font-medium">Servis yang diperlukan *</legend>
                 <div className="mt-3 flex flex-wrap gap-2" id="f-service" tabIndex={-1} aria-describedby={errors.service ? 'f-service-err' : undefined}>
                   {[...services.map((s) => s.title), OTHER].map((t) => (
-                    <label key={t} className={cn('cursor-pointer rounded-full border px-4 py-2 text-sm transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-saga', form.service === t ? 'border-ink bg-ink text-paper' : 'border-line-strong text-ink-soft hover:border-ink')}>
+                    <label key={t} className={cn('cursor-pointer rounded-full border px-4 py-2 text-sm transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-brand', form.service === t ? 'border-ink bg-ink text-paper' : 'border-line-strong text-ink-soft hover:border-ink')}>
                       <input type="radio" name="service" value={t} checked={form.service === t} onChange={() => set('service', t)} className="sr-only" />
                       {t}
                     </label>
                   ))}
                 </div>
-                {errors.service && <p id="f-service-err" className="mt-2 text-sm text-saga-deep">{errors.service}</p>}
+                {errors.service && <p id="f-service-err" className="mt-2 text-sm text-brand-deep">{errors.service}</p>}
               </fieldset>
 
               <div className="mt-7 grid gap-6 sm:grid-cols-2">
@@ -172,7 +172,7 @@ export default function ContactPage() {
 
             {sent && (
               <div ref={result} tabIndex={-1} role="status" className="mt-6 rounded-2xl border border-ink bg-ink p-6 text-paper outline-none sm:p-8">
-                <p className="label text-saga-bright">{sent.link ? 'WhatsApp dibuka' : 'Mesej sedia'}</p>
+                <p className="label text-brand-bright">{sent.link ? 'WhatsApp dibuka' : 'Mesej sedia'}</p>
                 <p className="mt-3 font-display text-xl font-semibold tracking-[-0.02em]">
                   {sent.link ? 'Semak mesej dalam WhatsApp, kemudian tekan hantar.' : 'Salin mesej di bawah dan hantar kepada kami.'}
                 </p>
@@ -201,7 +201,7 @@ export default function ContactPage() {
 function ContactRow({ icon: Icon, label, children }: { icon: typeof Mail; label: string; children: React.ReactNode }) {
   return (
     <li className="grid grid-cols-[2rem_6rem_minmax(0,1fr)] items-center gap-2 py-4 text-[0.95rem]">
-      <Icon className="size-4 text-saga-deep" aria-hidden="true" />
+      <Icon className="size-4 text-brand-deep" aria-hidden="true" />
       <span className="label text-muted">{label}</span>
       <span className="min-w-0 break-words [overflow-wrap:anywhere]">{children}</span>
     </li>
@@ -224,10 +224,10 @@ function Field({ id, label, error, hint, children }: { id: string; label: string
         'aria-describedby': [error ? `${fid}-err` : '', hint ? hintId : ''].filter(Boolean).join(' ') || undefined,
         className: cn(
           'mt-2 block w-full rounded-lg border bg-paper px-3.5 py-3 text-[0.95rem] outline-none transition-colors placeholder:text-muted/80 focus:border-ink focus:ring-0',
-          error ? 'border-saga-deep' : 'border-line-strong',
+          error ? 'border-brand-deep' : 'border-line-strong',
         ),
       })}
-      {error && <p id={`${fid}-err`} className="mt-2 text-sm text-saga-deep">{error}</p>}
+      {error && <p id={`${fid}-err`} className="mt-2 text-sm text-brand-deep">{error}</p>}
     </div>
   );
 }

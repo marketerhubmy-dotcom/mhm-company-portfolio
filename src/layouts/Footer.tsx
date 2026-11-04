@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import { ArrowUpRight } from 'lucide-react';
 import { nav, site } from '@/config/site';
 import { services } from '@/data/services';
-import { LogoMark } from '@/components/Logo';
+import { LogoFull } from '@/components/Logo';
 
 export function Footer() {
   return (
@@ -11,7 +11,7 @@ export function Footer() {
       <div className="container-x relative pt-20">
         <div className="grid gap-12 border-b border-line-dark pb-14 md:grid-cols-12">
           <div className="md:col-span-5">
-            <LogoMark className="size-8 text-paper" />
+            <LogoFull onDark className="w-44" />
             <p className="mt-6 max-w-sm text-[1.05rem] leading-relaxed text-paper/75">
               {site.tagline}. Kami membina sistem digital yang digunakan setiap hari oleh bisnes di Malaysia.
             </p>
@@ -32,7 +32,7 @@ export function Footer() {
                 MHM Academy <ArrowUpRight className="size-3.5" aria-hidden="true" />
               </a>
             </li>
-            {site.email && <li><a href={`mailto:${site.email}`} className="link-underline text-paper/80 hover:text-paper">{site.email}</a></li>}
+            {site.email && <li><a href={`mailto:${site.email}`} className="link-underline break-words text-paper/80 hover:text-paper">{site.email.split('@')[0]}@<wbr />{site.email.split('@')[1]}</a></li>}
             <li className="text-paper/60">{site.location}</li>
           </FooterCol>
         </div>

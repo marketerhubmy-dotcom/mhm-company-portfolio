@@ -13,7 +13,7 @@ export function Faq({ n = '08' }: { n?: string }) {
         <div className="lg:col-span-8">
           {faqs.map((f, i) => (
             <details key={f.q} className="group border-b border-line first:border-t first:border-t-ink" data-reveal style={{ ['--d' as string]: i % 3 }}>
-              <summary className="flex cursor-pointer items-start justify-between gap-6 py-6 font-display text-[clamp(1.1rem,1rem+0.5vw,1.35rem)] font-medium leading-snug tracking-[-0.015em] transition-colors hover:text-saga-deep">
+              <summary className="flex cursor-pointer items-start justify-between gap-6 py-6 font-display text-[clamp(1.1rem,1rem+0.5vw,1.35rem)] font-medium leading-snug tracking-[-0.015em] transition-colors hover:text-brand-deep">
                 {f.q}
                 <Plus aria-hidden="true" className="mt-1 size-5 shrink-0 transition-transform duration-500 ease-out-expo group-open:rotate-45" />
               </summary>

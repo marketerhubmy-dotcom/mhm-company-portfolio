@@ -68,7 +68,7 @@ export default function WorkPage() {
           <SectionLabel n="K">Hasil kerja</SectionLabel>
           <h1 className="display-xl mt-8">
             <span className="line-mask"><span>Kerja yang boleh</span></span>
-            <span className="line-mask"><span style={{ ['--i' as string]: 1 }}>anda <span className="serif-accent text-saga-deep">cuba sendiri.</span></span></span>
+            <span className="line-mask"><span style={{ ['--i' as string]: 1 }}>anda <span className="serif-accent text-brand-deep">cuba sendiri.</span></span></span>
           </h1>
           <div className="enter mt-10 grid gap-8 border-t border-line pt-8 md:grid-cols-12" style={{ ['--i' as string]: 1 }}>
             <p className="lede text-ink-soft md:col-span-6">
@@ -91,8 +91,8 @@ export default function WorkPage() {
         <div className="container-x">
           {/* Controls */}
           <div className="sticky top-0 z-30 -mx-[var(--gutter)] border-y border-line bg-paper/90 px-[var(--gutter)] py-4 backdrop-blur-md">
-            <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-              <div role="group" aria-label="Tapis kategori" className="no-scrollbar -mx-[var(--gutter)] flex gap-2 overflow-x-auto px-[var(--gutter)] lg:mx-0 lg:px-0">
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+              <div role="group" aria-label="Tapis kategori" className="no-scrollbar -mx-[var(--gutter)] flex gap-2 overflow-x-auto px-[var(--gutter)] lg:mx-0 lg:min-w-0 lg:flex-1 lg:flex-wrap lg:overflow-visible lg:px-0">
                 {[{ category: 'semua' as const, count: projects.length }, ...counts].map((c) => {
                   const on = filters.category === c.category;
                   return (

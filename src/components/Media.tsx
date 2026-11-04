@@ -60,7 +60,7 @@ export function PlaceholderPlate({ project, className }: { project: Project; cla
     <div className={cn('paper-grain relative flex aspect-[16/10] flex-col justify-between overflow-hidden rounded-[0.9rem] border border-line bg-paper-2 p-6', className)}>
       <div className="flex items-center justify-between text-muted">
         <span className="label">{CATEGORY_LABEL[project.category]}</span>
-        <LogoMark className="size-5 text-ink/30" />
+        <LogoMark className="h-5 opacity-40" />
       </div>
       <p className="display-s max-w-[14ch] text-ink/80">{project.title}</p>
       <span className="label text-muted">Imej sementara — tangkapan skrin akan ditambah</span>
@@ -75,7 +75,7 @@ export function ProjectVisual({ project, sizes, priority, variant = 'card', clas
   if (cover.frame === 'mobile') {
     const phones = [cover, ...project.galleryImages.filter((g) => g.src !== cover.src && g.frame === 'mobile')].slice(0, 3);
     return (
-      <div className={cn('relative flex aspect-[16/11] items-center justify-center gap-[3%] overflow-hidden rounded-[0.9rem] bg-saga-wash px-[6%]', variant === 'hero' && 'aspect-[16/9] md:aspect-[21/10]', className)}>
+      <div className={cn('relative flex aspect-[16/11] items-center justify-center gap-[3%] overflow-hidden rounded-[0.9rem] bg-brand-wash px-[6%]', variant === 'hero' && 'aspect-[16/9] md:aspect-[21/10]', className)}>
         <div aria-hidden="true" className="guides absolute inset-0 opacity-60" />
         {phones.map((img, i) => (
           <PhoneFrame

@@ -85,7 +85,7 @@ export default function ProjectPage() {
 
           <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
-              <p className="enter label text-saga-deep" style={{ ['--i' as string]: -2 }}>Kajian kes · {CATEGORY_LABEL[p.category]}</p>
+              <p className="enter label text-brand-deep" style={{ ['--i' as string]: -2 }}>Kajian kes · {CATEGORY_LABEL[p.category]}</p>
               <h1 className="display-l mt-5">
                 <span className="line-mask"><span>{p.title}</span></span>
               </h1>
@@ -140,7 +140,7 @@ export default function ProjectPage() {
                   <p className="label text-ink">{isDemo ? 'Cuba ini dalam demo' : 'Cuba ini di laman'}</p>
                   <ol className="mt-4 space-y-3 text-sm text-ink-soft">
                     {cs.tryIt.map((t, i) => (
-                      <li key={t} className="grid grid-cols-[1.5rem_1fr] gap-2"><span className="label pt-0.5 text-saga-deep">{i + 1}</span>{t}</li>
+                      <li key={t} className="grid grid-cols-[1.5rem_1fr] gap-2"><span className="label pt-0.5 text-brand-deep">{i + 1}</span>{t}</li>
                     ))}
                   </ol>
                 </div>
@@ -176,14 +176,14 @@ export default function ProjectPage() {
             <div className="grid gap-6 md:grid-cols-12 md:items-end" data-reveal>
               <div className="md:col-span-8">
                 <SectionLabel n="4" dark>Ciri utama</SectionLabel>
-                <h2 id="features-title" className="display-m mt-6">Apa yang boleh anda <span className="serif-accent text-saga-bright">lihat & cuba.</span></h2>
+                <h2 id="features-title" className="display-m mt-6">Apa yang boleh anda <span className="serif-accent text-brand-bright">lihat & cuba.</span></h2>
               </div>
               <p className="text-paper/65 md:col-span-4">Hanya ciri yang telah disemak pada {isDemo ? 'demo' : 'laman'} langsung disenaraikan di sini.</p>
             </div>
             <ol className="mt-14 grid border-l border-t border-line-dark sm:grid-cols-2 lg:grid-cols-3">
               {cs.features.map((f, i) => (
                 <li key={f.title} className="border-b border-r border-line-dark p-7 md:p-8" data-reveal style={{ ['--d' as string]: i % 3 }}>
-                  <span className="label text-saga-bright">{pad2(i + 1)}</span>
+                  <span className="label text-brand-bright">{pad2(i + 1)}</span>
                   <h3 className="mt-6 font-display text-[1.3rem] font-semibold leading-tight tracking-[-0.02em]">{f.title}</h3>
                   <p className="mt-3 text-[0.95rem] text-paper/70">{f.description}</p>
                 </li>

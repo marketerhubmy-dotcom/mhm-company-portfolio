@@ -16,11 +16,11 @@ export function SystemFlow({ className }: { className?: string }) {
     <figure className={cn('relative rounded-2xl border border-line bg-paper/70 p-5 backdrop-blur-sm sm:p-6', className)}>
       <figcaption className="label mb-5 flex items-center justify-between text-muted">
         <span>Rajah 01 — Dari klik kepada sistem</span>
-        <span aria-hidden="true" className="text-saga-deep">●</span>
+        <span aria-hidden="true" className="text-brand-deep">●</span>
       </figcaption>
       <ol className="relative" onMouseLeave={() => setActive(null)}>
         <span aria-hidden="true" className="absolute bottom-5 left-[0.9rem] top-5 w-px bg-line-strong">
-          <span className="absolute -left-[3px] size-[7px] rounded-full bg-saga shadow-[0_0_0_4px_rgb(217_70_31/0.15)] animate-[travel_5.5s_var(--ease-in-out-quart)_infinite]" />
+          <span className="absolute -left-[3px] size-[7px] rounded-full bg-brand shadow-[0_0_0_4px_rgb(0_102_230/0.18)] animate-[travel_5.5s_var(--ease-in-out-quart)_infinite]" />
         </span>
         {steps.map((s, i) => (
           <li key={s.t}>
@@ -34,7 +34,7 @@ export function SystemFlow({ className }: { className?: string }) {
               <span
                 className={cn(
                   'label relative z-10 grid size-[1.8rem] shrink-0 place-items-center rounded-full border bg-paper !tracking-normal transition-colors duration-300',
-                  active === i ? 'border-saga bg-saga text-paper' : 'border-line-strong text-ink-soft',
+                  active === i ? 'border-brand bg-brand text-paper' : 'border-line-strong text-ink-soft',
                 )}
               >
                 {i + 1}

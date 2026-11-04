@@ -33,7 +33,7 @@ compositions were copied.
 
 | Reference | MHM Center |
 |---|---|
-| Dark, neon multi-gradient | Light "paper & ink" editorial palette, **one** accent (Saga red) |
+| Dark, neon multi-gradient | Navy & electric blue taken from the official MHM CENTER logo, on a cool paper base |
 | Space Grotesk / Inter / JetBrains Mono | Bricolage Grotesque / Geist / Geist Mono + Instrument Serif italic accent word |
 | Personal brand, portrait hero | Studio brand: interactive "Rajah 01" system-flow schematic |
 | Marquee, custom cursor, count-up stats | Not used (no invented numbers; cursor effects add little for SMEs) |

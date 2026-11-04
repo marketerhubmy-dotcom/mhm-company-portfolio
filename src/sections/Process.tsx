@@ -17,7 +17,7 @@ export function Process({ n = '05' }: { n?: string }) {
 
         <div className="relative mt-16">
           <div aria-hidden="true" className="absolute left-0 right-0 top-[1.15rem] hidden h-px bg-line lg:block" />
-          <div aria-hidden="true" className="reveal-line absolute left-0 right-0 top-[1.15rem] hidden h-px bg-saga lg:block" data-reveal />
+          <div aria-hidden="true" className="reveal-line absolute left-0 right-0 top-[1.15rem] hidden h-px bg-brand lg:block" data-reveal />
           <ol className="grid gap-10 lg:grid-cols-5 lg:gap-6">
             {process.map((s, i) => (
               <li key={s.n} className="relative grid grid-cols-[2.3rem_1fr] gap-5 lg:block" data-reveal style={{ ['--d' as string]: i + 1 }}>
@@ -26,7 +26,7 @@ export function Process({ n = '05' }: { n?: string }) {
                 <div className="lg:mt-8 lg:pr-4">
                   <h3 className="font-display text-[1.35rem] font-semibold leading-tight tracking-[-0.02em]">{s.title}</h3>
                   <p className="mt-3 text-[0.95rem] text-ink-soft">{s.body}</p>
-                  <p className="label mt-5 text-saga-deep">→ {s.output}</p>
+                  <p className="label mt-5 text-brand-deep">→ {s.output}</p>
                 </div>
               </li>
             ))}

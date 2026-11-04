@@ -27,7 +27,7 @@ export default function AboutPage() {
           <SectionLabel n="T">Tentang MHM Center</SectionLabel>
           <h1 className="display-xl mt-8">
             <span className="line-mask"><span>Studio yang</span></span>
-            <span className="line-mask"><span style={{ ['--i' as string]: 1 }}>membina <span className="serif-accent text-saga-deep">sistem,</span></span></span>
+            <span className="line-mask"><span style={{ ['--i' as string]: 1 }}>membina <span className="serif-accent text-brand-deep">sistem,</span></span></span>
             <span className="line-mask"><span style={{ ['--i' as string]: 2 }}>bukan sekadar laman.</span></span>
           </h1>
         </div>
@@ -68,7 +68,7 @@ export default function AboutPage() {
           <ul className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-5">
             {['Founder & startup', 'SME & syarikat servis', 'Penjual online & jenama produk', 'Usahawan & pencipta produk digital', 'Pasukan operasi yang berkembang'].map((w, i) => (
               <li key={w} className="bg-paper-2 p-6 sm:last:col-span-2 lg:last:col-span-1" data-reveal style={{ ['--d' as string]: i }}>
-                <span className="label text-saga-deep">0{i + 1}</span>
+                <span className="label text-brand-deep">0{i + 1}</span>
                 <p className="mt-6 font-display text-lg font-semibold leading-snug tracking-[-0.015em]">{w}</p>
               </li>
             ))}
@@ -99,11 +99,11 @@ export default function AboutPage() {
         <div className="container-x relative grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5" data-reveal>
             <SectionLabel n="3" dark>Jenis sistem</SectionLabel>
-            <h2 id="build-title" className="display-m mt-6">Apa yang kami <span className="serif-accent text-saga-bright">bina.</span></h2>
+            <h2 id="build-title" className="display-m mt-6">Apa yang kami <span className="serif-accent text-brand-bright">bina.</span></h2>
             <ul className="mt-10 space-y-6">
               {capabilities.map((c) => (
                 <li key={c.n} className="grid grid-cols-[2.5rem_1fr]">
-                  <span className="label pt-1 text-saga-bright">{c.n}</span>
+                  <span className="label pt-1 text-brand-bright">{c.n}</span>
                   <span><span className="font-display text-xl font-semibold">{c.title}</span><span className="mt-1 block text-paper/65">{c.body}</span></span>
                 </li>
               ))}
@@ -125,7 +125,7 @@ export default function AboutPage() {
         <div className="container-x grid gap-10 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-7" data-reveal>
             <SectionLabel n="5">Ekosistem</SectionLabel>
-            <h2 id="academy-title" className="display-m mt-6">MHM Center & <span className="serif-accent text-saga-deep">MHM Academy.</span></h2>
+            <h2 id="academy-title" className="display-m mt-6">MHM Center & <span className="serif-accent text-brand-deep">MHM Academy.</span></h2>
             <p className="lede mt-6 max-w-2xl text-ink-soft">
               MHM Center turut mengendalikan ekosistem MHM Academy — kedai modul digital yang menawarkan modul praktikal tentang marketing, iklan, AI dan automasi.
             </p>

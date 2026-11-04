@@ -3,7 +3,7 @@ import type { ComponentProps, ReactNode } from 'react';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { cn } from '@/utils/cn';
 
-type Variant = 'primary' | 'outline' | 'light' | 'ghost-light' | 'saga' | 'contrast';
+type Variant = 'primary' | 'outline' | 'light' | 'ghost-light' | 'brand' | 'contrast';
 const base =
   'group/btn relative inline-flex min-h-12 items-center justify-center gap-2.5 overflow-hidden rounded-full px-6 text-[0.95rem] font-medium tracking-[-0.01em] transition-[color,border-color,transform] duration-500 ease-out-expo active:scale-[0.98] isolate select-none';
 const variants: Record<Variant, string> = {
@@ -11,15 +11,15 @@ const variants: Record<Variant, string> = {
   outline: 'border border-line-strong text-ink hover:border-ink hover:text-paper',
   light: 'bg-paper text-ink hover:text-paper',
   'ghost-light': 'border border-line-dark text-paper hover:border-paper hover:text-ink',
-  saga: 'bg-saga text-paper hover:text-ink',
+  brand: 'bg-brand text-paper hover:text-ink',
   contrast: 'bg-paper text-ink hover:text-paper',
 };
 const fill: Record<Variant, string> = {
-  primary: 'bg-saga',
+  primary: 'bg-brand',
   outline: 'bg-ink',
-  light: 'bg-saga',
+  light: 'bg-brand',
   'ghost-light': 'bg-paper',
-  saga: 'bg-paper',
+  brand: 'bg-paper',
   contrast: 'bg-ink',
 };
 
