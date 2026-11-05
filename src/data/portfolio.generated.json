@@ -1284,5 +1284,172 @@
     },
     "title": "MHM Academy — Kedai Modul Digital",
     "updatedAt": "2026-11-04"
+  },
+  {
+    "approvedForPublic": true,
+    "caseStudy": {
+      "challenge": "Pesakit klinik biasanya mahu tahu tiga perkara: adakah klinik buka sekarang, apakah rawatan yang ada, dan bagaimana mahu datang tanpa menunggu lama. Banyak website klinik hanya memaparkan maklumat asas, jadi pesakit terpaksa menelefon untuk bertanya.",
+      "demoNotes": [
+        "Klinik, doktor, alamat dan nombor telefon adalah rekaan sepenuhnya; laman ditanda DEMO di setiap halaman dan tidak diindeks oleh enjin carian.",
+        "Borang temujanji tidak menghantar data — ia hanya memaparkan pratonton mesej.",
+        "Kandungan kesihatan adalah umum dan bukan nasihat perubatan."
+      ],
+      "features": [
+        {
+          "description": "Dikira mengikut waktu Malaysia, termasuk bila klinik akan buka semula — tidak bergantung pada zon waktu pelawat.",
+          "title": "Status buka/tutup langsung"
+        },
+        {
+          "description": "Slot 30 minit dijana mengikut waktu operasi hari yang dipilih; slot yang sudah berlalu dimatikan.",
+          "title": "Temujanji ikut slot"
+        },
+        {
+          "description": "Butiran temujanji disusun menjadi mesej untuk kaunter. Dalam demo, mesej hanya dipratonton dan tiada apa-apa dihantar.",
+          "title": "Mesej WhatsApp tersusun"
+        },
+        {
+          "description": "Rawatan dengan apa yang dijangka pesakit, serta bidang dan jadual setiap doktor.",
+          "title": "Perkhidmatan & doktor"
+        },
+        {
+          "description": "Alamat, peta ilustrasi, waktu operasi dan nota jelas untuk kecemasan (999).",
+          "title": "Lokasi & kecemasan"
+        },
+        {
+          "description": "Menu mobile, sasaran sentuh yang besar, navigasi papan kekunci dan kandungan tetap kelihatan tanpa JavaScript.",
+          "title": "Mobile-first & boleh diakses"
+        },
+        {
+          "description": "HTML, CSS dan JavaScript statik tanpa framework, tanpa fon atau skrip pihak ketiga.",
+          "title": "Laju & ringan"
+        }
+      ],
+      "intro": "Demo ini menunjukkan apa yang sepatutnya ada pada website bisnes servis tempatan: maklumat yang dicari pelanggan setiap hari, disusun supaya mereka boleh bertindak dalam beberapa saat.",
+      "solution": "Lima halaman ringkas dengan navigasi jelas. Status buka/tutup dikira mengikut waktu Malaysia, hari ini diserlahkan dalam jadual, dan borang temujanji hanya memaparkan slot dalam waktu operasi sebelum menyusun mesej untuk kaunter. Semuanya statik, laju dan mesra telefon.",
+      "tryIt": [
+        "Lihat status buka/tutup di bahagian atas laman utama.",
+        "Buka Temujanji, pilih tarikh dan lihat slot masa berubah mengikut hari.",
+        "Buka laman pada telefon dan cuba menu mobile."
+      ]
+    },
+    "category": "website",
+    "demoUrl": "https://web.mhmacademy.site/demo/website-bisnes/",
+    "description": "Demo website bisnes untuk klinik rekaan: lima halaman dengan perkhidmatan, doktor, lokasi, waktu operasi yang menunjukkan status buka/tutup semasa, dan borang temujanji yang menyusun mesej WhatsApp secara automatik.",
+    "displayOrder": 24,
+    "featured": false,
+    "galleryImages": [
+      {
+        "alt": "Laman utama klinik rekaan dengan tajuk, butang temujanji dan jadual waktu operasi",
+        "caption": "Laman utama: tawaran jelas, butang temujanji dan waktu operasi dengan hari ini diserlahkan.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/website-bisnes-klinik-demo/laman-utama-1600.webp",
+        "srcset": {
+          "800": "/projects/website-bisnes-klinik-demo/laman-utama-800.webp",
+          "1600": "/projects/website-bisnes-klinik-demo/laman-utama-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Borang temujanji dengan slot masa dan pratonton mesej WhatsApp",
+        "caption": "Temujanji: slot 30 minit mengikut waktu operasi, kemudian mesej WhatsApp disusun automatik.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/website-bisnes-klinik-demo/temujanji-1600.webp",
+        "srcset": {
+          "800": "/projects/website-bisnes-klinik-demo/temujanji-800.webp",
+          "1600": "/projects/website-bisnes-klinik-demo/temujanji-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Senarai enam perkhidmatan klinik dengan ikon dan butiran",
+        "caption": "Perkhidmatan: enam rawatan dengan apa yang dijangka pesakit.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/website-bisnes-klinik-demo/perkhidmatan-1600.webp",
+        "srcset": {
+          "800": "/projects/website-bisnes-klinik-demo/perkhidmatan-800.webp",
+          "1600": "/projects/website-bisnes-klinik-demo/perkhidmatan-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Kad doktor rekaan dengan bidang dan jadual",
+        "caption": "Doktor: bidang dan jadual setiap doktor (nama rekaan).",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/website-bisnes-klinik-demo/doktor-1600.webp",
+        "srcset": {
+          "800": "/projects/website-bisnes-klinik-demo/doktor-800.webp",
+          "1600": "/projects/website-bisnes-klinik-demo/doktor-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Halaman lokasi dengan peta ilustrasi, waktu operasi dan nota kecemasan",
+        "caption": "Lokasi & waktu: peta ilustrasi, status buka/tutup semasa dan nota kecemasan 999.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/website-bisnes-klinik-demo/hubungi-1600.webp",
+        "srcset": {
+          "800": "/projects/website-bisnes-klinik-demo/hubungi-800.webp",
+          "1600": "/projects/website-bisnes-klinik-demo/hubungi-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Laman utama klinik pada telefon",
+        "caption": "Mobile-first: tajuk, butang dan waktu operasi mudah dibaca di telefon.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/website-bisnes-klinik-demo/mobile-utama-780.webp",
+        "srcset": {
+          "390": "/projects/website-bisnes-klinik-demo/mobile-utama-390.webp",
+          "780": "/projects/website-bisnes-klinik-demo/mobile-utama-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Pemilihan tarikh dan slot masa pada telefon",
+        "caption": "Slot masa mudah ditekan di telefon.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/website-bisnes-klinik-demo/mobile-temujanji-780.webp",
+        "srcset": {
+          "390": "/projects/website-bisnes-klinik-demo/mobile-temujanji-390.webp",
+          "780": "/projects/website-bisnes-klinik-demo/mobile-temujanji-780.webp"
+        },
+        "width": 780
+      }
+    ],
+    "id": "website-bisnes-klinik-demo",
+    "projectType": "Website Bisnes (Demo)",
+    "repositoryReference": "marketerhubmy-dotcom/mhm-company-portfolio",
+    "slug": "website-bisnes-klinik-demo",
+    "source": "manual",
+    "status": "demo",
+    "tagline": "Website klinik keluarga yang menjawab soalan pesakit sebelum mereka bertanya — dan memudahkan temujanji.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Mobile-first",
+      "SEO asas"
+    ],
+    "thumbnail": {
+      "alt": "Laman utama klinik rekaan dengan tajuk, butang temujanji dan jadual waktu operasi",
+      "caption": "Laman utama: tawaran jelas, butang temujanji dan waktu operasi dengan hari ini diserlahkan.",
+      "frame": "desktop",
+      "height": 1000,
+      "src": "/projects/website-bisnes-klinik-demo/laman-utama-1600.webp",
+      "srcset": {
+        "800": "/projects/website-bisnes-klinik-demo/laman-utama-800.webp",
+        "1600": "/projects/website-bisnes-klinik-demo/laman-utama-1600.webp"
+      },
+      "width": 1600
+    },
+    "title": "Klinik Nadi Harmoni — Demo Website Bisnes",
+    "updatedAt": "2026-11-05"
   }
 ]
