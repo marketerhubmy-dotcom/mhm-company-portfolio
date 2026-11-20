@@ -344,6 +344,238 @@
   {
     "approvedForPublic": true,
     "caseStudy": {
+      "challenge": "Pertanyaan kerja elektrik biasanya datang melalui panggilan dan WhatsApp tanpa maklumat lengkap — jenis kerja, lokasi dan skop. Quotation pula disediakan secara manual, sukar dijejak, dan pemilik tidak tahu berapa banyak sebut harga yang diterima pelanggan.",
+      "demoNotes": [
+        "Tangkapan skrin website diambil daripada laman langsung infaelectrical.com tanpa menghantar sebarang borang.",
+        "Tangkapan skrin admin diambil daripada salinan tempatan versi production dengan data rekaan sepenuhnya (‘Pelanggan Demo’); database INFA tidak disentuh.",
+        "Maklumat bank pada PDF quotation disembunyikan.",
+        "Modul fasa seterusnya (projek, invoice, bayaran, untung/rugi) dibina berasingan dan belum diaktifkan, jadi tidak didakwa di sini."
+      ],
+      "features": [
+        {
+          "description": "Profil syarikat dengan rekod pendaftaran CIDB, kategori dan kod pengkhususan, serta pautan semakan ke MyDigital Kontraktor.",
+          "title": "Website korporat berkredibiliti"
+        },
+        {
+          "description": "Video YouTube dan posting Facebook dipaparkan dalam popup di laman, dengan penapis mengikut sumber.",
+          "title": "Portfolio daripada media sosial"
+        },
+        {
+          "description": "Jenis servis, negeri dan daerah (Kelantan & Terengganu), cadangan tarikh site visit, ringkasan kerja dan persetujuan privasi.",
+          "title": "Borang pertanyaan berstruktur"
+        },
+        {
+          "description": "Pertanyaan disimpan dalam CRM sebelum WhatsApp dibuka dengan butiran kerja, jadi lead tidak hilang walaupun mesej tidak dihantar.",
+          "title": "Simpan dahulu, kemudian WhatsApp"
+        },
+        {
+          "description": "Enquiry website dan lead manual (WhatsApp, telefon, walk-in, rujukan, media sosial) dalam satu senarai dengan carian, penapis status dan tarikh.",
+          "title": "CRM leads"
+        },
+        {
+          "description": "Item kerja dengan unit, kuantiti dan harga RM; jumlah dikira semula oleh pelayan dalam sen; PDF quotation berjenama INFA.",
+          "title": "Quotation builder & PDF"
+        },
+        {
+          "description": "Status DRAFT, SENT, ACCEPTED dan REJECTED, serta dashboard leads, quotation dan nilai quotation yang diterima.",
+          "title": "Status & dashboard"
+        },
+        {
+          "description": "Admin hanya untuk peranan OWNER/ADMIN, semakan origin pada setiap perubahan data, had kadar pada login dan pertanyaan.",
+          "title": "Keselamatan asas"
+        }
+      ],
+      "intro": "INFA perlukan lebih daripada brosur dalam talian: website yang meyakinkan bakal pelanggan, dan cara yang tersusun untuk menukar pertanyaan kepada sebut harga.",
+      "solution": "Website korporat yang menunjukkan kredibiliti (rekod CIDB, perkhidmatan, portfolio kerja) dan satu borang pertanyaan berstruktur. Setiap pertanyaan disimpan dalam CRM sebelum WhatsApp dibuka, jadi tiada lead yang hilang. Di belakang, pemilik menyediakan quotation dengan item dan harga, menjana PDF berjenama, dan menjejak status setiap sebut harga.",
+      "tryIt": [
+        "Buka laman INFA dan lihat profil serta portfolio.",
+        "Buka borang pertanyaan untuk melihat medan berstruktur (tidak perlu dihantar)."
+      ]
+    },
+    "category": "website",
+    "demoUrl": "https://infaelectrical.com/",
+    "description": "Website korporat untuk kontraktor elektrik di Tanah Merah, Kelantan, disambung kepada sistem dalaman: pertanyaan dari website masuk ke CRM leads, pemilik menyediakan quotation dengan PDF berjenama, dan dashboard menunjukkan prestasi sebut harga.",
+    "displayOrder": 12,
+    "featured": false,
+    "galleryImages": [
+      {
+        "alt": "Laman utama INFA Electrical & Engineering dengan tajuk dan butang minta sebut harga",
+        "caption": "Laman utama: tawaran jelas dan butang ‘Minta sebut harga’ di atas.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/infa-electrical-engineering/laman-utama-1600.webp",
+        "srcset": {
+          "800": "/projects/infa-electrical-engineering/laman-utama-800.webp",
+          "1600": "/projects/infa-electrical-engineering/laman-utama-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Profil syarikat INFA dengan rekod pendaftaran CIDB, kategori dan kod pengkhususan",
+        "caption": "Profil syarikat dengan rekod pendaftaran CIDB yang boleh disemak melalui MyDigital Kontraktor.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/infa-electrical-engineering/profil-syarikat-1600.webp",
+        "srcset": {
+          "800": "/projects/infa-electrical-engineering/profil-syarikat-800.webp",
+          "1600": "/projects/infa-electrical-engineering/profil-syarikat-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Senarai perkhidmatan elektrik INFA untuk kediaman, perniagaan dan pemasangan",
+        "caption": "Perkhidmatan disusun mengikut jenis kerja, setiap satu dengan pautan ke borang pertanyaan.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/infa-electrical-engineering/perkhidmatan-1600.webp",
+        "srcset": {
+          "800": "/projects/infa-electrical-engineering/perkhidmatan-800.webp",
+          "1600": "/projects/infa-electrical-engineering/perkhidmatan-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Halaman portfolio INFA dengan video YouTube dan posting Facebook serta penapis",
+        "caption": "Portfolio hasil kerja daripada YouTube dan Facebook, dibuka dalam popup di laman.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/infa-electrical-engineering/portfolio-1600.webp",
+        "srcset": {
+          "800": "/projects/infa-electrical-engineering/portfolio-800.webp",
+          "1600": "/projects/infa-electrical-engineering/portfolio-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Borang pertanyaan kerja dengan jenis servis, negeri, daerah dan tarikh cadangan site visit",
+        "caption": "Borang pertanyaan: jenis servis, negeri & daerah, cadangan tarikh site visit dan persetujuan privasi.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/infa-electrical-engineering/borang-sebut-harga-1600.webp",
+        "srcset": {
+          "800": "/projects/infa-electrical-engineering/borang-sebut-harga-800.webp",
+          "1600": "/projects/infa-electrical-engineering/borang-sebut-harga-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Dashboard admin dengan bilangan leads, quotation, quotation diterima dan nilainya",
+        "caption": "Dashboard pemilik: leads, quotation, quotation diterima dan nilainya (data rekaan).",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/infa-electrical-engineering/admin-overview-1600.webp",
+        "srcset": {
+          "800": "/projects/infa-electrical-engineering/admin-overview-800.webp",
+          "1600": "/projects/infa-electrical-engineering/admin-overview-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Senarai CRM leads dengan sumber, servis, kawasan dan status",
+        "caption": "CRM / Leads: enquiry website dan lead manual dalam satu senarai, dengan carian dan penapis tarikh.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/infa-electrical-engineering/admin-leads-1600.webp",
+        "srcset": {
+          "800": "/projects/infa-electrical-engineering/admin-leads-800.webp",
+          "1600": "/projects/infa-electrical-engineering/admin-leads-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Quotation builder dengan maklumat pelanggan, item kerja dan ringkasan jumlah",
+        "caption": "Quotation builder: item, kuantiti dan harga RM, dengan jumlah dikira semula oleh pelayan.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/infa-electrical-engineering/admin-quotation-baru-1600.webp",
+        "srcset": {
+          "800": "/projects/infa-electrical-engineering/admin-quotation-baru-800.webp",
+          "1600": "/projects/infa-electrical-engineering/admin-quotation-baru-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Senarai quotation dengan nombor, jumlah, status dan pautan PDF",
+        "caption": "Senarai quotation dengan status DRAFT, SENT, ACCEPTED atau REJECTED dan PDF.",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/infa-electrical-engineering/admin-quotations-1600.webp",
+        "srcset": {
+          "800": "/projects/infa-electrical-engineering/admin-quotations-800.webp",
+          "1600": "/projects/infa-electrical-engineering/admin-quotations-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "PDF quotation dengan kepala surat INFA, item kerja dan jumlah",
+        "caption": "PDF quotation berjenama INFA (data rekaan; maklumat bank disembunyikan).",
+        "frame": "desktop",
+        "height": 1000,
+        "src": "/projects/infa-electrical-engineering/pdf-quotation-1600.webp",
+        "srcset": {
+          "800": "/projects/infa-electrical-engineering/pdf-quotation-800.webp",
+          "1600": "/projects/infa-electrical-engineering/pdf-quotation-1600.webp"
+        },
+        "width": 1600
+      },
+      {
+        "alt": "Laman utama INFA pada telefon",
+        "caption": "Mobile: laman utama.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/infa-electrical-engineering/mobile-laman-utama-780.webp",
+        "srcset": {
+          "390": "/projects/infa-electrical-engineering/mobile-laman-utama-390.webp",
+          "780": "/projects/infa-electrical-engineering/mobile-laman-utama-780.webp"
+        },
+        "width": 780
+      },
+      {
+        "alt": "Borang pertanyaan INFA pada telefon",
+        "caption": "Mobile: borang pertanyaan.",
+        "frame": "mobile",
+        "height": 1688,
+        "src": "/projects/infa-electrical-engineering/mobile-borang-780.webp",
+        "srcset": {
+          "390": "/projects/infa-electrical-engineering/mobile-borang-390.webp",
+          "780": "/projects/infa-electrical-engineering/mobile-borang-780.webp"
+        },
+        "width": 780
+      }
+    ],
+    "id": "infa-electrical-engineering",
+    "projectType": "Website Korporat + CRM & Quotation",
+    "repositoryReference": null,
+    "slug": "infa-electrical-engineering",
+    "source": "manual",
+    "status": "production",
+    "tagline": "Website kontraktor elektrik yang membawa pertanyaan terus ke CRM, dan quotation PDF dalam beberapa minit.",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Netlify"
+    ],
+    "thumbnail": {
+      "alt": "Laman utama INFA Electrical & Engineering dengan tajuk dan butang minta sebut harga",
+      "caption": "Laman utama: tawaran jelas dan butang ‘Minta sebut harga’ di atas.",
+      "frame": "desktop",
+      "height": 1000,
+      "src": "/projects/infa-electrical-engineering/laman-utama-1600.webp",
+      "srcset": {
+        "800": "/projects/infa-electrical-engineering/laman-utama-800.webp",
+        "1600": "/projects/infa-electrical-engineering/laman-utama-1600.webp"
+      },
+      "width": 1600
+    },
+    "title": "INFA Electrical & Engineering",
+    "updatedAt": "2026-11-20"
+  },
+  {
+    "approvedForPublic": true,
+    "caseStudy": {
       "challenge": "Banyak bisnes menjalankan jualan melalui satu nombor WhatsApp yang dipegang oleh beberapa staf. Perbualan terlepas, tiada siapa tahu siapa yang patut membalas, pesanan dicatat secara manual dan pemilik tidak dapat melihat prestasi pasukan.",
       "demoNotes": [
         "Tangkapan skrin diambil daripada salinan tempatan dengan organisasi dan data rekaan sepenuhnya (‘Kedai Rekaan Demo’, ‘Pelanggan Demo’), bukan daripada app.mhmacademy.site.",

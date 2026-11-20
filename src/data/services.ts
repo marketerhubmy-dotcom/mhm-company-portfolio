@@ -88,6 +88,7 @@ export const services: Service[] = [
     priceRange: { min: 10000, max: 50000, openEnded: true },
     relatedExamples: [
       { slug: 'mhm-business-suite', note: 'Modul CRM (pelanggan, peluang jualan, pipeline, follow-up) dan Order Management.' },
+      { slug: 'infa-electrical-engineering', note: 'CRM leads daripada website, quotation builder dengan PDF dan status sebut harga.' },
     ],
   },
   {
